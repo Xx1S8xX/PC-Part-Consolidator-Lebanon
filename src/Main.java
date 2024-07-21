@@ -16,9 +16,15 @@ public class Main {
         Save save = new Save(fileName);
         AyoubComputers ayoubComputers = new AyoubComputers(items);
         ayoubComputers.getAllItemAyoub();
-        for(ArrayList<item> data: ayoubComputers.getItems()) {
-            save.writeItemToFile(data);
-        }
+        // 0: Power Supply
+        // 1: CPUS
+        // 2: GPUS
+        // 3: Ram
+        // 4: Motherboards
+        // 5: Cases
+        // 6: Storage
+        // 7: Cooling
+
         save.closePW();
     }
 }

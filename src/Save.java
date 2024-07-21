@@ -30,4 +30,48 @@ public class Save {
             pw.println(item.getWebsite());
         }
     }
+    
+    public void writeOneItemToFile(item item) {
+        pw.println(item.getName());
+        pw.println(item.getPrice());
+        pw.println(item.getWebsite());
+    }
+
+    public void writeStringToFile(String string) {
+        pw.println(string);
+    }
+
+    public void saveAllAyoubItems(AyoubComputers ayoubComputers) {
+        for(int i = 0; i < ayoubComputers.getItems().length; i++) {
+            for(int x = 0; x < ayoubComputers.getItems()[i].size(); x++){
+                switch (i) {
+                    case 0:
+                        writeStringToFile("POWER SUPPLY");
+                        break;
+                    case 1:
+                        writeStringToFile("CPU");
+                        break;
+                    case 2:
+                        writeStringToFile("GPU");
+                        break;
+                    case 3:
+                        writeStringToFile("RAM");
+                        break;
+                    case 4:
+                        writeStringToFile("MOTHERBOARD");
+                        break;
+                    case 5:
+                        writeStringToFile("CASE");
+                        break;
+                    case 6:
+                        writeStringToFile("STORAGE");
+                        break;
+                    case 7:
+                        writeStringToFile("COOLING");
+                        break;
+                }
+                writeOneItemToFile(ayoubComputers.getItems()[i].get(x));
+            }
+        }
+    }
 }
