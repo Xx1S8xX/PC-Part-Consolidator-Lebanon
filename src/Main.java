@@ -24,7 +24,7 @@ public class Main {
         // 5: Cases
         // 6: Storage
         // 7: Cooling
-
+        save.saveAllAyoubItems(ayoubComputers);
         save.closePW();
     }
 }
