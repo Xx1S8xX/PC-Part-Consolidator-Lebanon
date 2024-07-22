@@ -24,7 +24,7 @@ public class Main {
             System.out.println("No File Found");
             ayoubComputers = new AyoubComputers(ayoubItems);
         }
-        //ayoubComputers.getAllItemAyoub();
+        ayoubComputers.getAllItemAyoub();
         ayoubSave.saveAllAyoubItems(ayoubComputers);
 
 
@@ -42,7 +42,7 @@ public class Main {
             System.out.println("No File Found");
             pcAndParts = new PCandParts(pcAndPartsItems);
         }
-        //pcAndParts.getAllItemPCandParts();
+        pcAndParts.getAllItemPCandParts();
         pcAndPartsSave.saveAllPcAndPartsItems(pcAndParts);
 
 
@@ -59,7 +59,7 @@ public class Main {
             System.out.println("No File Found");
             mojitech = new Mojitech(mojitechItems);
         }
-        //mojitech.getAllItemMojitech();
+        mojitech.getAllItemMojitech();
         mojitechSave.saveAllMojitechItems(mojitech);
 
         MainMenu mainMenu = new MainMenu(ayoubComputers,mojitech,pcAndParts);
