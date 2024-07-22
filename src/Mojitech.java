@@ -7,14 +7,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 public class Mojitech {
     private final ArrayList<item>[] items;
-    private final String [] urls =   {"https://mojitech.net/product-category/pc-parts/power-supplies/",
-                                "https://mojitech.net/product-category/pc-parts/cpus/",             "https://mojitech.net/product-category/pc-parts/cpus/page/2/",
-                                "https://mojitech.net/product-category/pc-parts/video-cards/",
-                                "https://mojitech.net/product-category/pc-parts/memory/",
-                                "https://mojitech.net/product-category/pc-parts/motherboards/",     "https://mojitech.net/product-category/pc-parts/motherboards/page/2/",      "https://mojitech.net/product-category/pc-parts/motherboards/page/3/",
-                                "https://mojitech.net/product-category/pc-parts/computer-cases/",   "https://mojitech.net/product-category/pc-parts/computer-cases/page/2/",
-                                "https://mojitech.net/product-category/pc-parts/storage/",          "https://mojitech.net/product-category/pc-parts/storage/page/2/",           "https://mojitech.net/product-category/pc-parts/storage/page/3/",
-                                "https://mojitech.net/product-category/pc-parts/cooling/",          "https://mojitech.net/product-category/pc-parts/cooling/page/2/"};
+    private final String [] urls =      {"https://mojitech.net/product-category/pc-parts/power-supplies/",
+                                        "https://mojitech.net/product-category/pc-parts/cpus/",             "https://mojitech.net/product-category/pc-parts/cpus/page/2/",
+                                        "https://mojitech.net/product-category/pc-parts/video-cards/",
+                                        "https://mojitech.net/product-category/pc-parts/memory/",
+                                        "https://mojitech.net/product-category/pc-parts/motherboards/",     "https://mojitech.net/product-category/pc-parts/motherboards/page/2/",      "https://mojitech.net/product-category/pc-parts/motherboards/page/3/",
+                                        "https://mojitech.net/product-category/pc-parts/computer-cases/",   "https://mojitech.net/product-category/pc-parts/computer-cases/page/2/",
+                                        "https://mojitech.net/product-category/pc-parts/storage/",          "https://mojitech.net/product-category/pc-parts/storage/page/2/",           "https://mojitech.net/product-category/pc-parts/storage/page/3/",
+                                        "https://mojitech.net/product-category/pc-parts/cooling/",          "https://mojitech.net/product-category/pc-parts/cooling/page/2/"};
     public Mojitech(ArrayList<item>[] items) {
         // 0: Power Supply
         // 1: CPUS
