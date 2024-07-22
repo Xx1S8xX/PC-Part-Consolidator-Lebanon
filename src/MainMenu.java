@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -14,16 +15,17 @@ public class MainMenu   extends JFrame{
     private int category;
     private String searchFor;
 
-    public MainMenu(AyoubComputers ayoubComputers, Mojitech mojitech) {
+    public MainMenu(AyoubComputers ayoubComputers, Mojitech mojitech, PCandParts pcAndParts) {
         searchFor = " ";
         shownItems.setEditable(false);
         setContentPane(MainMenu);
-        AllItems allItems = new AllItems(ayoubComputers, mojitech);
+        AllItems allItems = new AllItems(ayoubComputers, mojitech, pcAndParts);
         setVisible(true);
-        setSize(600,500);
+        setSize(1000,800);
         setResizable(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         showAllItems(allItems);
+        shownItems.setFont(Font.getFont(Font.MONOSPACED));
         categoryChoice.addItem("Power Supply");
         categoryChoice.addItem("CPU");
         categoryChoice.addItem("GPU");
@@ -34,7 +36,6 @@ public class MainMenu   extends JFrame{
         categoryChoice.addItem("Cooling");
         sortBy.addItem("Price High To Low");
         sortBy.addItem("Price Low to High");
-        sortBy.addItem("Name");
         categoryChoice.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -52,10 +53,8 @@ public class MainMenu   extends JFrame{
                 }
                 else {
                     for (item item: allItems.getAllItems()[category]) {
-                        if(item.getName().toLowerCase().contains(searchFor.toLowerCase())) {
-                            System.out.println(item.getName());
-                            shownItems.append(item.getName() + "    $" + item.getPrice() + item.getWebsite() +"\n");
-                        }
+                        if(item.getName().toLowerCase().contains(searchFor.toLowerCase()))
+                            shownItems.append(item.getName() + "        $" + item.getPrice() +"         "+ item.getWebsite() +"\n");
                     }
                 }
             }
@@ -82,12 +81,14 @@ public class MainMenu   extends JFrame{
                         case 0:
                             temp = sortByPriceLowToHigh(temp);
                             for(item item:temp)
-                                shownItems.append(item.getName()+"              $"+item.getPrice()+"                "+item.getWebsite()+'\n');
+                                if(item.getName().toLowerCase().contains(searchFor.toLowerCase()))
+                                    shownItems.append(item.getName()+"              $"+item.getPrice()+"                "+item.getWebsite()+'\n');
                             break;
                         case 1:
                             temp = sortByPriceHighToLow(temp);
                             for(item item:temp)
-                                shownItems.append(item.getName()+"              $"+item.getPrice()+"                "+item.getWebsite()+'\n');
+                                if(item.getName().toLowerCase().contains(searchFor.toLowerCase()))
+                                    shownItems.append(item.getName()+"              $"+item.getPrice()+"                "+item.getWebsite()+'\n');
                             break;
                     }
                 }

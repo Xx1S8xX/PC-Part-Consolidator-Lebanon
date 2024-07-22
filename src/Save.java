@@ -94,4 +94,46 @@ public class Save {
         }
         pw.close();
     }
+    public void saveAllPcAndPartsItems(PCandParts pcAndParts) throws FileNotFoundException {
+        PrintWriter pw = new PrintWriter(file);
+        try {
+            for (int i = 0; i < pcAndParts.getItems().length; i++) {
+                for (int x = 0; x < pcAndParts.getItems()[i].size(); x++) {
+                    switch (i) {
+                        case 0:
+                            pw.println("POWER SUPPLY");
+                            break;
+                        case 1:
+                            pw.println("CPU");
+                            break;
+                        case 2:
+                            pw.println("GPU");
+                            break;
+                        case 3:
+                            pw.println("RAM");
+                            break;
+                        case 4:
+                            pw.println("MOTHERBOARD");
+                            break;
+                        case 5:
+                            pw.println("CASE");
+                            break;
+                        case 6:
+                            pw.println("STORAGE");
+                            break;
+                        case 7:
+                            pw.println("COOLING");
+                            break;
+                    }
+                    pw.println(pcAndParts.getItems()[i].get(x).getName());
+                    pw.println(pcAndParts.getItems()[i].get(x).getPrice());
+                    pw.println(pcAndParts.getItems()[i].get(x).getWebsite());
+                }
+            }
+        }
+        catch (Exception e) {
+            System.out.println("No Items In List");
+        }
+        pw.close();
+    }
 }

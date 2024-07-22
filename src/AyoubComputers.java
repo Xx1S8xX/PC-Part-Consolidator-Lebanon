@@ -30,7 +30,8 @@ public class AyoubComputers {
     }
     private ArrayList<item> getItemAyoub(String url) throws IOException {
         ArrayList<item> items = new ArrayList<>();
-        Document doc = Jsoup.connect(url).get();
+        final String userAgent = "Mozilla/5.0 (X11; U; Linux i586; en-US; rv:1.7.3) Gecko/20040924 Epiphany/1.4.4 (Ubuntu)";
+        Document doc = Jsoup.connect(url).userAgent(userAgent).get();
         Elements elements = doc.select("li.product");
         String name;
         String price;
@@ -43,7 +44,7 @@ public class AyoubComputers {
             {
                 price = element2.select("span.price.price--withoutTAX.price--main").text();
                 price = price.substring(0, price.indexOf(" "));
-                item temp_item = new item(name, Double.parseDouble(price.replace("$", "").replace(",", "")), "Ayoub Computers");
+                item temp_item = new item(name.replace("-"," "), Double.parseDouble(price.replace("$", "").replace(",", "")), "Ayoub Computers");
                 items.add(temp_item);
             }
         }
@@ -56,16 +57,16 @@ public class AyoubComputers {
         temp = getItemAyoub(urls[1]);
         for(item item:temp)
             items[0].add(item);
-        System.out.println("Power Supplies");
+        System.out.println("Power Supplies Ayoub Computers");
         // CPUs
         this.items[1] = getItemAyoub(this.urls[2]);
-        System.out.println("CPUs");
+        System.out.println("CPUs Ayoub Computers");
         // GPUs
         this.items[2] = getItemAyoub(this.urls[3]);
         temp = getItemAyoub(urls[4]);
         for(item item:temp)
             items[2].add(item);
-        System.out.println("GPUs");
+        System.out.println("GPUs Ayoub Computers");
         // RAMs
         this.items[3] = getItemAyoub(this.urls[5]);
         temp = getItemAyoub(urls[6]);
@@ -77,7 +78,7 @@ public class AyoubComputers {
         temp = getItemAyoub(urls[8]);
         for(item item:temp)
             items[3].add(item);
-        System.out.println("RAMs");
+        System.out.println("RAMs Ayoub Computers");
         // Motherboards
         this.items[4] = getItemAyoub(this.urls[9]);
         temp = getItemAyoub(urls[10]);
@@ -86,13 +87,13 @@ public class AyoubComputers {
         temp = getItemAyoub(urls[11]);
         for(item item:temp)
             items[4].add(item);
-        System.out.println("Motherboards");
+        System.out.println("Motherboards Ayoub Computers");
         // Cases
         this.items[5] = getItemAyoub(this.urls[12]);
         temp = getItemAyoub(urls[13]);
         for(item item:temp)
             items[5].add(item);
-        System.out.println("Cases");
+        System.out.println("Cases Ayoub Computers");
         // Storage
         this.items[6] = getItemAyoub(this.urls[14]);
         temp = getItemAyoub(urls[15]);
@@ -107,7 +108,7 @@ public class AyoubComputers {
         temp = getItemAyoub(urls[18]);
         for(item item:temp)
             items[6].add(item);
-        System.out.println("Storage");
+        System.out.println("Storage Ayoub Computers");
         //Cooling
         this.items[7] = getItemAyoub(this.urls[19]);
         temp = getItemAyoub(urls[20]);
@@ -119,8 +120,6 @@ public class AyoubComputers {
         temp = getItemAyoub(urls[22]);
         for(item item:temp)
             items[7].add(item);
-        System.out.println("Cooling");
-        for(int i = 0; i < items.length; i++)
-            System.out.println(i+": "+items[i].size());
+        System.out.println("Cooling Ayoub Computers");
     }
 }

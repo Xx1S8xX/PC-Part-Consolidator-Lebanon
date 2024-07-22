@@ -26,13 +26,24 @@ public class Main {
         }
         //ayoubComputers.getAllItemAyoub();
         ayoubSave.saveAllAyoubItems(ayoubComputers);
+
+
+
         // PC and Parts Stuff
-
-
-
-
-
-
+        File pcAndPartsFile = new File("pcAndPartsFile.txt");
+        Save pcAndPartsSave = new Save(pcAndPartsFile);
+        Read pcAndPartsRead = new Read(pcAndPartsFile);
+        ArrayList<item>[] pcAndPartsItems = (ArrayList<item>[]) new ArrayList[8];
+        PCandParts pcAndParts;
+        try {
+            pcAndParts = pcAndPartsRead.readPcAndPartsData();
+        }
+        catch (Exception e) {
+            System.out.println("No File Found");
+            pcAndParts = new PCandParts(pcAndPartsItems);
+        }
+        //pcAndParts.getAllItemPCandParts();
+        pcAndPartsSave.saveAllPcAndPartsItems(pcAndParts);
 
 
         // Mojitech Stuff
@@ -51,6 +62,6 @@ public class Main {
         //mojitech.getAllItemMojitech();
         mojitechSave.saveAllMojitechItems(mojitech);
 
-        MainMenu mainMenu = new MainMenu(ayoubComputers,mojitech);
+        MainMenu mainMenu = new MainMenu(ayoubComputers,mojitech,pcAndParts);
     }
 }

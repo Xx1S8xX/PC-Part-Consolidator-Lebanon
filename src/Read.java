@@ -39,31 +39,30 @@ public class Read {
         while (counter < data.size()) {
             switch (data.get(counter)) {
                 case "POWER SUPPLY":
-                    items[0].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[0].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
                 case "CPU":
-                    items[1].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[1].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
                 case "GPU":
-                    items[2].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[2].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
                 case "RAM":
-                    items[3].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[3].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
                 case "MOTHERBOARD":
-                    items[4].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[4].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
                 case "CASE":
-                    items[5].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[5].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
                 case "STORAGE":
-                    items[6].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[6].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
                 case "COOLING":
-                    items[7].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[7].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
             }
-            System.out.println(counter);
             counter += 4;
         }
         return new AyoubComputers(items);
@@ -83,33 +82,75 @@ public class Read {
         while (counter < data.size()) {
             switch (data.get(counter)) {
                 case "POWER SUPPLY":
-                    items[0].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[0].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
                 case "CPU":
-                    items[1].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[1].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
                 case "GPU":
-                    items[2].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[2].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
                 case "RAM":
-                    items[3].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[3].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
                 case "MOTHERBOARD":
-                    items[4].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[4].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
                 case "CASE":
-                    items[5].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[5].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
                 case "STORAGE":
-                    items[6].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[6].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
                 case "COOLING":
-                    items[7].add(new item(data.get(counter+1),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    items[7].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
                     break;
             }
-            System.out.println(counter);
             counter += 4;
         }
         return new Mojitech(items);
+    }
+    public PCandParts readPcAndPartsData() throws IOException {
+        ArrayList<item>[] items = (ArrayList<item>[]) new ArrayList[8];
+        items[0] = new ArrayList<item>();
+        items[1] = new ArrayList<item>();
+        items[2] = new ArrayList<item>();
+        items[3] = new ArrayList<item>();
+        items[4] = new ArrayList<item>();
+        items[5] = new ArrayList<item>();
+        items[6] = new ArrayList<item>();
+        items[7] = new ArrayList<item>();
+        ArrayList<String> data = readData();
+        int counter = 0;
+        while (counter < data.size()) {
+            switch (data.get(counter)) {
+                case "POWER SUPPLY":
+                    items[0].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    break;
+                case "CPU":
+                    items[1].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    break;
+                case "GPU":
+                    items[2].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    break;
+                case "RAM":
+                    items[3].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    break;
+                case "MOTHERBOARD":
+                    items[4].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    break;
+                case "CASE":
+                    items[5].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    break;
+                case "STORAGE":
+                    items[6].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    break;
+                case "COOLING":
+                    items[7].add(new item(data.get(counter+1).replace("-"," "),Double.parseDouble(data.get(counter+2)),data.get(counter+3)));
+                    break;
+            }
+            counter += 4;
+        }
+        return new PCandParts(items);
     }
 }

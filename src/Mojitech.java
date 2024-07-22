@@ -46,7 +46,7 @@ public class Mojitech {
                 price = element2.select("bdi").text();
                 if(price.contains(" "))
                     price = price.substring(price.indexOf(" ")+1);
-                item temp_item = new item(name,Double.parseDouble(price.replace("$","").replace(",","")),"Mojitech");
+                item temp_item = new item(name.replace("-"," "),Double.parseDouble(price.replace("$","").replace(",","")),"Mojitech");
                 items.add(temp_item);
             }
         }
@@ -107,8 +107,5 @@ public class Mojitech {
         for(item item:temp)
             items[7].add(item);
         System.out.println("Cooling MOJITECH");
-
-        for(int i = 0; i < items.length; i++)
-            System.out.println("MOJITECH "+i+": "+items[i].size());
     }
 }
