@@ -12,6 +12,7 @@ public class MainMenu   extends JFrame{
     private JComboBox sortBy;
     private JTextArea shownItems;
     private JPanel MainMenu;
+    private JButton button1;
     private int category;
     private String searchFor;
 
