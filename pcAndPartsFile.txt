@@ -155,6 +155,22 @@ Cooler Master Elite V3 300W PSU
 39.0
 PC and Parts
 CPU
+AMD Ryzen 7 7700x (TAX included)
+286.0
+PC and Parts
+CPU
+AMD Ryzen 5 7600x (TAX included)
+246.0
+PC and Parts
+CPU
+AMD Ryzen 9 5900X (TAX included)
+249.0
+PC and Parts
+CPU
+AMD Ryzen 9 7950X Tray (TAX included)
+475.0
+PC and Parts
+CPU
 Intel Core i9 14900KF Tray (TAX included)
 498.0
 PC and Parts
@@ -335,10 +351,6 @@ Intel Core i9 14900KS Tray (TAX included)
 605.0
 PC and Parts
 CPU
-AMD Ryzen 9 5900X (TAX included)
-280.0
-PC and Parts
-CPU
 AMD Ryzen 7 7700 (TAX included)
 305.0
 PC and Parts
@@ -357,10 +369,6 @@ PC and Parts
 CPU
 AMD Ryzen 9 7900x (TAX included)
 395.0
-PC and Parts
-CPU
-AMD Ryzen 7 7700x (TAX included)
-328.0
 PC and Parts
 CPU
 AMD Ryzen 7 5800X
@@ -389,10 +397,6 @@ PC and Parts
 CPU
 AMD Ryzen 5 3600
 129.0
-PC and Parts
-CPU
-AMD Ryzen 5 7600x (TAX included)
-255.0
 PC and Parts
 CPU
 Intel Core i3 10100F
@@ -497,6 +501,10 @@ PC and Parts
 GPU
 Matrox M9138 1GB
 479.0
+PC and Parts
+RAM
+HyperX Fury 32GB (1 x 32GB) DDR5 5600 RAM Black
+98.0
 PC and Parts
 RAM
 HyperX Fury 16GB RGB (1 x 16GB) DDR5 6000 RAM White
@@ -719,10 +727,6 @@ HyperX Fury 16GB (1 x 16GB) DDR5 5600 RAM Black
 55.0
 PC and Parts
 RAM
-HyperX Fury 32GB (1 x 32GB) DDR5 5600 RAM Black
-101.0
-PC and Parts
-RAM
 HyperX Fury 8GB (1 x 8GB) DDR4 3600 RAM
 24.0
 PC and Parts
@@ -733,6 +737,26 @@ PC and Parts
 RAM
 Kingston 4GB DDR3 1600 RAM
 29.0
+PC and Parts
+MOTHERBOARD
+Biostar H81MHV3 LGA1150
+68.0
+PC and Parts
+MOTHERBOARD
+Gigabyte X670 AORUS ELITE AX DDR5 AMD
+307.0
+PC and Parts
+MOTHERBOARD
+Gigabyte B760 DS3H AX DDR5 LGA1700
+147.0
+PC and Parts
+MOTHERBOARD
+Gigabyte Z790 AORUS ELITE AX DDR5 LGA1700
+297.0
+PC and Parts
+MOTHERBOARD
+MSI B760M GAMING PLUS WIFI DDR5 LGA1700
+156.0
 PC and Parts
 MOTHERBOARD
 Asus ROG Strix X399 E Gaming
@@ -789,10 +813,6 @@ PC and Parts
 MOTHERBOARD
 MSI PRO B760M P DDR5 LGA1700
 118.0
-PC and Parts
-MOTHERBOARD
-Gigabyte X670 AORUS ELITE AX DDR5 AMD
-313.0
 PC and Parts
 MOTHERBOARD
 Gigabyte B760 GAMING X DDR4 LGA1700
@@ -871,24 +891,12 @@ Gigabyte B760M DS3H DDR4 LGA1700
 123.0
 PC and Parts
 MOTHERBOARD
-MSI B760M GAMING PLUS WIFI DDR5 LGA1700
-160.0
-PC and Parts
-MOTHERBOARD
 MSI X570 Tomahawk WIFI AMD Ryzen AM4
 285.0
 PC and Parts
 MOTHERBOARD
 MSI MAG B550 Tomahawk AMD Ryzen AM4
 179.0
-PC and Parts
-MOTHERBOARD
-Gigabyte B760 DS3H AX DDR5 LGA1700
-149.0
-PC and Parts
-MOTHERBOARD
-Gigabyte Z790 AORUS ELITE AX DDR5 LGA1700
-300.0
 PC and Parts
 MOTHERBOARD
 Biostar B660MX E DDR4 LGA1700
@@ -909,10 +917,6 @@ PC and Parts
 MOTHERBOARD
 Gigabyte Z690 GAMING X DDR4 LGA1700
 193.0
-PC and Parts
-MOTHERBOARD
-Biostar H81MHV3 LGA1150
-69.0
 PC and Parts
 MOTHERBOARD
 Gigabyte X570 Aorus Elite AMD
@@ -1569,10 +1573,6 @@ PC and Parts
 STORAGE
 Samsung 980 PRO 500GB PCIe Gen 4.0 NVMe SSD (TAX included)
 71.0
-PC and Parts
-STORAGE
-Samsung 980 PRO 1TB PCIe Gen 4.0 NVMe SSD (TAX included)
-115.0
 PC and Parts
 STORAGE
 Samsung 980 1TB PCIe NVMe SSD (TAX included)

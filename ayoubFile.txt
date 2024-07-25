@@ -388,7 +388,7 @@ GIGABYTE AORUS P1200W 80+ PLATINUM MODULAR | GP  AP1200PM
 Ayoub Computers
 POWER SUPPLY
 Asus ROG Strix GeForce RTX 4080 SUPER 16GB GDDR6X OC Edition Graphics Card | RTX4080S O16G GAMING
-1500.0
+1299.0
 Ayoub Computers
 CPU
 Intel CPU I3 12100 12th Gen Processor | 12100
@@ -401,6 +401,10 @@ Ayoub Computers
 CPU
 INTEL CORE I5 10400F TRAY PROCESSOR 12M CACHE UP TO 4.30GHZ FC LGA14A WITHOUT FAN | I5 10400F
 93.0
+Ayoub Computers
+CPU
+Intel Core i5 12400 Tray 12th Gen Processor   LGA 1700 Tray
+99.0
 Ayoub Computers
 CPU
 AMD Ryzen 3 4300G 6MB 4C/8T CPU | 100000144BOX
@@ -421,10 +425,6 @@ Ayoub Computers
 CPU
 AMD Ryzen 5 3600 Processor Without Cooler | 10000031AWOF
 130.0
-Ayoub Computers
-CPU
-Intel Core i5 12400 Alder Lake 2.5GHz Six Core LGA 1700 Boxed Processor
-137.0
 Ayoub Computers
 CPU
 AMD Ryzen 5 Pro 4650G with Wraith Stealth cooler 11MB 6C/12T | 100 100000143MPK
@@ -464,7 +464,11 @@ Intel 13th Gen. Core i5 13400F BOXED 4.6GHz, 10C, 20MB | 13400F
 Ayoub Computers
 CPU
 Intel Core i7 12700 12th Gen Processor   Alder Lake 12 Core LGA 1700 CPU   TRAY NO FAN | 12700
-237.0
+210.0
+Ayoub Computers
+CPU
+Intel Core i7 12700K 3.6 GHz 12 Core LGA 1700 Processor   Tray | 12700K T
+220.0
 Ayoub Computers
 CPU
 Intel CPU Core I7 12700 TRAY 12th Gen Processor , 4.9GHz, 12Core, 25MB
@@ -481,10 +485,6 @@ Ayoub Computers
 CPU
 AMD Ryzen 7 3700X 8 Core, 16 Thread Unlocked Desktop Processor with Wraith Prism LED Cooler. | 100 100000071BOX
 256.0
-Ayoub Computers
-CPU
-Intel Core i7 12700K 3.6 GHz 12 Core LGA 1700 Processor   Tray | 12700K T
-259.0
 Ayoub Computers
 CPU
 GIGABYTE GeForce GTX 1660 Super OC 6G | GTX 1660 OC
@@ -511,6 +511,10 @@ AMD Ryzen 7 5800X 8 core, 16 Thread Unlocked Desktop Processor Without Cooler   
 297.0
 Ayoub Computers
 CPU
+Intel Core i7 13700KF TRAY 13th Gen Processor   Raptor Lake 16 Core LGA 1700 CPU | 13700KF
+299.0
+Ayoub Computers
+CPU
 AMD Ryzen 7 5700G with Wraith Stealth cooler 20MB 8C/16T | 100 100000263MPK
 300.0
 Ayoub Computers
@@ -521,6 +525,10 @@ Ayoub Computers
 CPU
 AMD Ryzen 7 7700 with Wraith Prism cooler 40MB 8C/16T | 100000592BOX
 305.0
+Ayoub Computers
+CPU
+Intel Core i7 13700K 13th Gen Processor   Raptor Lake 16 Core LGA 1700 CPU   Tray
+310.0
 Ayoub Computers
 CPU
 AMD Ryzen 5 7600 with Wraith Stealth cooler 38MB 6C/12T | 1000001015BOX
@@ -536,7 +544,7 @@ Intel Core i7 13700F 13th Gen Processor   Raptor Lake 16 Core LGA 1700 Boxed CPU
 Ayoub Computers
 CPU
 Intel Core i7 14700KF 14th Generation Processor   TRAY | 14700KF
-335.0
+333.0
 Ayoub Computers
 CPU
 Intel Core i9 12900K 12th Gen Processor   LGA 1700 Tray
@@ -556,7 +564,7 @@ Intel 14th Gen Core I7 14700 Gen LGA1700 20 Cores 28 Threads 61MB 65W UHD Graphi
 Ayoub Computers
 CPU
 Intel Core i7 14700 14th Generation Processor   TRAY | 14700
-354.0
+349.0
 Ayoub Computers
 CPU
 Intel Core i7 13700 13th Gen Processor   Raptor Lake 16 Core LGA 1700 Boxed CPU
@@ -596,7 +604,7 @@ AMD Ryzen 9 5900X   12 Core AM4 Boxed CPU   HeatSink Not Included | 100 10000006
 Ayoub Computers
 CPU
 Intel Core i9 14900K 14th Generation Processor   TRAY | 14900K
-536.0
+510.0
 Ayoub Computers
 CPU
 Intel Core i9 13900KF 13th Gen Processor,5.8GHz, 24Core, 36MB
@@ -609,10 +617,6 @@ Ayoub Computers
 CPU
 Intel Core I9 13900K CPU   Tray | 13900K
 550.0
-Ayoub Computers
-CPU
-Intel Core I9 14900KF 14th Gen. Processor | 14900K
-615.0
 Ayoub Computers
 CPU
 AMD Ryzen™ Threadripper™ PRO 3955WX 72MB 16C/32T | 100 100000167WOF
@@ -743,20 +747,16 @@ MSI GeForce RTX3060 Ventus 2X 12G OC Graphic Card | 912 V397 664
 299.0
 Ayoub Computers
 GPU
+ASUS Dual GeForce RTX 4060 EVO OC Edition 8GB GDDR6 Graphic Card | 90YV0JC7 M0NA00
+315.0
+Ayoub Computers
+GPU
 GIGABYTE VGA GeForce RTX™ 3050 EAGLE OC 8G (1.0) | GV N3050EAGLE OC 8GD
 319.0
 Ayoub Computers
 GPU
 Zotac Gaming Geforce RTX 4060 8GB Twin Edge 128bit,black | ZT D40600E 10M
-319.0
-Ayoub Computers
-GPU
-ASUS Dual GeForce RTX 4060 EVO OC Edition 8GB GDDR6 Graphic Card | 90YV0JC7 M0NA00
-330.0
-Ayoub Computers
-GPU
-Asus Dual GeForce RTX 4060 OC Edition 8GB GDDR6 Graphic Card | 90YV0JC0 M0NA00
-340.0
+329.0
 Ayoub Computers
 GPU
 ZOTAC RTX 4060 8GB GDDR6 SOLO | RTX 4060
@@ -991,6 +991,10 @@ GIGABYTE GeForce RTX 4080 16GB Gaming OC (1.0) | RTX 4080
 1253.0
 Ayoub Computers
 GPU
+ASUS TUF Gaming GeForce RTX4080 OC Edition Graphics Card
+1299.0
+Ayoub Computers
+GPU
 MSI GeForce RTX 4080 16GB Ventus 3X OC Graphic Card | 912 V511 013
 1299.0
 Ayoub Computers
@@ -1011,8 +1015,8 @@ ASUS ROG Strix RTX 4080 SUPER 16GB OC Gaming Graphics Card | 90YV0KB0 MVAA00
 1500.0
 Ayoub Computers
 GPU
-ASUS TUF Gaming GeForce RTX4080 OC Edition Graphics Card
-1500.0
+ASUS TUF Gaming GeForce RTX 4090 24GB OC Edition Gaming Graphics Card | 90YV0IE0 M0AA00
+1749.0
 Ayoub Computers
 GPU
 ASUS ROG STRIX Gaming GeForce RTX 4090 24GB OC Edition Gaming Graphics Card | 90YV0ID0 M0AA00
@@ -1088,6 +1092,10 @@ ADATA 4GB DDR4 2666MHz DRAM | AM2P26KC4R1 BXTS
 Ayoub Computers
 RAM
 Kingston 4GB DDR4 2666MHz Memory | KVR26N19S6/4
+15.0
+Ayoub Computers
+RAM
+SK Hynix 8GB DDR5 5600 Mhz 1Rx16 SODIMM RAM For Laptop | HMCG66AGBSA092N (Pull out   No Box)
 15.0
 Ayoub Computers
 RAM
@@ -1191,6 +1199,10 @@ Kingston 8GB DDR4 2666MHZ SODIMM Laptop RAM | KCP426SS8/8
 20.0
 Ayoub Computers
 RAM
+Kingston RAM 8GB 1Rx16 1G x 64 Bit PC4 3200 CL22 260 Pin SODIMM | KVR32S22S6/8
+20.0
+Ayoub Computers
+RAM
 Kingston Technology 4GB 1600MHz DDR3L Non ECC CL11 DIMM 1.35V Memory | KVR16LN11/4
 20.0
 Ayoub Computers
@@ -1212,10 +1224,6 @@ Kingston 8GB DDR4 3200MT/S Non ECC Unbuffered DIMM CL22 Desktop RAM | KCP432NS6/
 Ayoub Computers
 RAM
 Kingston DDR4 8GB Memory | KVR26N19S8/8
-21.0
-Ayoub Computers
-RAM
-Kingston RAM 8GB 1Rx16 1G x 64 Bit PC4 3200 CL22 260 Pin SODIMM | KVR32S22S6/8
 21.0
 Ayoub Computers
 RAM
@@ -1259,6 +1267,10 @@ Kingston Fury Beast   8GB 3733MHz DDR4 CL19 KF437C19BB/8 Desktop Memory | KF437C
 24.0
 Ayoub Computers
 RAM
+Kingston Fury Beast RGB 8GB 3200MT/s DDR4 CL16 DIMM Computer Memory | KF432C16BB2A/8
+24.0
+Ayoub Computers
+RAM
 Transcend 4GB JM DDR3 1600 Udimm 1Rx8 512mx8 Cl11 1.5v | JM1600KLH4G
 24.0
 Ayoub Computers
@@ -1295,10 +1307,6 @@ SK Hynix 8GB 4800MHz DDR5 RAM | HMCG66MEBSA095N (Pull out   No Box)
 25.0
 Ayoub Computers
 RAM
-SK Hynix 8GB DDR5 5600 Mhz 1Rx16 SODIMM RAM For Laptop | HMCG66AGBSA092N (Pull out   No Box)
-25.0
-Ayoub Computers
-RAM
 Transcend 4GB DDR3 SDRAM RAM | TS512MLK72V3N
 25.0
 Ayoub Computers
@@ -1320,10 +1328,6 @@ Adata 8GB DDR3L 1600 UDIMM PC3L 12800 | ADDU1600W8G11
 Ayoub Computers
 RAM
 ADATA RAM DDR3 1600 8GB PC3 12800 SODIMM | ADDS1600W8G11 S
-26.0
-Ayoub Computers
-RAM
-Kingston Fury Beast RGB 8GB 3200MT/s DDR4 CL16 DIMM Computer Memory | KF432C16BB2A/8
 26.0
 Ayoub Computers
 RAM
@@ -1539,6 +1543,10 @@ KINGSTON 16GB 2666MHz DDR4 Laptop RAM | KVR26S19D8/16
 37.5
 Ayoub Computers
 RAM
+Kingston Fury Beast RGB 16GB 3200MHz DDR4 Memory | KF432C16BB2A/16
+37.5
+Ayoub Computers
+RAM
 Transcend 8GB DDR3 1333 SODIMM 2RX8 512MX8 CL9 1.5V | TS1GSK64V3H
 38.0
 Ayoub Computers
@@ -1575,10 +1583,6 @@ Kingston Memory 8GB DDR3 1600 1.35V | KVR16LN11/8
 40.0
 Ayoub Computers
 RAM
-addlink Spider 4 16GB DDR4 3200MHz w/Heatsink | AG16GB32C16S4UB
-41.0
-Ayoub Computers
-RAM
 Kingston Fury Renegade 16GB 3600MT/S DDR4 CL16 DIMM Desktop Gaming RAM | KF436C16RB12/16
 41.0
 Ayoub Computers
@@ -1593,10 +1597,6 @@ Ayoub Computers
 RAM
 Transcend Memory Desktop DDR5, 16GB Transcend 4800Mhz | JM4800ALE 16G
 42.0
-Ayoub Computers
-RAM
-Kingston Fury Beast RGB 16GB 3200MHz DDR4 Memory | KF432C16BB2A/16
-43.0
 Ayoub Computers
 RAM
 Transcend Memory Laptop DDR5, 16GB Transcend 4800Mhz | JM4800ASE 16G
@@ -1743,6 +1743,10 @@ Kingston ValueRAM 16GB 5600MT/s DDR5 Non ECC CL46 SODIMM 1Rx8 KVR56S46BS8 16   L
 55.0
 Ayoub Computers
 RAM
+Kingston 16G DDR5 5200 CL40 40 BEAST RGB | KF552C40BBA 16
+56.0
+Ayoub Computers
+RAM
 Kingston Technology Kingston Fury Beast 16GB 5600MT/s DDR5 CL36 Desktop Memory Single Module | KF556C36BBE 16
 56.0
 Ayoub Computers
@@ -1751,19 +1755,15 @@ Kingston 16b DDR4 2666mhz Memory for Notebook | KCP426SD8/16
 57.0
 Ayoub Computers
 RAM
-Kingston 16G DDR5 5200 CL40 40 BEAST RGB | KF552C40BBA 16
-57.0
-Ayoub Computers
-RAM
-Kingston Fury Beast 16G 6000MT/s DDR5 CL30 RGB Desktop RAM | KF560C30BBA 16
-57.0
-Ayoub Computers
-RAM
 Transcend Memory Server 16GB,3200 DDR4 ECC | TS2GLH72V2B
 57.0
 Ayoub Computers
 RAM
 HyperX Fury 16GB (1 x 16GB) DDR5 6000 RAM White | KF560C40BBW 16
+59.0
+Ayoub Computers
+RAM
+Kingston Fury Beast 16G 6000MT/s DDR5 CL30 RGB Desktop RAM | KF560C30BBA 16
 59.0
 Ayoub Computers
 RAM
@@ -1795,10 +1795,6 @@ Transcend Memory Desktop DDR4, 32GB (3200) | JM3200HLE 32G
 63.0
 Ayoub Computers
 RAM
-addlink Spider 5 16GB DDR5 4800MHz w/ Heatsink,Black | AG16GB48C40S5UB
-64.0
-Ayoub Computers
-RAM
 Kingston Fury 16GB 6000MHz DDR5 RGB White Desktop RAM | KF560C40BWA 16
 64.0
 Ayoub Computers
@@ -1819,14 +1815,6 @@ ADATA 32GB DDR4 3200 UDIMM RAM | AD4U320032G22
 67.0
 Ayoub Computers
 RAM
-addlink Spider 5 Black 16GB DDR5 5600MHz w/Heatsink | AG16GB56C40S5UB
-67.0
-Ayoub Computers
-RAM
-addlink Spider S5 RGB 16GB DDR5 5600 w/Heatsink | AG16GB56C40X5UB
-67.0
-Ayoub Computers
-RAM
 Kingston FURY Renegade 32GB 3200MT/S DDR4 | KF432C16RB/32
 67.0
 Ayoub Computers
@@ -1837,10 +1825,6 @@ Ayoub Computers
 RAM
 Kingston ValueRAM 32GB 2666MHz DDR4 Non ECC CL19 DIMM 2Rx8 1.2V | KVR26N19D8/32
 69.0
-Ayoub Computers
-RAM
-Addlink Spider N4 32GB DDR4 3200 SO DIMM | AG32GB32C22N4S
-70.0
 Ayoub Computers
 RAM
 Kingston Fury Beast 32GB 3600MHz DDR4 CL18 Desktop Memory Single Stick | KF436C18BB/32
@@ -1868,7 +1852,7 @@ KINGSTON FURY 32GB 3200U DDR4 SODIMM IMPACT BLACK RAM For Laptop | KF432S20IB/32
 Ayoub Computers
 RAM
 Kingston Fury Beast RGB 32GB 3200 DDR4 For Desktop | KF432C16BB2A 32
-74.0
+73.0
 Ayoub Computers
 RAM
 KINGSTON 16GB 2666E19 DDR4 Desktop | KSM26ED8/16HD
@@ -1915,10 +1899,6 @@ HyperX Fury Renegade RGB 16 GB (2 X 8 GB) 3200MHz DDR4 CL16 | KF432C16RBAK2/16
 82.5
 Ayoub Computers
 RAM
-Adata 32GB 5600 DDR5 Notebook RAM | AD5S560032GS
-83.0
-Ayoub Computers
-RAM
 Adata 32GB DDR5 4800MHz SODIMM RAM | AD5S480032GS
 83.0
 Ayoub Computers
@@ -1956,10 +1936,6 @@ Transcend 16GB DDR3 1333 REG DIMM 4Rx8 | TS2GKR72V3H
 Ayoub Computers
 RAM
 Kingston 32GB 5600 DDR5 Notebook RAM | KCP556SD8 32
-95.0
-Ayoub Computers
-RAM
-Kingston Fury 32GB DDR5 5200 Beast RGB BLK K2 X16 Memory | KF552C40BBAK2 32
 95.0
 Ayoub Computers
 RAM
@@ -2235,10 +2211,6 @@ MSI B760M E DDR4 Motherboard Micro ATX | 911 7D48 025
 98.0
 Ayoub Computers
 MOTHERBOARD
-MSI Pro H610M B DDR4 Motherboard | 911 7D46 004
-98.0
-Ayoub Computers
-MOTHERBOARD
 Biostar B760MX2 E D4 DDR4 Motherboard | B760MX2 E
 99.0
 Ayoub Computers
@@ -2443,6 +2415,10 @@ MSI MAG B560 TOMAHAWK WIFI Motherboard | 911 7D15 014
 178.0
 Ayoub Computers
 MOTHERBOARD
+ASRock Z790 PG Lightning DDR4 Intel Motherboard | 90 MXBJM0 A0UAYZ
+179.0
+Ayoub Computers
+MOTHERBOARD
 Gigabyte Intel Motherboard with Direct 12+1 Phases Digital VRM and DrMOS, Full PCIe 4.0* Design, PCIe 4.0 M.2 with Thermal Guard, 2.5GbE Gaming LAN, USB TYPE C , RGB FUSION 2.0, Q Flash Plus | Z590 UD
 179.0
 Ayoub Computers
@@ -2629,10 +2605,6 @@ Ayoub Computers
 MOTHERBOARD
 Asus Prime Z690 P D4 DDR4 Motherboard | 90MB18P0 M0EAYC
 221.0
-Ayoub Computers
-MOTHERBOARD
-ASRock Z790 PG Lightning DDR4 Intel Motherboard | 90 MXBJM0 A0UAYZ
-222.0
 Ayoub Computers
 MOTHERBOARD
 Gigabyte Z690 Aorus Elite DDR5 (rev. 1.0) | Z690 Aorus Elite
@@ -2953,10 +2925,6 @@ Ayoub Computers
 CASE
 Xigmatek Elite One 1 ATX Mid Tower Case | EN49684
 48.0
-Ayoub Computers
-CASE
-DarkFlash DRX70 Mesh ATX PC Case   Black | DRX70
-49.0
 Ayoub Computers
 CASE
 REDRAGON GC EB211 GAMING CASE | GC EB211
@@ -3519,6 +3487,10 @@ COUGAR CASE GEMINI X Dual Tower Case to Build Two Full Computers Within A Single
 566.5
 Ayoub Computers
 CASE
+ASUS NUC 13 Pro Mini PC   Intel Core I7 1360P | NUC13ANHi7
+640.0
+Ayoub Computers
+CASE
 Thermaltake Level 10 Limited Edition Silver Aluminum ATX Full Tower Computer Case VL300A2N1N
 995.0
 Ayoub Computers
@@ -3527,24 +3499,12 @@ ADATA C008 16GB Capless Sliding USB Flash Drive | AC00816GRKD
 3.0
 Ayoub Computers
 STORAGE
-Addlink 16GB SDHC UHS I (Class 10) | ad16GBSH310
-4.0
-Ayoub Computers
-STORAGE
 Addlink 32GB microSD UHS I (Class 10+Adapter) | ad32GBMSH310A
 4.0
 Ayoub Computers
 STORAGE
 Kingston DataTraveler Exodia 64GB USB 3.2 Flash Drive DTX/64GB
 4.0
-Ayoub Computers
-STORAGE
-Addlink 16GB microSD UHS I (Class 10+Adapter) | ad16GBMSH310A
-5.0
-Ayoub Computers
-STORAGE
-addlink T50 8GB 2in1(USB 2.0+Micro USB) ,Blue | ad08GBT50B2
-5.0
 Ayoub Computers
 STORAGE
 Kingston Micro SD 64GB Class 10 | SDCS2/64GB
@@ -3557,14 +3517,6 @@ Ayoub Computers
 STORAGE
 SanDisk Cruzer Glide 64GB USB 3.0 Flash Drive | SDCZ600 64G G35
 5.0
-Ayoub Computers
-STORAGE
-Addlink 32GB SDHC UHS I (Class 10) | ad32GBSH310
-6.0
-Ayoub Computers
-STORAGE
-Addlink Flash Drive T55 16GB OTG 2in1 (Micro USB+USB 3.1) Blue | ad16GBT55B3
-6.0
 Ayoub Computers
 STORAGE
 Kingston 64GB DataTraveler Kyson USB Flash Drive | DTKN/64GB
@@ -3619,7 +3571,7 @@ SanDisk Cruzer Glide 128GB USB 3.0 Flash Drive | SDCZ600 128G G35
 9.0
 Ayoub Computers
 STORAGE
-Addlink Flash Drive T55 32GB OTG 2in1 (Micro USB+USB 3.1) Blue | ad32GBT55B3
+Gigabyte 120GB NAND Flash SATA III 2.5" Internal SSD | GSTFS31120G
 10.0
 Ayoub Computers
 STORAGE
@@ -3632,10 +3584,6 @@ ADATA EX500 2.5" EXTERNAL HDD/SSD ENCLOSURE | AEX500U3CRD
 Ayoub Computers
 STORAGE
 ADATA ED600 2.5" EXTERNAL ENCLOSURE HDD/ SSD DURABLE | AED600U31
-11.0
-Ayoub Computers
-STORAGE
-Addlink 64GB SDXC UHS I (Class 10) | ad64GBSXU3
 11.0
 Ayoub Computers
 STORAGE
@@ -3691,10 +3639,6 @@ Kingston 128GB microSDXC Canvas Go Plus 170MB/s Memory Card | SDCG3/128GB
 12.5
 Ayoub Computers
 STORAGE
-Addlink Flash Drive T55 64GB OTG 2in1 (Micro USB+USB 3.1) Blue | ad64GBT55B3
-13.0
-Ayoub Computers
-STORAGE
 Kingston USB Datatraveler Microduo 3C 128GB 200Mb/s Usb A Usb C | DTDUO3CG3/128GB
 13.0
 Ayoub Computers
@@ -3739,10 +3683,6 @@ UGREEN USB 3.0 All in One Card Reader | CR125 | 30333
 17.0
 Ayoub Computers
 STORAGE
-Addlink 128GB SDXC UHS I (Class 10) | ad128GBSXU3
-18.0
-Ayoub Computers
-STORAGE
 IWAYS USB C & A M.2 NVMe  SATA SSD Enclosure RGB Light   "Dual Protocol" UP to 4TB | IW M2808SN
 18.0
 Ayoub Computers
@@ -3783,7 +3723,11 @@ SanDisk 128GB Extreme Pro SDXC UHS I 200MB/S | SDSDXXD 128G GN4IN
 19.0
 Ayoub Computers
 STORAGE
-Sandisk 128GB Extreme Pro SDXC USH I Card 170MB/s | SDSDXXY 128G GN4IN
+SanDisk 256GB Ultra Dual Drive Go USB Type C Flash Drive, Black | SDDDC3 256G G46
+19.0
+Ayoub Computers
+STORAGE
+SanDisk Flash USB Drive 32GB | SDCZ450 032G G46
 19.0
 Ayoub Computers
 STORAGE
@@ -3791,11 +3735,23 @@ SanDisk iXpand 64GB Flash Drive Flip for iPhone, iPad and Computers | SDIX90N 06
 19.0
 Ayoub Computers
 STORAGE
+HIKVISION T200N 256GB External SSD
+20.0
+Ayoub Computers
+STORAGE
 Kingston High Endurance 256GB microSD Card | SDCE/256GB
 20.0
 Ayoub Computers
 STORAGE
+Transcend SSD M.2 2280 PCIe NVMe 250GB | TS250GMTE115S
+20.0
+Ayoub Computers
+STORAGE
 Twinmos 256GB SATA 3.0 2.5" Internal SSD | TM256GH2UGL
+20.0
+Ayoub Computers
+STORAGE
+WD SN740 512GB NVMe Internal SSD | SDDPMQD/512GB
 20.0
 Ayoub Computers
 STORAGE
@@ -3819,14 +3775,6 @@ UGREEN USB C 3.1 Enclosure for 2.5 inch HDD/SSD | 70499
 22.0
 Ayoub Computers
 STORAGE
-Addlink S68 Gen3 NVMe SSD 256GB | ad256GBS68M2P
-23.0
-Ayoub Computers
-STORAGE
-HIKVISION T200N 256GB External SSD
-23.0
-Ayoub Computers
-STORAGE
 Kingston 2.5 to 3.5in SATA Drive Carrier | SNA DC2/35
 23.0
 Ayoub Computers
@@ -3836,10 +3784,6 @@ Kingston 32GB Canvas React Plus SDHC UHS II 300R/260W U3 V90 for Full HD/4K/8K |
 Ayoub Computers
 STORAGE
 Kingston SSD 240GB A400 SATA 3 2.5" Internal SSD SA400S37/240G
-23.0
-Ayoub Computers
-STORAGE
-Transcend SSD M.2 2280 PCIe NVMe 250GB | TS250GMTE115S
 23.0
 Ayoub Computers
 STORAGE
@@ -3919,14 +3863,6 @@ Transcend 256GB SATA III 6Gb/s M.2 SSD Solid State Drive | TS256GMTS430S
 29.0
 Ayoub Computers
 STORAGE
-WD Purple 1TB 3.5" SATA Surveillance Internal HDD | WD10PURZ
-29.0
-Ayoub Computers
-STORAGE
-Addlink S70 Lite Gen3 NVMe SSD 512GB | ad512GBS70LTM2P
-30.0
-Ayoub Computers
-STORAGE
 Kingston DataTraveler Max 256GB USB C Flash Drive with USB 3.2 Gen 2 Performance | DTMAX/256GB
 30.0
 Ayoub Computers
@@ -3951,6 +3887,10 @@ Transcend 256GB SATA III 6Gb/s mSATA Internal (SSD) Solid State Drive | TS256GMS
 32.0
 Ayoub Computers
 STORAGE
+WD Purple 1TB 3.5" SATA Surveillance Internal HDD | WD10PURZ
+32.0
+Ayoub Computers
+STORAGE
 Western Digital 1TB WD Blue Mobile Hard Drive   2.5" | WD10SPZX
 32.0
 Ayoub Computers
@@ -3971,6 +3911,10 @@ Adata Legend 710 512GB PCIe Gen3 x4 M.2 2280 SSD | ALEG 710 512GCS
 34.0
 Ayoub Computers
 STORAGE
+Kingston 500GB NV2 M.2 2280 PCIe 4.0 x4 NVMe SSD | SNV2S/500G
+34.0
+Ayoub Computers
+STORAGE
 Transcend 256GB USB A and USB C Portable SSD | TS256GESD310C
 34.0
 Ayoub Computers
@@ -3979,19 +3923,11 @@ Transcend 500GB M.2 SSD SATA III 6GB/s | TS500GMTS425S
 34.0
 Ayoub Computers
 STORAGE
-Addlink SSD S90 Lite Gen4 NVMe SSD 512GB | ad512GBS90LTM2P
-35.0
-Ayoub Computers
-STORAGE
 Hikvision Desire 1024GB 2.5" SATA SSD
 35.0
 Ayoub Computers
 STORAGE
 IWAYS USB C & A M.2 SATA  NVMe,2 Slots SSD Enclosure "Dual Protocol" UP to 8TB |IW  2836SN
-35.0
-Ayoub Computers
-STORAGE
-Kingston 500GB NV2 M.2 2280 PCIe 4.0 x4 NVMe SSD | SNV2S/500G
 35.0
 Ayoub Computers
 STORAGE
@@ -4035,7 +3971,7 @@ Seagate SSD M.2 2280 PCIe NVMe Gen4 500GB Barracuda | ZP500CV30002
 39.0
 Ayoub Computers
 STORAGE
-WD Green SATA SSD 480GB 2.5�? 545MB/s | WDS480G3G0A
+WD Green SATA SSD 480GB 2.5” 545MB/s | WDS480G3G0A
 39.0
 Ayoub Computers
 STORAGE
@@ -4071,10 +4007,6 @@ Seagate SkyHawk 1TB Surveillance Internal Hard Drive HDD – 3.5 Inch SATA 6Gb/s
 42.0
 Ayoub Computers
 STORAGE
-WD Purple 2TB 3.5" SATA Surveillance Internal HDD | WD22PURZ
-43.0
-Ayoub Computers
-STORAGE
 MSI Spatium M450 500GB PCIe 4.0 NVMe M.2 | S78 440K220 P83
 44.0
 Ayoub Computers
@@ -4092,6 +4024,10 @@ Transcend 500GB M.2 SSD 825S SATA III 6GB/S | TS500GMTS825S
 Ayoub Computers
 STORAGE
 ADATA External HDD 1TB XPG EX500 2.5″ | ADAT1TBHDD
+45.0
+Ayoub Computers
+STORAGE
+Addlink S68 NVMe SSD 1TB | ad1TBS68M2P
 45.0
 Ayoub Computers
 STORAGE
@@ -4131,7 +4067,7 @@ Seagate Expansion 1TB Portable External Hard Drive USB 3.0 (STEA1000400)
 46.0
 Ayoub Computers
 STORAGE
-Transcend 512GB SATA III 6Gb/s SSD230S 2.5�? Solid State Drive, Silver | TS512GSSD230S
+Transcend 512GB SATA III 6Gb/s SSD230S 2.5” Solid State Drive, Silver | TS512GSSD230S
 46.0
 Ayoub Computers
 STORAGE
@@ -4139,12 +4075,12 @@ Transcend SSD470K 2.5 in 256 GB Internal SSD Drive | TS256GSSD470K
 46.0
 Ayoub Computers
 STORAGE
-Addlink P20 SSD 512GB (With 2 cable   TC to TC/ TC to TA) | AD512GBP20B32
+HIKVISION E100 1024GB 2.5" Sata 6GB/S SSD | HS SSD E100/1024G
 47.0
 Ayoub Computers
 STORAGE
-HIKVISION E100 1024GB 2.5" Sata 6GB/S SSD | HS SSD E100/1024G
-47.0
+Kingston 1TB NV2 M.2 2280 PCIe 4.0 x4 NVMe SSD | SNV2S/1000G
+48.0
 Ayoub Computers
 STORAGE
 ADATA External Elite SE760 512GB External HDD | ASE760 512GU32G2 CBK
@@ -4153,10 +4089,6 @@ Ayoub Computers
 STORAGE
 Transcend External SSD USB C 500GB, ESD270C | TS500GESD270C
 49.5
-Ayoub Computers
-STORAGE
-Kingston 1TB NV2 M.2 2280 PCIe 4.0 x4 NVMe SSD | SNV2S/1000G
-50.0
 Ayoub Computers
 STORAGE
 KINGSTON KC600 512GB SATA 3 2.5" SSD | SKC600/512G
@@ -4181,10 +4113,6 @@ Ayoub Computers
 STORAGE
 WD Blue 2TB 3.5" SATA Desktop Internal HDD | WD20EZAZ
 51.0
-Ayoub Computers
-STORAGE
-Addlink S68 NVMe SSD 1TB | ad1TBS68M2P
-51.5
 Ayoub Computers
 STORAGE
 Kingston 512G SSD KC600 SATA3 mSATA | SKC600MS/512G
@@ -4247,10 +4175,6 @@ Kingston KC3000 PCIe 4.0 NVMe M.2 SSD 512GB | SKC3000S/512G
 58.0
 Ayoub Computers
 STORAGE
-Samsung SSD 870 EVO, 500 GB V NAND 3bit MLC, Form Factor 2.5 Inch ,Up To 560 MB/S Sequential Read , Intelligent Turbo Write, SATA 6 Gb/S Interface , Magician 6 Software, Black | MZ 77E500B/CN
-59.0
-Ayoub Computers
-STORAGE
 Seagate 3.5" 256 MB & 2TB Skyhawk Lite Surveillance Internal Hard Drive
 59.0
 Ayoub Computers
@@ -4263,11 +4187,11 @@ Transcend Storejet 1T Portable USB 3.1 Hard Disk | TS1TSJ25H3P
 59.0
 Ayoub Computers
 STORAGE
-Addlink SSD S90 Lite M.2 PCIe NVMe 1TB | ad1TBS90LTM2P
+LaCie 500GB Porsche Design Metal USB 3.0 Type A Bus Powered 5400RPM Mac Silver 2.5″ External HDD | 301998
 60.0
 Ayoub Computers
 STORAGE
-LaCie 500GB Porsche Design Metal USB 3.0 Type A Bus Powered 5400RPM Mac Silver 2.5″ External HDD | 301998
+LEXAR External SSD 512GB | LPSSD512GRCBNA
 60.0
 Ayoub Computers
 STORAGE
@@ -4291,8 +4215,8 @@ MSI Spatium M450 1TB NVMe M.2 | M450
 63.0
 Ayoub Computers
 STORAGE
-Addlink S20 512GB SSD 2.5" SSD R:500MB/s W: 450MB/s | ad512GBS20S3S
-64.0
+WD SSD M.2 2280 PCIe NVMe Gen4 1TB WD Blue | WDS100T3B0E
+63.0
 Ayoub Computers
 STORAGE
 Transcend SSD M.2 2280 PCIe NVMe 1TB | TS1TMTE110Q
@@ -4312,10 +4236,6 @@ Transcend MTE712A M.2 2280 512GB Internal SSD | TS512GMTE712A
 Ayoub Computers
 STORAGE
 WD Blue SN850X 1TB M.2 2280 PCIe NVMe Internal SSD | WDS100T3B0E
-65.0
-Ayoub Computers
-STORAGE
-WD SSD M.2 2280 PCIe NVMe Gen4 1TB WD Blue | WDS100T3B0E
 65.0
 Ayoub Computers
 STORAGE
@@ -4387,16 +4307,16 @@ Transcend 2TB USB 3.1 Gen 1 StoreJet 25M3G SJ25M3G Rugged External Hard Drive   
 74.0
 Ayoub Computers
 STORAGE
-Addlink P20 SSD 1TB (With 2 cable   TC to TC/ TC to TA) | AD1TBP20B32
-75.0
-Ayoub Computers
-STORAGE
 Transcend 1TB MSATA SSD Sata3 3D Tlc BICS5| TS1TMSA470T| TS1TMSA470T
 75.0
 Ayoub Computers
 STORAGE
 MSI Spatium M461 1TB PCIE 4.0 NVME M.2 | M461
 76.0
+Ayoub Computers
+STORAGE
+Seagate Skyhawk 4TB Surveillance Internal Hard Drive HDD – 3.5 Inch SATA 6GB/s 64MB Cache for DVR NVR Security Camera System with Drive Health Management
+77.0
 Ayoub Computers
 STORAGE
 MSI Spatium M460 NVMe M.2 1TB HS | M460
@@ -4491,6 +4411,10 @@ Kingston 1024G SSD KC600 SATA3 mSATA | SKC600MS/1024G
 98.0
 Ayoub Computers
 STORAGE
+Kingston NV2 2TB 3500MB/s NVME Internal SSD | SNV2S/2000G
+98.0
+Ayoub Computers
+STORAGE
 Seagate Basic, 4TB, Portable External Hard Drive, USB 3.0, for Laptop PC | STJL4000400
 98.0
 Ayoub Computers
@@ -4499,7 +4423,7 @@ Transcend SSD 1TB SSD460K Series | TS1TSSD460K
 98.0
 Ayoub Computers
 STORAGE
-Samsung 870 EVO SATA 2.5" SSD 1TB | MZ 77E1T0BW
+SanDisk 1TB Extreme Portable SSD   Up to 1050MB/s Read Speed |SDSSDE61 1T00 G25
 99.0
 Ayoub Computers
 STORAGE
@@ -4519,10 +4443,6 @@ Ritek 960GB Panther Series SE SATA III 2.5″ Internal SSD
 105.0
 Ayoub Computers
 STORAGE
-Samsung 980 PRO 1 TB PCIe 4.0 (bis zu 7.000 MB/s) NVMe M.2 (2280) Internes Solid State Drive (SSD)| MZ V8P1T0BW
-105.0
-Ayoub Computers
-STORAGE
 Transcend M.2 2280 1TB Internal SSD | TS1TMTE712A
 105.0
 Ayoub Computers
@@ -4533,10 +4453,6 @@ Ayoub Computers
 STORAGE
 Kingston Dc600 960GB SSD 2.5 Enterprise Sata | SEDC600M/960G
 107.0
-Ayoub Computers
-STORAGE
-Kingston NV2 2TB 3500MB/s NVME Internal SSD | SNV2S/2000G
-107.5
 Ayoub Computers
 STORAGE
 WD AN1500 RGB Gaming NVMe AIC 1TB Gen3 PCI Express 3.0 X8 Up To 6500 MB/S Internal Solid State Drive (SSD), Black | WDS100T1X0L 00AUJ0
@@ -4579,10 +4495,6 @@ MSI Spatium M371 2TB NVMe M.2 | M371
 112.0
 Ayoub Computers
 STORAGE
-Samsung 990 PRO W/ Heatsink SSD 1TB, PCIe PCIe Gen 4.0 X4, NVMe 2.0 Internal Solid State Hard Drive | MZ V9P1T0GW
-112.0
-Ayoub Computers
-STORAGE
 Adata HD650 4TB External Shock Resistant HDD,Black | HD650
 113.0
 Ayoub Computers
@@ -4595,15 +4507,15 @@ Seagate SSD M.2 2280 PCIe NVMe Gen4 2TB Barracuda | ZP2000CV30002
 114.0
 Ayoub Computers
 STORAGE
+Seagate Skyhawk 6TB Surveillance Internal Hard Drive HDD – 3.5 Inch SATA 6GB/s 256MB Cache for DVR NVR Security Camera System with Drive Health Management
+115.0
+Ayoub Computers
+STORAGE
 Transcend 2TB 110S M.2 PCIe Gen3 x4 SSD | TS2TMTE110S
 115.0
 Ayoub Computers
 STORAGE
 HP S750 2TB SATA III 2.5″ Internal solid State Drive | 1R9T8AA#ABB
-118.0
-Ayoub Computers
-STORAGE
-Samsung 980 SSD 1TB M.2 NVMe Interface PCIe 3.0 x4 Internal Solid State | MZ V8V1T0B/AM
 118.0
 Ayoub Computers
 STORAGE
@@ -4613,10 +4525,6 @@ Ayoub Computers
 STORAGE
 Kingston Fury Renegade 1TB PCIe Gen 4.0 NVMe M.2 Internal Gaming SSD with Heat Sink | SFYRSK/1000G
 121.0
-Ayoub Computers
-STORAGE
-Seagate Skyhawk 6TB Surveillance Internal Hard Drive HDD – 3.5 Inch SATA 6GB/s 256MB Cache for DVR NVR Security Camera System with Drive Health Management
-122.0
 Ayoub Computers
 STORAGE
 Sans Digital Tower RAID TR4M6GNC 4 Bay eSATA 6G Port Multiplier JBOD Tower | TR4M6GNC
@@ -4635,10 +4543,6 @@ Kingston 2048G KC3000 PCIe 4.0 NVMe M.2 SSD | SKC3000D/2048G
 130.0
 Ayoub Computers
 STORAGE
-Addlink S20 1TB SSD 2.5" SSD R:500MB/s W: 450MB/s | ad1TBS20S3S
-132.0
-Ayoub Computers
-STORAGE
 Transcend 2TB TS2TSSD225S SATA III 2.5" Internal SSD | TS2TSSD225S
 134.0
 Ayoub Computers
@@ -4651,7 +4555,7 @@ Seagate IronWolf 4TB 5400 RPM 256MB Cache SATA 6.0Gb/s 3.5" Internal Hard Drive 
 139.5
 Ayoub Computers
 STORAGE
-WD Blue 2TB 2.5�? SATA Internal SSD | WDS200T3B0A
+WD Blue 2TB 2.5” SATA Internal SSD | WDS200T3B0A
 139.5
 Ayoub Computers
 STORAGE
@@ -4692,6 +4596,10 @@ LEVEN JP400 2TB M.2 PCIe 2242 Gen3x4 SSD NVMe | JP400
 Ayoub Computers
 STORAGE
 MSI Spatium M480 PRO PCIe 4.0 NVMe M.2 2TB | M480
+149.0
+Ayoub Computers
+STORAGE
+Samsung 2TB 980 PRO PCIe 4.0 x4 M.2 Internal SSD with Heatsink | MZ V8P2T0CW
 149.0
 Ayoub Computers
 STORAGE
@@ -4771,10 +4679,6 @@ Seagate Skyhawk 8TB Surveillance Internal Hard Drive HDD – 3.5 Inch SATA 6GB/s
 165.0
 Ayoub Computers
 STORAGE
-Samsung 990 PRO With Heatsink SSD 2TB, PCIe PCIe Gen 4.0 X4, NVMe 2.0 Internal Solid State Hard Drive | MZ V9P2T0GW
-168.0
-Ayoub Computers
-STORAGE
 Transcend SSD230S 2TB 2.5″ SSD SATA III 6GB/S 3D TLC | TS2TSSD230S
 168.0
 Ayoub Computers
@@ -4795,10 +4699,6 @@ Seagate 2.5" SAS 1200GB, 10K RPM, 12Gb/s HDD | ST1200MM0129
 175.5
 Ayoub Computers
 STORAGE
-Samsung SSD NVME 980 Pro Gen4 2TB 7000 Mb/s | MZ V8P2T0B/AM
-179.0
-Ayoub Computers
-STORAGE
 Seagate 8TB SATA Enterprise , EXOS (8 TB, , 6 Gb / s, 7200 rpm, 256MB 3.5 inch) | ST8000NM017B
 179.0
 Ayoub Computers
@@ -4817,14 +4717,6 @@ Ayoub Computers
 STORAGE
 HPE 600GB SAS 600 GB 10K SFF SC DS HDD | EG0600JEMCV
 185.0
-Ayoub Computers
-STORAGE
-Seagate 10TB Expansion Desktop USB 3.0 External Hard Drive | STKP10000400
-189.0
-Ayoub Computers
-STORAGE
-Transcend Internal SSD M.2 2280 PCIe NVMe Gen4 2TB MTE250H with Heat Sink | TS2TMTE250H
-189.0
 Ayoub Computers
 STORAGE
 Transcend M.2 2280 2TB Internal SSD | TS2TMTE712A
@@ -4927,10 +4819,6 @@ Seagate Skyhawk 12TB Surveillance Internal Hard Drive HDD – 3.5 Inch SATA 6GB/
 235.0
 Ayoub Computers
 STORAGE
-Seagate One Touch 12TB External Desktop Hard Drive | STLC12000400
-238.0
-Ayoub Computers
-STORAGE
 Seagate IronWolf 8TB SATA 3.5'' Internal Hard Drive
 245.0
 Ayoub Computers
@@ -4949,14 +4837,6 @@ Ayoub Computers
 STORAGE
 Dell 2TB 7.2K RPM NLSAS 12Gbps 512n 3.5in Hot plug Drive | 400 AUUQ
 267.0
-Ayoub Computers
-STORAGE
-Seagate One Touch Hub 14TB External Hard Drive Desktop HDD 3.5" – USB C and USB 3.0 port, for Computer Desktop Workstation PC Laptop Mac | STLC14000400
-267.0
-Ayoub Computers
-STORAGE
-SanDisk Extreme 4TB Portable SSD | SDSSDE61 4T00 G25
-269.0
 Ayoub Computers
 STORAGE
 Seagate Exos Enterprise 14TB Internal Hard Drive | ST14000NM001G
@@ -4981,6 +4861,10 @@ Ayoub Computers
 STORAGE
 ADATA SD810 4000GB External SSD, Black | SD810
 290.0
+Ayoub Computers
+STORAGE
+SanDisk Extreme 4TB Portable SSD | SDSSDE61 4T00 G25
+299.0
 Ayoub Computers
 STORAGE
 Seagate 16TB SATA Enterprise , EXOS (16 TB, , 6 Gb / s, 7200 rpm, 256MB 3.5 inch) | ST16000NM000J
@@ -5027,10 +4911,6 @@ Transcend 4TB 2.5″ Solid State Drive | TS4TSSD472K
 329.0
 Ayoub Computers
 STORAGE
-Seagate One Touch 16TB External Hard Drive Desktop HDD 3.5" – USB C and USB 3.0 port, for Computer Desktop Workstation PC Laptop Mac | STLC16000400
-330.0
-Ayoub Computers
-STORAGE
 Kingston Fury Renegade 4TB PCIE GEN 4.0 | SFYRD/4000G
 335.0
 Ayoub Computers
@@ -5051,6 +4931,10 @@ QNAP TS 431K 4BAY QC 1.7GHz, 1GB, 2*GIGA LAN, 3USB 3.2 , RAID 0, 1, 5, 6, 10, & 
 339.0
 Ayoub Computers
 STORAGE
+Seagate One Touch 16TB External Hard Drive Desktop HDD 3.5" – USB C and USB 3.0 port, for Computer Desktop Workstation PC Laptop Mac | STLC16000400
+343.0
+Ayoub Computers
+STORAGE
 GIGABYTE AORUS Gen5 12000 SSD 2TB | AG512K2TB
 345.0
 Ayoub Computers
@@ -5068,10 +4952,6 @@ HPE 2.4TB SAS 12G Enterprise 10K SFF (2.5in) SC HDD | 881457 B21
 Ayoub Computers
 STORAGE
 Addlink 4TB M.2 A93 SSD Expansion for PS5 with Heatsink, Up to 7400 MB/s | ad4TBA93M2P
-350.0
-Ayoub Computers
-STORAGE
-Seagate One Touch 18TB External Hard Drive Desktop HDD 3.5" – USB C and USB 3.0 port, for Computer Desktop Workstation PC Laptop Mac | STLC18000402
 350.0
 Ayoub Computers
 STORAGE
@@ -5103,8 +4983,20 @@ Kingston 3840GB DC600M 2.5″ Enterprise SATA3 SSD | SEDC600M/ 3840G
 391.0
 Ayoub Computers
 STORAGE
+Seagate One Touch 18TB External Hard Drive Desktop HDD 3.5" – USB C and USB 3.0 port, for Computer Desktop Workstation PC Laptop Mac | STLC18000402
+399.0
+Ayoub Computers
+STORAGE
+Lacie 2tb 2big quadra used,External Desktop Drive | 301352U
+400.0
+Ayoub Computers
+STORAGE
 WD Purple Internal Storage 3.5" ,12TB Surveillance SATA 5640 RPM | WD121PURP
 408.0
+Ayoub Computers
+STORAGE
+OWC 1TB Aura 6G PCIe For MacBook Air (Mid 2012) | OWCSSDA2A6G960
+425.0
 Ayoub Computers
 STORAGE
 Seagate Skyhawk 18TB Surveillance Internal Hard Drive HDD – 3.5 Inch SATA 6GB/s 256MB Cache for DVR NVR Security Camera System with Drive Health Management
@@ -5125,6 +5017,10 @@ Ayoub Computers
 STORAGE
 Kingston DC600M 7680G 2.5" Internal Solid State Drive | SEDC600M/7680G
 630.0
+Ayoub Computers
+STORAGE
+QNAP TS 464 8G Nas Storage | TS 464 8G
+775.0
 Ayoub Computers
 STORAGE
 QNAP 4 bay NAS, AMD Ryzen V1000 series V1500B 4C/8T, 8GB DDR4, 5 Ports Unmanaged Switch | TS 473A SW5T
@@ -5185,6 +5081,14 @@ Ayoub Computers
 COOLING
 Thermaltake Pacific G1/4 90 Degree Adapter – Red (2 Pack Fittings) | CL W052 CU00RE A
 5.0
+Ayoub Computers
+COOLING
+Thermaltake Pacific G1/4 90 Degree Adapter – White (2 Pack Fittings) | CL W052 CU00WT A
+5.0
+Ayoub Computers
+COOLING
+Arctic MX 4 Thermal Compound | MX 4
+7.0
 Ayoub Computers
 COOLING
 Cooler For Notebook | FYD UC 638B
@@ -5431,10 +5335,6 @@ Thermal Grizzly Hydronaut 7.8 Gram | TG H 030 R
 18.0
 Ayoub Computers
 COOLING
-Thermalright X3 CPU Fan 120mm ARGB Case Cooler Fan | TL C12C S
-18.0
-Ayoub Computers
-COOLING
 Thermalright Assassin X 120 Refined SE ARGB CPU Air Cooler
 18.0
 Ayoub Computers
@@ -5559,6 +5459,10 @@ NZXT Case Fan Aer RGB 120mm Fan | RF AR120 B1
 24.0
 Ayoub Computers
 COOLING
+GIGABYTE AORUS 120 ARGB FAN | GP AR120RFAN
+25.0
+Ayoub Computers
+COOLING
 NZXT F120 RGB Duo Fan   Black | RF D12SF B1
 25.0
 Ayoub Computers
@@ -5580,10 +5484,6 @@ Cooler Master Hyper 212 Spectrum V3 Silver ARGB CPU Cooler | RR S4NA 17PA R1
 Ayoub Computers
 COOLING
 DarkFlash S11 Pro Air CPU Cooler   Black | S11
-26.0
-Ayoub Computers
-COOLING
-GIGABYTE AORUS 120 ARGB FAN | GP AR120RFAN
 26.0
 Ayoub Computers
 COOLING
@@ -5624,7 +5524,7 @@ DarkFlash S11 Pro Air CPU Cooler | S11
 Ayoub Computers
 COOLING
 GIGABYTE AORUS 140 ARGB FAN | GP AR140RFAN
-29.0
+28.0
 Ayoub Computers
 COOLING
 Thermalright Burst Assassin 120 ARGB CPU Air Cooler
@@ -5667,16 +5567,16 @@ Thermalright Peerless Assassin 120 SE ARGB CPU Air Cooler
 37.0
 Ayoub Computers
 COOLING
+Thermaltake Massive 12 RGB Notebook Cooler | CL N020 PL12SW A
+37.0
+Ayoub Computers
+COOLING
 Thermaltake Riing Silent 12 Red | CL P022 AL12RE A
 37.0
 Ayoub Computers
 COOLING
 Aerocool Mirage 5 ARGB CPU Air Cooler | Mirage 5
 37.5
-Ayoub Computers
-COOLING
-Thermaltake Massive 12 RGB Notebook Cooler | CL N020 PL12SW A
-38.0
 Ayoub Computers
 COOLING
 Porodo Gaming Al RGB Laptop Cooling Fan | PDX117
@@ -5763,15 +5663,15 @@ Thermalright Peerless Assassin 120 White CPU Air Cooler
 49.0
 Ayoub Computers
 COOLING
+Thermaltake Massive 12 Max Steel Mesh Panel with Fans | CL N018 PL12BU A
+49.0
+Ayoub Computers
+COOLING
 Cooler Master MasterFan MF120 Halo 3in1 ARGB PC Fans | MFL B2DN 213P2 R2
 50.0
 Ayoub Computers
 COOLING
 Cooler Master MasterFan MF120 Halo Duo Ring ARGB Case Fan, White Edition (3 Pack) | MFL B2DW 183PA R1
-50.0
-Ayoub Computers
-COOLING
-Thermaltake Massive 12 Max Steel Mesh Panel with Fans | CL N018 PL12BU A
 50.0
 Ayoub Computers
 COOLING
@@ -5867,6 +5767,10 @@ Cooler Master Hyper 622 Halo White Dual Tower CPU Air Cooler | RR D6WW 20PA R1
 60.0
 Ayoub Computers
 COOLING
+Thermaltake TT  2030 | 20cm 7 pin connector ARGB (MPK),X3 | A2030L12S
+60.0
+Ayoub Computers
+COOLING
 DarkFlash Twister DX240 Liquid CPU Cooler | DX240
 62.0
 Ayoub Computers
@@ -5904,7 +5808,7 @@ Thermalright Frost Spirit 140 White V3 ARGB CPU Air Cooler
 Ayoub Computers
 COOLING
 Thermaltake TH120 ARGB Sync AIO Liquid Cooler | CL W285 PL12SW A
-68.0
+67.0
 Ayoub Computers
 COOLING
 COUGAR Forza 85 Premium Single Tower Air Cooler | FORZA85
@@ -6023,11 +5927,11 @@ NZXT F120 RGB DUO Fan Triple Pack   Black | RF D12TF B1
 95.0
 Ayoub Computers
 COOLING
-GIGABYTE Aorus ATC800 RGB 120mm CPU Cooler | GP ATC800
-96.0
+Thermaltake Pacific W6 CPU Water Block [AMD Ryzen Threadripper TR4]| CL W225 CU00SW A
+95.0
 Ayoub Computers
 COOLING
-Thermaltake Pacific W6 CPU Water Block [AMD Ryzen Threadripper TR4]| CL W225 CU00SW A
+GIGABYTE Aorus ATC800 RGB 120mm CPU Cooler | GP ATC800
 96.0
 Ayoub Computers
 COOLING
@@ -6079,12 +5983,12 @@ MSI MAG CoreLiquid C240 CPU Cooler ARGB | 306 7ZW2R11 813
 102.0
 Ayoub Computers
 COOLING
-Xigmatek LIQUID KILLER X 360 ARGB AIO CPU Cooler | EN47703
+Thermaltake SWAFAN EX14 RGB Fan Black (3 Fan Pack)   14cm | CL F144 PL14SW A
 102.0
 Ayoub Computers
 COOLING
-Thermaltake SWAFAN EX14 RGB Fan Black (3 Fan Pack)   14cm | CL F144 PL14SW A
-103.0
+Xigmatek LIQUID KILLER X 360 ARGB AIO CPU Cooler | EN47703
+102.0
 Ayoub Computers
 COOLING
 Thermaltake SWAFAN EX14 RGB Fan White (3 Fan Pack)   14cm | CL F162 PL14SW A
@@ -6123,7 +6027,7 @@ Noctua NH D15, Premium CPU Cooler with 2x NF A15 PWM 140mm Fans | NF A15 PWM
 110.0
 Ayoub Computers
 COOLING
-Noctua NH D15S Chromax.Black, Premium Dual Tower CPU Cooler With NF A15 PWM 140mm Fan (Black) “Award Winning�? | NF A15 HS PWM BR
+Noctua NH D15S Chromax.Black, Premium Dual Tower CPU Cooler With NF A15 PWM 140mm Fan (Black) “Award Winning” | NF A15 HS PWM BR
 111.0
 Ayoub Computers
 COOLING
@@ -6227,12 +6131,12 @@ Cooler Master Liquid ML360 Vivid A RGB LCD Display | ML360
 140.0
 Ayoub Computers
 COOLING
-Xigmatek Aquarius Pro Case | EN49417
+Thermaltake TH360 ARGB Sync AIO Liquid Cooler   Snow Edition | CL W302 PL12SW A
 140.0
 Ayoub Computers
 COOLING
-Thermaltake TH360 ARGB Sync AIO Liquid Cooler   Snow Edition | CL W302 PL12SW A
-141.0
+Xigmatek Aquarius Pro Case | EN49417
+140.0
 Ayoub Computers
 COOLING
 Cooler Master MasterLiquid ML360L ARGB Mirror CPU Liquid Cooler | MLY L36M A18PK R1
@@ -6256,7 +6160,7 @@ Arctic Liquid Freezer II 420 A RGB | ACFRE00109A
 Ayoub Computers
 COOLING
 Thermaltake TH420 ARGB Sync All In One Liquid Cooler | CL W367 PL14SW A
-153.0
+152.0
 Ayoub Computers
 COOLING
 NZXT Kraken X53 RGB 240mm AIO Liquid Cooler With Aer RGB Fans | RL KRX53 R1
@@ -6271,7 +6175,7 @@ Thermaltake TH420 ARGB Sync All In One Liquid Cooler   Snow Edition | CL W369 PL
 162.0
 Ayoub Computers
 COOLING
-Lian Li Galahad II LCD 280 – AIO  Asetek 8th Gen – 2.88�? IPS LCD Screen Liquid Cooler  Pre Installed ARGB Daisy Chainable Fans Or UNI FAN SL INF Fans – White | GA2ALCD28W
+Lian Li Galahad II LCD 280 – AIO  Asetek 8th Gen – 2.88” IPS LCD Screen Liquid Cooler  Pre Installed ARGB Daisy Chainable Fans Or UNI FAN SL INF Fans – White | GA2ALCD28W
 163.0
 Ayoub Computers
 COOLING
@@ -6295,12 +6199,12 @@ Thermaltake Floe Dual Ring RGB 240 TT Premium Edition
 180.0
 Ayoub Computers
 COOLING
-NZXT Kraken 360 360mm AIO Liquid Cooler with LCD Display   Matte Black | RL KN360 B1
-183.0
+Thermaltake Floe DX RGB 280 TT Premium Edition CL W257 PL14SW A
+181.0
 Ayoub Computers
 COOLING
-Thermaltake Floe DX RGB 280 TT Premium Edition CL W257 PL14SW A
-184.0
+NZXT Kraken 360 360mm AIO Liquid Cooler with LCD Display   Matte Black | RL KN360 B1
+183.0
 Ayoub Computers
 COOLING
 CORSAIR RGB COOLER | H115I
@@ -6312,7 +6216,7 @@ Thermaltake Floe Riing RGB 280 TT Premium Edition | CL W257 PL14SW A
 Ayoub Computers
 COOLING
 Thermaltake Pacific RL120 Water Cooling Kit | CL W069 CA00BL A
-214.0
+213.0
 Ayoub Computers
 COOLING
 NZXT Kraken 360 RGB – 360mm AIO CPU Liquid Cooler – LCD Display – White | RL KR360 W1
