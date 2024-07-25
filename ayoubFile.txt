@@ -15,6 +15,10 @@ GamingMaster Power Supply 230W Real, 12CM Fan | GM 230W2
 13.0
 Ayoub Computers
 POWER SUPPLY
+Aerocool LUX 550W Power Supply | LUX 550W
+15.0
+Ayoub Computers
+POWER SUPPLY
 Power Supply 230W | ATX230W
 15.5
 Ayoub Computers
@@ -32,6 +36,10 @@ GamingMaster Power Supply 300W Real, 12CM Fan | GM 300W2
 Ayoub Computers
 POWER SUPPLY
 GamingMaster Power Supply 400W Real, 12CM Fan | GM 400W2
+25.0
+Ayoub Computers
+POWER SUPPLY
+Sharkoon SilentStorm Cool Zero 750W 80 Plus Gold Power Supply
 25.0
 Ayoub Computers
 POWER SUPPLY
@@ -201,6 +209,10 @@ Ayoub Computers
 POWER SUPPLY
 MSI MAG A750GL PCIE 5 & ATX 3.0 80 Plus Gold Gaming Power Supply – Full Modular | 306 7ZP8B23 CE0
 79.0
+Ayoub Computers
+POWER SUPPLY
+CorsAir 850W 80 Plus Gold Fully Modular ATX Power Supply | RM850
+80.0
 Ayoub Computers
 POWER SUPPLY
 MSI Mag A750GL 750w 80 Plus Pcie 5.0 Gold Full Modular Power Supply| 306 7ZP8B17 CE0
@@ -3603,10 +3615,6 @@ Kingston Digital 64GB Data Traveler Micro Duo USB 3C | DTDUO3CG3/64GB
 11.0
 Ayoub Computers
 STORAGE
-Kingston High Endurance 32GB MicroSD Card | SDCE/32GB
-11.0
-Ayoub Computers
-STORAGE
 Sandisk 64GB Extreme Pro Micro SD | ‎SDSQXCU 064G GN6MA
 11.0
 Ayoub Computers
@@ -3637,6 +3645,10 @@ Ayoub Computers
 STORAGE
 Kingston 128GB microSDXC Canvas Go Plus 170MB/s Memory Card | SDCG3/128GB
 12.5
+Ayoub Computers
+STORAGE
+Kingston High Endurance 64GB MicroSD Card | SDCE/64GB
+13.0
 Ayoub Computers
 STORAGE
 Kingston USB Datatraveler Microduo 3C 128GB 200Mb/s Usb A Usb C | DTDUO3CG3/128GB

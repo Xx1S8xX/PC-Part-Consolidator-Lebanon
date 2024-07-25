@@ -3,6 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
+import java.io.File;
 import java.util.ArrayList;
 
 public class MainMenu   extends JFrame{
@@ -18,6 +19,8 @@ public class MainMenu   extends JFrame{
     private JList ItemsPriceList;
     private JList ItemsWebsiteList;
     private JButton button2;
+    private JScrollPane PriceList;
+    private JScrollPane WebsiteList;
     private int category;
     private String searchFor;
 
@@ -40,6 +43,10 @@ public class MainMenu   extends JFrame{
         categoryChoice.addItem("Cooling");
         sortBy.addItem("Price High To Low");
         sortBy.addItem("Price Low to High");
+        PriceList.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+        WebsiteList.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+        itemsList.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+
         categoryChoice.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -47,10 +54,10 @@ public class MainMenu   extends JFrame{
                 showCategory(category,allItems);
             }
         });
-
-        searchButton.addActionListener(new ActionListener() {
+        searchName.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                searchFor = searchName.getText();
                 if(category < 0 || category > 7) {
                     showAllItems(allItems);
                 }
@@ -65,16 +72,16 @@ public class MainMenu   extends JFrame{
                             websiteList.add(item.getWebsite());
                         }
                     }
+                    ItemsWebsiteList.setSelectedIndex(0);
+                    ItemsWebsiteList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+                    ItemsPriceList.setSelectedIndex(0);
+                    ItemsPriceList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+                    ItemsNameList.setSelectedIndex(0);
+                    ItemsNameList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
                     ItemsNameList.setListData(namesList.toArray());
                     ItemsPriceList.setListData(priceList.toArray());
                     ItemsWebsiteList.setListData(websiteList.toArray());
                 }
-            }
-        });
-        searchName.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                searchFor = searchName.getText();
             }
         });
         sortBy.addActionListener(new ActionListener() {
@@ -83,9 +90,8 @@ public class MainMenu   extends JFrame{
                 ArrayList<String> namesList = new ArrayList<>();
                 ArrayList<String> priceList = new ArrayList<>();
                 ArrayList<String> websiteList = new ArrayList<>();
-                ArrayList<item> temp = new ArrayList<>();
+                ArrayList<item> temp = new ArrayList<>(allItems.getAllItems()[category]);
 
-                temp.addAll(allItems.getAllItems()[category]);
                 switch (sortBy.getSelectedIndex()) {
                     case 0:
                         temp = sortByPriceLowToHigh(temp);
@@ -108,6 +114,12 @@ public class MainMenu   extends JFrame{
                         }
                         break;
                 }
+                ItemsWebsiteList.setSelectedIndex(0);
+                ItemsWebsiteList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+                ItemsPriceList.setSelectedIndex(0);
+                ItemsPriceList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+                ItemsNameList.setSelectedIndex(0);
+                ItemsNameList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
                 ItemsNameList.setListData(namesList.toArray());
                 ItemsPriceList.setListData(priceList.toArray());
                 ItemsWebsiteList.setListData(websiteList.toArray());
@@ -116,10 +128,101 @@ public class MainMenu   extends JFrame{
         ItemsNameList.addMouseWheelListener(new MouseWheelListener() {
             @Override
             public void mouseWheelMoved(MouseWheelEvent e) {
-                ItemsPriceList. (e.getWheelRotation()*e.getScrollAmount());
+                if(ItemsNameList.getSelectedIndex() > 0 || e.getWheelRotation() > 0) {
+                    ItemsNameList.setSelectedIndex(ItemsNameList.getSelectedIndex() + ((e.getScrollAmount() * e.getWheelRotation()) / 2));
+                    ItemsNameList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
+                    ItemsPriceList.setSelectedIndex(ItemsNameList.getSelectedIndex());
+                    ItemsPriceList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
+                    ItemsWebsiteList.setSelectedIndex(ItemsNameList.getSelectedIndex());
+                    ItemsWebsiteList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
+                }
+            }
+        });
+
+        ItemsPriceList.addMouseWheelListener(new MouseWheelListener() {
+            @Override
+            public void mouseWheelMoved(MouseWheelEvent e) {
+                if(ItemsNameList.getSelectedIndex() > 0 || e.getWheelRotation() > 0) {
+                    ItemsPriceList.setSelectedIndex(ItemsPriceList.getSelectedIndex() + ((e.getScrollAmount() * e.getWheelRotation()) / 2));
+                    ItemsPriceList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex());
+                    ItemsNameList.setSelectedIndex(ItemsPriceList.getSelectedIndex());
+                    ItemsNameList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex());
+                    ItemsWebsiteList.setSelectedIndex(ItemsPriceList.getSelectedIndex());
+                    ItemsWebsiteList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex());
+                }
+            }
+        });
+        ItemsWebsiteList.addMouseWheelListener(new MouseWheelListener() {
+            @Override
+            public void mouseWheelMoved(MouseWheelEvent e) {
+                if(ItemsNameList.getSelectedIndex() > 0 || e.getWheelRotation() > 0) {
+                    ItemsWebsiteList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex() + ((e.getScrollAmount() * e.getWheelRotation()) / 2));
+                    ItemsWebsiteList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+                    ItemsPriceList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex());
+                    ItemsPriceList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+                    ItemsNameList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex());
+                    ItemsNameList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+                }
+            }
+        });
+        UpdateSources.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    File ayoubFile = new File("ayoubFile.txt");
+                    Save ayoubSave = new Save(ayoubFile);
+                    Read ayoubRead = new Read(ayoubFile);
+                    ArrayList<item>[] ayoubItems = (ArrayList<item>[]) new ArrayList[8];
+                    AyoubComputers ayoubComputers;
+                    try {
+                        ayoubComputers = ayoubRead.readAyoubComputersData();
+                    } catch (Exception ex) {
+                        System.out.println("No File Found");
+                        ayoubComputers = new AyoubComputers(ayoubItems);
+                    }
+                    ayoubComputers.getAllItemAyoub();
+
+
+                    // PC and Parts Stuff
+                    File pcAndPartsFile = new File("pcAndPartsFile.txt");
+                    Save pcAndPartsSave = new Save(pcAndPartsFile);
+                    Read pcAndPartsRead = new Read(pcAndPartsFile);
+                    ArrayList<item>[] pcAndPartsItems = (ArrayList<item>[]) new ArrayList[8];
+                    PCandParts pcAndParts;
+                    try {
+                        pcAndParts = pcAndPartsRead.readPcAndPartsData();
+                    } catch (Exception ex) {
+                        System.out.println("No File Found");
+                        pcAndParts = new PCandParts(pcAndPartsItems);
+                    }
+                    pcAndParts.getAllItemPCandParts();
+
+
+                    // Mojitech Stuff
+                    File mojitechFile = new File("mojitechFile.txt");
+                    Save mojitechSave = new Save(mojitechFile);
+                    Read mojitechRead = new Read(mojitechFile);
+                    ArrayList<item>[] mojitechItems = (ArrayList<item>[]) new ArrayList[8];
+                    Mojitech mojitech;
+                    try {
+                        mojitech = mojitechRead.readMojitechData();
+                    } catch (Exception ex) {
+                        System.out.println("No File Found");
+                        mojitech = new Mojitech(mojitechItems);
+                    }
+                    mojitech.getAllItemMojitech();
+
+                    pcAndPartsSave.saveAllPcAndPartsItems(pcAndParts);
+                    mojitechSave.saveAllMojitechItems(mojitech);
+                    ayoubSave.saveAllAyoubItems(ayoubComputers);
+                }
+                catch (Exception ex) {
+                    System.out.println("Error in updating sources");
+                }
             }
         });
     }
+
     public ArrayList<item> sortByPriceLowToHigh(ArrayList<item> items) {
         if(items.size() <= 1)
             return items;
@@ -160,7 +263,12 @@ public class MainMenu   extends JFrame{
                 websiteList.add(item.getWebsite());
             }
         }
-
+        ItemsWebsiteList.setSelectedIndex(0);
+        ItemsWebsiteList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+        ItemsPriceList.setSelectedIndex(0);
+        ItemsPriceList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+        ItemsNameList.setSelectedIndex(0);
+        ItemsNameList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
         ItemsNameList.setListData(namesList.toArray());
         ItemsPriceList.setListData(priceList.toArray());
         ItemsWebsiteList.setListData(websiteList.toArray());
@@ -176,7 +284,12 @@ public class MainMenu   extends JFrame{
             priceList.add(String.valueOf(item.getPrice()));
             websiteList.add(item.getWebsite());
         }
-
+        ItemsWebsiteList.setSelectedIndex(0);
+        ItemsWebsiteList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+        ItemsPriceList.setSelectedIndex(0);
+        ItemsPriceList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+        ItemsNameList.setSelectedIndex(0);
+        ItemsNameList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
         ItemsNameList.setListData(namesList.toArray());
         ItemsPriceList.setListData(priceList.toArray());
         ItemsWebsiteList.setListData(websiteList.toArray());

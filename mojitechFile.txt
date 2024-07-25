@@ -1263,8 +1263,8 @@ ESonic M.2 H110DA1 M ATX Motherboard DDR4 | ESONIC H110DA1
 53.5
 Mojitech
 MOTHERBOARD
-Gigabyte B450 Aorus Elite Rev1.1 Motherboard
-124.0
+Gigabyte B450 Aorus Elite Rev1.1 Motherboard tax free
+123.0
 Mojitech
 MOTHERBOARD
 Gigabyte B450M DS3H Motherboard Rev.1.1
@@ -2287,10 +2287,6 @@ STORAGE
 40.0
 Mojitech
 STORAGE
-10 Pack Kingston DataTraveller Exodia 32GB USB 3.2
-32.0
-Mojitech
-STORAGE
 10X Imation 8X DVD+R Dual Layer Blank 8.5GB
 11.5
 Mojitech
@@ -2321,6 +2317,10 @@ Mojitech
 STORAGE
 ADATA EXTERNAL SSD 960GB DURABLE BLACK
 103.0
+Mojitech
+STORAGE
+Adata HD710 Pro External HDD – 5TB | AHD710P 5TU31 CBK
+148.0
 Mojitech
 STORAGE
 Adata SD810 External SSD 1TB | SD810 1000GB
@@ -3213,10 +3213,6 @@ Mojitech
 COOLING
 COUGAR Forza 50 Pemium Single Tower Air Cooler
 46.0
-Mojitech
-COOLING
-Cougar Poseidon Elite ARGB 360 White Liquid Cooler
-122.0
 Mojitech
 COOLING
 DarkFlash Darkvoid Air CPU Cooler

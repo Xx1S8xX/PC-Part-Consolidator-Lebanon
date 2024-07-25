@@ -31,7 +31,7 @@ public class AyoubComputers {
     private ArrayList<item> getItemAyoub(String url) throws IOException {
         ArrayList<item> items = new ArrayList<>();
         final String userAgent = "Mozilla/5.0 (X11; U; Linux i586; en-US; rv:1.7.3) Gecko/20040924 Epiphany/1.4.4 (Ubuntu)";
-        Document doc = Jsoup.connect(url).userAgent(userAgent).get();
+        Document doc = Jsoup.connect(url).get();
         Elements elements = doc.select("li.product");
         String name;
         String price;

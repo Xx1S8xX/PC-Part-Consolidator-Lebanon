@@ -1331,6 +1331,10 @@ ThermalTake CA 1H1 00F1WN 00 Tower 900 Vertical
 211.0
 PC and Parts
 STORAGE
+Seagate Expansion 5TB External HDD w/ Rescue Data Recovery (TAX included)
+134.0
+PC and Parts
+STORAGE
 Kingston A400 SA400S37/960G SSD
 52.0
 PC and Parts
@@ -1509,10 +1513,6 @@ PC and Parts
 STORAGE
 Seagate Expansion 4TB External HDD w/ Rescue Data Recovery (TAX included)
 97.0
-PC and Parts
-STORAGE
-Seagate Expansion 5TB External HDD w/ Rescue Data Recovery (TAX included)
-135.0
 PC and Parts
 STORAGE
 Seagate Expansion 2TB External HDD w/ Rescue Data Recovery (TAX included)
