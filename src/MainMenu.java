@@ -1,12 +1,9 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseWheelEvent;
-import java.awt.event.MouseWheelListener;
+import java.awt.event.*;
 import java.io.File;
 import java.util.ArrayList;
 
-public class MainMenu   extends JFrame{
+public class MainMenu   extends JFrame {
     private JTextField searchName;
     private JComboBox categoryChoice;
     private JScrollPane itemsList;
@@ -138,7 +135,6 @@ public class MainMenu   extends JFrame{
                 }
             }
         });
-
         ItemsPriceList.addMouseWheelListener(new MouseWheelListener() {
             @Override
             public void mouseWheelMoved(MouseWheelEvent e) {
@@ -212,17 +208,98 @@ public class MainMenu   extends JFrame{
                     }
                     mojitech.getAllItemMojitech();
 
+                    for (int i = 0; i < mojitech.getItems().length; i++) {
+                        for (item item: mojitech.getItems()[i]) {
+                            if (item.getName().contains("Tax Free")) {
+                                item.setName(item.getName().replace("Tax Free",""));
+                            }
+                            else if(item.getName().contains("free tax")) {
+                                item.setName(item.getName().replace("free tax",""));
+                            }
+                            else if(!item.getName().contains("Tax Included")) {
+                                item.setName(item.getName().replace("Tax Included",""));
+                            }
+                            else if(!item.getName().contains("Tax included")) {
+                                item.setName(item.getName().replace("Tax included",""));
+                            }
+                            else {
+                                item.setPrice(item.getPrice() * 1.11);
+                                item.setPrice(Math.round(item.getPrice()));
+                            }
+                        }
+                    }
+                    for (int i = 0; i < ayoubComputers.getItems().length; i++) {
+                        for (item item: ayoubComputers.getItems()[i]) {
+                            if (item.getName().contains("Tax Free")) {
+                                item.setName(item.getName().replace("Tax Free",""));
+                            }
+                            else if(item.getName().contains("free tax")) {
+                                item.setName(item.getName().replace("free tax",""));
+                            }
+                            else if(!item.getName().contains("Tax Included")) {
+                                item.setName(item.getName().replace("Tax Included",""));
+                            }
+                            else if(!item.getName().contains("Tax included")) {
+                                item.setName(item.getName().replace("Tax included",""));
+                            }
+                            else {
+                                item.setPrice(item.getPrice() * 1.11);
+                                item.setPrice(Math.round(item.getPrice()));
+                            }
+                        }
+                    }
+                    for (int i = 0; i < pcAndParts.getItems().length; i++) {
+                        for (item item: pcAndParts.getItems()[i]) {
+                            if (item.getName().contains("Tax Free")) {
+                                item.setName(item.getName().replace("Tax Free",""));
+                            }
+                            else if(item.getName().contains("free tax")) {
+                                item.setName(item.getName().replace("free tax",""));
+                            }
+                            else if(!item.getName().contains("Tax Included")) {
+                                item.setName(item.getName().replace("Tax Included",""));
+                            }
+                            else if(!item.getName().contains("Tax included")) {
+                                item.setName(item.getName().replace("Tax included",""));
+                            }
+                            else {
+                                item.setPrice(item.getPrice() * 1.11);
+                                item.setPrice(Math.round(item.getPrice()));
+                            }
+                        }
+                    }
                     pcAndPartsSave.saveAllPcAndPartsItems(pcAndParts);
                     mojitechSave.saveAllMojitechItems(mojitech);
                     ayoubSave.saveAllAyoubItems(ayoubComputers);
+                    dispose();
+                    new MainMenu(ayoubComputers,mojitech,pcAndParts);
                 }
                 catch (Exception ex) {
                     System.out.println("Error in updating sources");
                 }
             }
         });
+        ItemsNameList.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                if(e.getKeyCode() == 40) {
+                    ItemsPriceList.setSelectedIndex(ItemsNameList.getSelectedIndex() + 1);
+                    ItemsPriceList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex() + 1);
+                    ItemsWebsiteList.setSelectedIndex(ItemsNameList.getSelectedIndex() + 1);
+                    ItemsWebsiteList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex() + 1);
+                    System.out.println("Down");
+                }
+                else if(e.getKeyCode() == 38) {
+                    ItemsPriceList.setSelectedIndex(ItemsNameList.getSelectedIndex() - 1);
+                    ItemsPriceList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex() - 1);
+                    ItemsWebsiteList.setSelectedIndex(ItemsNameList.getSelectedIndex() - 1);
+                    ItemsWebsiteList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex() - 1);
+                    System.out.println("Up");
+                }
+            }
+        });
     }
-
     public ArrayList<item> sortByPriceLowToHigh(ArrayList<item> items) {
         if(items.size() <= 1)
             return items;

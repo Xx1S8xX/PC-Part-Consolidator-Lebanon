@@ -63,15 +63,15 @@ Cougar STC Power Supply 600W
 63.0
 Mojitech
 POWER SUPPLY
-Darkflash WA600 Non Modular Power Supply | Tax Free
+Darkflash WA600 Non Modular Power Supply | 
 44.0
 Mojitech
 POWER SUPPLY
-Darkflash WA700 Non Modular Power Supply | Tax Free
+Darkflash WA700 Non Modular Power Supply | 
 47.0
 Mojitech
 POWER SUPPLY
-Darkflash WA800 Non Modular Power Supply | Tax Free
+Darkflash WA800 Non Modular Power Supply | 
 54.0
 Mojitech
 POWER SUPPLY
@@ -219,7 +219,7 @@ AMD Ryzen 5 3600XT 6 core, 12 threads unlocked desktop processor with Wraith Spi
 249.0
 Mojitech
 CPU
-AMD Ryzen 5 7600X Raphael AM5 4.7GHz 6 Core Boxed Processor  7600X | Tax Free
+AMD Ryzen 5 7600X Raphael AM5 4.7GHz 6 Core Boxed Processor  7600X | 
 254.0
 Mojitech
 CPU
@@ -291,7 +291,7 @@ CPU AMD Ryzen 7 3800X With Wraith Prism Cooler –
 275.0
 Mojitech
 CPU
-CPU AMD RYZEN 9 3900X 12 Cores 24 Threads free tax
+CPU AMD RYZEN 9 3900X 12 Cores 24 Threads 
 480.0
 Mojitech
 CPU
@@ -431,7 +431,7 @@ Intel Core I5 13400F 2.5 GHz 10 Core LGA 1700 Processor tray without cooler | Ta
 159.0
 Mojitech
 CPU
-Intel Core i5 13500 Desktop Processor | Tray | Tax Free
+Intel Core i5 13500 Desktop Processor | Tray | 
 192.0
 Mojitech
 CPU
@@ -447,7 +447,7 @@ Intel Core i7 11700 Processor tray | Tax Included
 207.0
 Mojitech
 CPU
-Intel Core i7 12700F 8P/4E 20T | *TRAY* | Tax Free
+Intel Core i7 12700F 8P/4E 20T | *TRAY* | 
 232.0
 Mojitech
 CPU
@@ -479,7 +479,7 @@ Intel Core i9 12900F 5.1GHz – LGA 1700
 497.0
 Mojitech
 CPU
-Intel Core i9 14900KS Tray | Tax Free
+Intel Core i9 14900KS Tray | 
 577.0
 Mojitech
 CPU
@@ -587,7 +587,7 @@ AMD FirePro W4300 4 GB T7T58AA
 216.0
 Mojitech
 GPU
-ASUS Dual GeForce RTX 4060 OC Edition 8GB GDDR6 | Tax Free
+ASUS Dual GeForce RTX 4060 OC Edition 8GB GDDR6 | 
 337.0
 Mojitech
 GPU
@@ -607,7 +607,7 @@ Asus ROG Strix RTX 4070Ti 12GB 90YV0II0 M0NA00
 920.0
 Mojitech
 GPU
-Asus ROG STRIX RTX 4090 OC 24G | 90YV0ID0 M0AA00 | Tax Free
+Asus ROG STRIX RTX 4090 OC 24G | 90YV0ID0 M0AA00 | 
 2098.0
 Mojitech
 GPU
@@ -615,7 +615,7 @@ ASUS TUF Gaming GeForce RTX 4060 Ti 8GB GDDR6 OC | 90YV0J50 M0NA00
 589.0
 Mojitech
 GPU
-ASUS TUF Gaming GeForce RTX 4090 24GB GDDR6X OC Edition | 90YV0IY3 M0AA00 | Tax Free
+ASUS TUF Gaming GeForce RTX 4090 24GB GDDR6X OC Edition | 90YV0IY3 M0AA00 | 
 1988.0
 Mojitech
 GPU
@@ -675,7 +675,7 @@ Gigabyte GeForce RTX 4080 16GB GAMING OC | GV N4080GAMING OC 16GD
 1250.0
 Mojitech
 GPU
-Gigabyte GeForce RTX 4090 Gaming OC 24G | GV N4090GAMING OC 24G | Tax Free
+Gigabyte GeForce RTX 4090 Gaming OC 24G | GV N4090GAMING OC 24G | 
 1969.0
 Mojitech
 GPU
@@ -687,27 +687,27 @@ MSI Geforce GTX 1650 D6 Ventus XS OCV1 Graphic Card
 158.0
 Mojitech
 GPU
-MSI GeForce RTX 4060 Ti VENTUS 2X BLACK 8G OC | 912 V515 064 | Tax Free
+MSI GeForce RTX 4060 Ti VENTUS 2X BLACK 8G OC | 912 V515 064 | 
 486.0
 Mojitech
 GPU
-MSI GeForce RTX 4060 Ventus 2X 8GB OC | 912 V516 012 | Tax Free
+MSI GeForce RTX 4060 Ventus 2X 8GB OC | 912 V516 012 | 
 336.0
 Mojitech
 GPU
-MSI GeForce RTX 4070 Super 12G Gaming Slim | 912 V513 648 | Tax Free
+MSI GeForce RTX 4070 Super 12G Gaming Slim | 912 V513 648 | 
 751.0
 Mojitech
 GPU
-MSI GeForce RTX 4070 SUPER 12G GAMING X SLIM – White | Tax Free
+MSI GeForce RTX 4070 SUPER 12G GAMING X SLIM – White | 
 751.0
 Mojitech
 GPU
-MSI GeForce RTX 4070 SUPER 12G GAMING X SLIM | Tax Free
+MSI GeForce RTX 4070 SUPER 12G GAMING X SLIM | 
 758.0
 Mojitech
 GPU
-MSI GeForce RTX 4070 Super 12G Ventus 2X OC | 912 V513 641 | Tax Free
+MSI GeForce RTX 4070 Super 12G Ventus 2X OC | 912 V513 641 | 
 654.0
 Mojitech
 GPU
@@ -723,11 +723,11 @@ MSI GeForce RTX 4070 VENTUS 2X E 12GB OC
 579.0
 Mojitech
 GPU
-MSI GeForce RTX 4080 SUPER 16G GAMING X SLIM | Tax Free
+MSI GeForce RTX 4080 SUPER 16G GAMING X SLIM | 
 1328.0
 Mojitech
 GPU
-MSI GeForce RTX 4090 Gaming Slim 24G | 912 V510 400 | Tax Free
+MSI GeForce RTX 4090 Gaming Slim 24G | 912 V510 400 | 
 2119.0
 Mojitech
 GPU
@@ -747,15 +747,15 @@ PNY GeForce RTX 4060 8GB XLR8 Gaming VERTO Overclocked Dual Fan | tax free
 335.0
 Mojitech
 GPU
-PNY GeForce RTX 4090 24GB OC XLR8 Gaming Verto EPIC X RGB TF | VCG409024TFXXPB1 O | Tax Free
+PNY GeForce RTX 4090 24GB OC XLR8 Gaming Verto EPIC X RGB TF | VCG409024TFXXPB1 O | 
 1897.0
 Mojitech
 GPU
-ZOTAC Gaming GeForce RTX 4070 SUPER Trinity Black Edition | 5 Years Warranty | Tax Free
+ZOTAC Gaming GeForce RTX 4070 SUPER Trinity Black Edition | 5 Years Warranty | 
 707.0
 Mojitech
 GPU
-ZOTAC GAMING GeForce RTX 4070 SUPER Twin Edge OC 12GB | ZT D40720H 10M | Tax Free
+ZOTAC GAMING GeForce RTX 4070 SUPER Twin Edge OC 12GB | ZT D40720H 10M | 
 666.0
 Mojitech
 GPU
@@ -767,23 +767,23 @@ ZOTAC Gaming GeForce RTX 4070 Ti Super Trinity OC White Edition | 5 Years Warran
 794.0
 Mojitech
 GPU
-ZOTAC GAMING GeForce RTX 4080 SUPER Trinity Black Edition | ZT D40820D 10P | Up to 5 Years Warranty | Tax Free
+ZOTAC GAMING GeForce RTX 4080 SUPER Trinity Black Edition | ZT D40820D 10P | Up to 5 Years Warranty | 
 1084.0
 Mojitech
 GPU
-ZOTAC GAMING GeForce RTX 4080 SUPER Trinity OC White 16GB | ZT D40820Q 10P | Tax Free
+ZOTAC GAMING GeForce RTX 4080 SUPER Trinity OC White 16GB | ZT D40820Q 10P | 
 1127.0
 Mojitech
 GPU
-ZOTAC GeForce RTX 4060 8GB TWIN EDGE | ZT D40600E 10M | Tax Free
+ZOTAC GeForce RTX 4060 8GB TWIN EDGE | ZT D40600E 10M | 
 332.0
 Mojitech
 GPU
-ZOTAC GeForce RTX 4060 TI Twin Edge 16GB | ZT D40620E 10M | Tax Free
+ZOTAC GeForce RTX 4060 TI Twin Edge 16GB | ZT D40620E 10M | 
 488.0
 Mojitech
 GPU
-ZOTAC GeForce RTX 4060 TI Twin Edge 8GB | ZT D40610E 10M | Tax Free
+ZOTAC GeForce RTX 4060 TI Twin Edge 8GB | ZT D40610E 10M | 
 439.0
 Mojitech
 RAM
@@ -1003,7 +1003,7 @@ ASROCK B760M PG Lightning WIFI Gaming Motherboard | 90 MXBMT0 A0UAYZ
 138.0
 Mojitech
 MOTHERBOARD
-ASRock B760M PG Riptide WiFi DDR5 | 90 MXBN30 A0UAYZ | Tax Free
+ASRock B760M PG Riptide WiFi DDR5 | 90 MXBN30 A0UAYZ | 
 173.0
 Mojitech
 MOTHERBOARD
@@ -1103,7 +1103,7 @@ Asus Prime B760M K D4 DDR4 Motherboard | 90MB1DS0 M1EAY0
 110.0
 Mojitech
 MOTHERBOARD
-ASUS Prime B760M K MATX Motherboard | 90MB1FI0 M0EAY0 | Tax Free
+ASUS Prime B760M K MATX Motherboard | 90MB1FI0 M0EAY0 | 
 147.0
 Mojitech
 MOTHERBOARD
@@ -1243,7 +1243,7 @@ Biostar Motherboard Z690GTA DDR5 – Z690GTA
 305.0
 Mojitech
 MOTHERBOARD
-Biostar TB360 BTC PRO 2.0 Motherboard | TB360 BTC PRO 2.0 | Tax Free
+Biostar TB360 BTC PRO 2.0 Motherboard | TB360 BTC PRO 2.0 | 
 89.0
 Mojitech
 MOTHERBOARD
@@ -1579,7 +1579,7 @@ MSI Z790 Gaming Plus Wi Fi Motherboard | 911 7E06 060
 244.0
 Mojitech
 MOTHERBOARD
-NZXT N5 Z690 Motherboard | N5 Z69XT B1 | Tax Free
+NZXT N5 Z690 Motherboard | N5 Z69XT B1 | 
 183.0
 Mojitech
 MOTHERBOARD
@@ -1767,27 +1767,27 @@ DarkFlash A290 ATX Case Black | Tax Included
 29.0
 Mojitech
 CASE
-Darkflash DK230 ATX Case + PSU Darkflash 550W Bronze | Tax Free
+Darkflash DK230 ATX Case + PSU Darkflash 550W Bronze | 
 77.0
 Mojitech
 CASE
-Darkflash DK352 ATX Case – White | Tax Free
+Darkflash DK352 ATX Case – White | 
 46.0
 Mojitech
 CASE
-Darkflash DLC29 Full Mesh Case – White | Tax Free
+Darkflash DLC29 Full Mesh Case – White | 
 51.0
 Mojitech
 CASE
-Darkflash DRX70 Glass ATX PC Case – White | Tax Free
+Darkflash DRX70 Glass ATX PC Case – White | 
 57.0
 Mojitech
 CASE
-Darkflash DRX70 Mesh ATX Case – White | Tax Free
+Darkflash DRX70 Mesh ATX Case – White | 
 57.0
 Mojitech
 CASE
-Darkflash DRX70 Mesh ATX Case | Tax Free
+Darkflash DRX70 Mesh ATX Case | 
 53.0
 Mojitech
 CASE
@@ -1799,7 +1799,7 @@ DarkFlash DS900 Aquarium ATX PC Case White | Tax Included
 72.0
 Mojitech
 CASE
-Darkflash Phantom ATX Case + PSU Darkflash 650W Bronze | Tax Free
+Darkflash Phantom ATX Case + PSU Darkflash 650W Bronze | 
 119.0
 Mojitech
 CASE
@@ -2419,7 +2419,7 @@ Kingston A400 480G SSD – SA400S37
 31.0
 Mojitech
 STORAGE
-Kingston A400 960G SSD – SA400S37 | Tax Free
+Kingston A400 960G SSD – SA400S37 | 
 58.0
 Mojitech
 STORAGE
@@ -2532,7 +2532,7 @@ MSI Spatium M480 PCie 4.0 NVme M.2 2TB HS
 Mojitech
 STORAGE
 MSI Spatium M570 PCie 5.0 M.2 2TB HS
-289.5
+234.5
 Mojitech
 STORAGE
 MY PASSPORT 1TB BLACK WORLDWIDE
@@ -2563,7 +2563,7 @@ QNap NAS Storage TS 230 . 1.4GHz processor . System Memory: 2 GB DDR4 . Flash Me
 199.0
 Mojitech
 STORAGE
-Samsung 990 PRO 2TB PCIe 4.0 NVMe SSD | Tax Free
+Samsung 990 PRO 2TB PCIe 4.0 NVMe SSD | 
 208.0
 Mojitech
 STORAGE
@@ -2739,12 +2739,16 @@ Spatium M461 PCie 4.0 NVme M.2 500 GB
 45.0
 Mojitech
 STORAGE
+SPATIUM M480 PCIe 4.0 NVMe M.2 PLAY 1TB with heatsink
+107.0
+Mojitech
+STORAGE
 SPATIUM M480 PRO PCIe 4.0 NVMe M.2 4TB
 307.0
 Mojitech
 STORAGE
 SPATIUM M480 PRO PCIe 4.0 NVMe M.2 Heatsink 2TB
-164.0
+152.0
 Mojitech
 STORAGE
 SSD 2.5″ Solid State Drive Kingston KC 600 SKC600 256Gb / 512Gb / 1024Gb / 2tb
@@ -2960,15 +2964,15 @@ Transcend ESD410C 4TB Portable SSD | TS4TESD410C
 Mojitech
 COOLING
 Transcend Internal SSD 1TB NVMe M.2 Gen4 with Heatsink | TS1TMTE250H | 2 Years Warranty
-118.0
+115.0
 Mojitech
 COOLING
 Transcend Internal SSD 2TB NVMe M.2 Gen4 with Heatsink | TS2TMTE250H | 2 Years Warranty
-188.0
+186.0
 Mojitech
 COOLING
 Transcend Internal SSD 4TB NVMe M.2 Gen4 with Heatsink | TS4TMTE250H | 2 Years Warranty
-358.0
+355.0
 Mojitech
 COOLING
 Transcend Mte250s PCIe SSD 2TB
@@ -3183,7 +3187,7 @@ Cooler Master MasterLiquid ML240 Vivid With LCD Display ARGB CPU Liquid Cooler
 138.0
 Mojitech
 COOLING
-Cooler Master MasterLiquid ML360 Illusion Gen.2 ARGB Liquid Cooler | Tax Free
+Cooler Master MasterLiquid ML360 Illusion Gen.2 ARGB Liquid Cooler | 
 124.0
 Mojitech
 COOLING
@@ -3223,7 +3227,7 @@ DarkFlash INF 24 Pro PWM ARGB Fan Black | Tax Included
 32.0
 Mojitech
 COOLING
-Darkflash Radiant DC 240 Liquid CPU Cooler | Tax Free
+Darkflash Radiant DC 240 Liquid CPU Cooler | 
 59.0
 Mojitech
 COOLING
@@ -3231,7 +3235,7 @@ DarkFlash Radiant DC 240 Liquid CPU Cooler Black | Tax Included
 58.0
 Mojitech
 COOLING
-Darkflash Radiant DC 360 Liquid CPU Cooler | Tax Free
+Darkflash Radiant DC 360 Liquid CPU Cooler | 
 78.0
 Mojitech
 COOLING
@@ -3243,7 +3247,7 @@ DarkFlash S11 Pro Air CPU Cooler White | Tax Included
 29.0
 Mojitech
 COOLING
-Darkflash S21 Air CPU Cooler – White | Tax Free
+Darkflash S21 Air CPU Cooler – White | 
 31.0
 Mojitech
 COOLING
@@ -3251,7 +3255,7 @@ DarkFlash Storm Z4 CPU Cooler Black | Tax Included
 18.0
 Mojitech
 COOLING
-Darkflash Twister DX240 Liquid CPU Cooler | Tax Free
+Darkflash Twister DX240 Liquid CPU Cooler | 
 68.0
 Mojitech
 COOLING

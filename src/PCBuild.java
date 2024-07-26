@@ -19,6 +19,7 @@ public class PCBuild {
         this.Case = Case;
         this.Motherboard = motherboard;
     }
+
     public double getPriceOfBuild() {
         double price = 0;
         price += this.Cpu.getPrice();

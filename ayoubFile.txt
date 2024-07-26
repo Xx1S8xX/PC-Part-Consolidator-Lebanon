@@ -275,10 +275,6 @@ Thermaltake Toughpower Grand RGB 850W Fully Modular 80 PLUS Gold | PS TPG 0850FP
 125.0
 Ayoub Computers
 POWER SUPPLY
-MSI MPG Series A850GF (PSU): 850 Watt FULL 80+GOLD | A850GF
-130.0
-Ayoub Computers
-POWER SUPPLY
 Xigmatek X Miner 1800W Power Supply | PSU XIG XMINER 1800
 139.0
 Ayoub Computers
@@ -473,10 +469,6 @@ Ayoub Computers
 CPU
 Intel 13th Gen. Core i5 13400F BOXED 4.6GHz, 10C, 20MB | 13400F
 205.0
-Ayoub Computers
-CPU
-Intel Core i7 12700 12th Gen Processor   Alder Lake 12 Core LGA 1700 CPU   TRAY NO FAN | 12700
-210.0
 Ayoub Computers
 CPU
 Intel Core i7 12700K 3.6 GHz 12 Core LGA 1700 Processor   Tray | 12700K T
@@ -4335,10 +4327,6 @@ MSI Spatium M460 NVMe M.2 1TB HS | M460
 79.0
 Ayoub Computers
 STORAGE
-Transcend 1TB M.2 SSD 85S SATA III 64GB/S | TS1TMTS825S
-79.0
-Ayoub Computers
-STORAGE
 Seagate Enterprise Capacity 1TB 7200RPM SATA 6.0 GB/S 128MB Enterprise Hard Drive (3.5 Inch, Exos 7E8 HDD 512N SATA) | ST1000NM0055
 80.0
 Ayoub Computers
@@ -4915,10 +4903,6 @@ Kingston 4096GB KC3000 PCIe 4.0 NVMe M.2 SSD | SKC3000D/4096G
 325.0
 Ayoub Computers
 STORAGE
-SanDisk Extreme PRO 4TB Portable SSD | SDSSDE81 4T00 G25
-325.0
-Ayoub Computers
-STORAGE
 Transcend 4TB 2.5″ Solid State Drive | TS4TSSD472K
 329.0
 Ayoub Computers
@@ -4937,6 +4921,10 @@ Ayoub Computers
 STORAGE
 Transcend SSD 4TB SSD470K Series | TS4TSSD470K
 335.0
+Ayoub Computers
+STORAGE
+SanDisk Extreme PRO 4TB Portable SSD | SDSSDE81 4T00 G25
+336.0
 Ayoub Computers
 STORAGE
 QNAP TS 431K 4BAY QC 1.7GHz, 1GB, 2*GIGA LAN, 3USB 3.2 , RAID 0, 1, 5, 6, 10, & JBOD | TS 431K
@@ -5323,6 +5311,10 @@ N11 Laptop Cooler With Dimmer   Flagship Design | N11
 17.0
 Ayoub Computers
 COOLING
+Porodo Gaming PS5 Console Cooling Fan   Black | PDX616
+17.0
+Ayoub Computers
+COOLING
 Thermal Grizzly Conductonaut Extreme liquid metal Thermal Paste | TG CE 001 R
 17.0
 Ayoub Computers
@@ -5336,10 +5328,6 @@ Noctua NA FK1 Redux Second Fan Upgrade Kit for NH U12S Redux Cooler | NA FK1
 Ayoub Computers
 COOLING
 OEM Q3 Laptop Cooling Pad | Q3
-18.0
-Ayoub Computers
-COOLING
-Porodo Gaming PS5 Console Cooling Fan   Black | PDX616
 18.0
 Ayoub Computers
 COOLING
@@ -5491,19 +5479,11 @@ Cooler Master Ergostand Air Notebook Cooling Stand | MNX SSEW NNNNN R1
 26.0
 Ayoub Computers
 COOLING
-Cooler Master Hyper 212 Spectrum V3 Silver ARGB CPU Cooler | RR S4NA 17PA R1
-26.0
-Ayoub Computers
-COOLING
 DarkFlash S11 Pro Air CPU Cooler   Black | S11
 26.0
 Ayoub Computers
 COOLING
 OEM YL 019 Notebook Cooling Pad
-26.0
-Ayoub Computers
-COOLING
-Thermaltake T1000 Coolant   Green | CL W245 OS00GR A
 26.0
 Ayoub Computers
 COOLING
@@ -5667,6 +5647,10 @@ Thermaltake CL P0478 Gunmet ORB CPU Cooler | CL P0478
 48.0
 Ayoub Computers
 COOLING
+Porodo Gaming PS5 Slim Stand With Magnetic Charger   White | PDX118
+49.0
+Ayoub Computers
+COOLING
 Thermalright Peerless Assassin 120 Black CPU Air Cooler
 49.0
 Ayoub Computers
@@ -5692,6 +5676,10 @@ Thermaltake Riing Plus 20 RGB TT Premium Edition w/Controller 200mm Software Ena
 Ayoub Computers
 COOLING
 Noctua Redux High Performance CPU Cooler with NF P12 redux 1700 PWM 120mm Fan | NH U12S
+52.0
+Ayoub Computers
+COOLING
+Porodo Gaming Multi Function PS5 and Headphone Cooling and Charging Hub   Black/White| PDX116
 52.0
 Ayoub Computers
 COOLING
