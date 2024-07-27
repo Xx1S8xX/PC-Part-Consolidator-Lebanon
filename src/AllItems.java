@@ -1,5 +1,6 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class AllItems {
     private ArrayList<item>[] allItems = (ArrayList<item>[]) new ArrayList[8];
@@ -31,7 +32,15 @@ public class AllItems {
             count ++;
         }
     }
-
+    public int searchForName(String name, int cat) {
+        int index = 0;
+        for(item item: getAllItems()[cat]) {
+            if(Objects.equals(name, item.getName()))
+                return index;
+            index ++;
+        }
+        return -1;
+    }
     public ArrayList<item>[] getAllItems() {
         return allItems;
     }

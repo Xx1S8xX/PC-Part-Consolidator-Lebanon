@@ -1,127 +1,122 @@
 import java.util.ArrayList;
-
 public class PCBuild {
     private item Cpu;
     private item Gpu;
     private item Case;
     private item PowerSupply;
     private item Motherboard;
-    private ArrayList<item> Coolers;
-    private ArrayList<item> Rams;
-    private ArrayList<item> Storages;
-    public PCBuild(item powerSupply,item cpu, item gpu, ArrayList<item> rams, item motherboard, item Case, ArrayList<item> storages, ArrayList<item> coolers) {
+    private item Cooler;
+    private item Ram;
+    private item Storage;
+    public PCBuild(item powerSupply,item cpu, item gpu, item ram, item motherboard, item Case, item storage, item cooler) {
         this.PowerSupply = powerSupply;
         this.Cpu = cpu;
         this.Gpu = gpu;
-        this.Rams = rams;
-        this.Storages = storages;
-        this.Coolers = coolers;
+        this.Ram = ram;
+        this.Storage = storage;
+        this.Cooler = cooler;
         this.Case = Case;
         this.Motherboard = motherboard;
     }
-
     public double getPriceOfBuild() {
         double price = 0;
-        price += this.Cpu.getPrice();
-        price += this.Gpu.getPrice();
-        price += this.Motherboard.getPrice();
-        price += this.PowerSupply.getPrice();
-        price += this.Case.getPrice();
-        for (item item : Storages)
-            price += item.getPrice();
-        for (item item : Coolers)
-            price += item.getPrice();
-        for (item item : Rams)
-            price += item.getPrice();
+        try {
+            price += this.PowerSupply.getPrice();
+        }
+        catch (Exception e) {
+            System.out.println("No Power Supply Price");
+        }
+        try {
+            price += this.Cpu.getPrice();
+        }
+        catch (Exception e) {
+            System.out.println("No CPU Price");
+        }
+        try {
+            price += this.Gpu.getPrice();
+        }
+        catch (Exception e) {
+            System.out.println("No GPU Price");
+        }
+        try {
+            price += this.Motherboard.getPrice();
+        }
+        catch (Exception e) {
+            System.out.println("No Motherboard Price");
+        }
+        try {
+            price += this.Case.getPrice();
+        }
+        catch (Exception e) {
+            System.out.println("No Case Price");
+        }
+        try {
+            price += this.Ram.getPrice();
+        }
+        catch (Exception e) {
+            System.out.println("No Ram Price");
+        }
+        try {
+            price += this.Storage.getPrice();
+        }
+        catch (Exception e) {
+            System.out.println("No Storage Price");
+        }
+        try {
+            price += this.Cooler.getPrice();
+        }
+        catch (Exception e) {
+            System.out.println("No Cooler Price");
+        }
         return price;
     }
-
     public void setMotherboard(item motherboard) {
         Motherboard = motherboard;
     }
-
     public item getPowerSupply() {
         return PowerSupply;
     }
-
     public item getMotherboard() {
         return Motherboard;
     }
-
     public void setGpu(item gpu) {
         Gpu = gpu;
     }
-
     public void setCpu(item cpu) {
         Cpu = cpu;
     }
-
     public item getGpu() {
         return Gpu;
     }
-
     public item getCpu() {
         return Cpu;
     }
-
     public void setCase(item aCase) {
         Case = aCase;
     }
-
     public item getCase() {
         return Case;
     }
-
     public void setPowerSupply(item powerSupply) {
         PowerSupply = powerSupply;
     }
-
-    public void setRams(ArrayList<item> rams) {
-        Rams = rams;
+    public void setStorage(item storage) {
+        Storage = storage;
     }
-
-    public void setStorages(ArrayList<item> storages) {
-        Storages = storages;
+    public item getCooler() {
+        return Cooler;
     }
-
-    public ArrayList<item> getCoolers() {
-        return Coolers;
+    public void setCooler(item cooler) {
+        Cooler = cooler;
     }
-
-    public ArrayList<item> getRams() {
-        return Rams;
+    public item getStorage() {
+        return Storage;
     }
-
-    public ArrayList<item> getStorages() {
-        return Storages;
+    public item getRam() {
+        return Ram;
     }
-
-    public void setCoolers(ArrayList<item> coolers) {
-        Coolers = coolers;
-    }
-
-    public item getStorage(int index) {
-        return Storages.get(index);
-    }
-
-    public void setStorage(int index, item storage) {
-        Storages.set(index,storage);
-    }
-
-    public item getCooler(int index) {
-        return Coolers.get(index);
-    }
-
-    public item getRam(int index) {
-        return Rams.get(index);
-    }
-
-    public void setCooler(int index, item cooler) {
-        Coolers.set(index,cooler);
-    }
-
-    public void setRam(int index, item ram) {
-        Rams.set(index,ram);
+    public void setRam(item ram) {
+        this.Ram = ram;
     }
     public String getPartNames(ArrayList<item> items) {
         StringBuilder names = new StringBuilder();
@@ -129,16 +124,15 @@ public class PCBuild {
             names.append(item.getName()).append(" ");
         return names.toString();
     }
-
     @Override
     public String toString() {
         return "Power Supply: " + PowerSupply.getName() + "\n" +
                 "CPU: " + Cpu.getName() + "\n" +
                 "GPU: " + Gpu.getName() + "\n" +
-                "Ram: " + getPartNames(getRams()) + "\n" +
+                "Ram: " + Ram.getName() + "\n" +
                 "Motherboard: " + Motherboard.getName() + "\n" +
                 "Case: " + Case.getName() + "\n" +
-                "Storage" + getPartNames(getStorages()) + "\n" +
-                "Cooler: " + getPartNames(getCoolers()) + "\n";
+                "Storage" + Storage.getName() + "\n" +
+                "Cooler: " + Cooler.getName() + "\n";
     }
 }

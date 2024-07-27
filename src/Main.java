@@ -24,11 +24,6 @@ public class Main {
             System.out.println("No File Found");
             ayoubComputers = new AyoubComputers(ayoubItems);
         }
-        //ayoubComputers.getAllItemAyoub();
-
-
-
-
         // PC and Parts Stuff
         File pcAndPartsFile = new File("pcAndPartsFile.txt");
         Save pcAndPartsSave = new Save(pcAndPartsFile);
@@ -42,10 +37,6 @@ public class Main {
             System.out.println("No File Found");
             pcAndParts = new PCandParts(pcAndPartsItems);
         }
-        //pcAndParts.getAllItemPCandParts();
-
-
-
         // Mojitech Stuff
         File mojitechFile = new File("mojitechFile.txt");
         Save mojitechSave = new Save(mojitechFile);
@@ -59,8 +50,6 @@ public class Main {
             System.out.println("No File Found");
             mojitech = new Mojitech(mojitechItems);
         }
-        //mojitech.getAllItemMojitech();
-
         pcAndPartsSave.saveAllPcAndPartsItems(pcAndParts);
         mojitechSave.saveAllMojitechItems(mojitech);
         ayoubSave.saveAllAyoubItems(ayoubComputers);
