@@ -36,17 +36,21 @@ public class Mojitech {
         Elements elements = doc.select("div.col-inner");
         String name;
         String price;
+        String website;
         for(int i = 0; i < elements.size(); i ++)
         {
             Element element = elements.get(i);
-            Element element2 = elements.get(i);
+            Element element2 = element;
+            Element element3 = element;
             name = element.select("a.woocommerce-LoopProduct-link.woocommerce-loop-product__link").text();
+            website = "https://mojitech.net" + element3.select("a.woocommerce-LoopProduct-link.woocommerce-loop-product__link").attr("href");
+            System.out.println(website);
             if(!element2.select("strong").text().equals("Call for price"))
             {
                 price = element2.select("bdi").text();
                 if(price.contains(" "))
                     price = price.substring(price.indexOf(" ")+1);
-                item temp_item = new item(name.replace("-"," "),Double.parseDouble(price.replace("$","").replace(",","")),"Mojitech");
+                item temp_item = new item(name.replace("-"," "),Double.parseDouble(price.replace("$","").replace(",","")), website);
                 items.add(temp_item);
             }
         }

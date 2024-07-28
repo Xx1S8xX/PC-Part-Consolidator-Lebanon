@@ -51,6 +51,14 @@ public class Main {
             System.out.println("No File Found");
             mojitech = new Mojitech(mojitechItems);
         }
+
+        // Saved PCs Stuff
+        File savedPCsFile = new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt");
+        Save savedPCsSave = new Save(savedPCsFile);
+        Read savedPCsRead = new Read(savedPCsFile);
+
+
+
         pcAndPartsSave.saveAllPcAndPartsItems(pcAndParts);
         mojitechSave.saveAllMojitechItems(mojitech);
         ayoubSave.saveAllAyoubItems(ayoubComputers);

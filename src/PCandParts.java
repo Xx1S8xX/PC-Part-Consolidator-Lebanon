@@ -36,17 +36,20 @@ public class PCandParts {
         Elements elements = doc.select("div.product-small.box ");
         String name;
         String price;
+        String website;
         for(int i = 0; i < elements.size(); i ++)
         {
             Element element = elements.get(i);
-            Element element2 = elements.get(i);
+            Element element2 = element;
+            Element element3 = element;
             name = element.select("a.woocommerce-LoopProduct-link.woocommerce-loop-product__link").text();
+            website = element3.select("a.woocommerce-LoopProduct-link.woocommerce-loop-product__link").attr("href");
             if(!element2.select("span.price").text().equals("Out Of Stock") && !element2.select("span.price").text().equals("Request Price"))
             {
                 price = element2.select("bdi").text();
                 if(price.contains(" "))
                     price = price.substring(price.indexOf(" ")+1);
-                item temp_item = new item(name.replace("-"," "),Double.parseDouble(price.replace("$","").replace(",","")),"PC and Parts");
+                item temp_item = new item(name.replace("-"," "),Double.parseDouble(price.replace("$","").replace(",","")),website);
                 items.add(temp_item);
             }
         }

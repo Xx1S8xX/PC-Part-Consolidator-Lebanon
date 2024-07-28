@@ -33,18 +33,21 @@ public class AyoubComputers {
         final String userAgent = "Mozilla/5.0 (X11; U; Linux i586; en-US; rv:1.7.3) Gecko/20040924 Epiphany/1.4.4 (Ubuntu)";
         Document doc = Jsoup.connect(url).get();
         Elements elements = doc.select("li.product");
+        String website;
         String name;
         String price;
         for(int i = 0; i < elements.size(); i ++)
         {
             Element element = elements.get(i);
-            Element element2 = elements.get(i);
+            Element element2 = element;
+            Element element3 = element;
             name = element.select("h4.card-title a").text();
+            website = element3.select("a").attr("href");
             if(!element2.select("span.price.price--withoutTAX.price--main").isEmpty())
             {
                 price = element2.select("span.price.price--withoutTAX.price--main").text();
                 price = price.substring(0, price.indexOf(" "));
-                item temp_item = new item(name.replace("-"," "), Double.parseDouble(price.replace("$", "").replace(",", "")), "Ayoub Computers");
+                item temp_item = new item(name.replace("-"," "), Double.parseDouble(price.replace("$", "").replace(",", "")), website);
                 items.add(temp_item);
             }
         }

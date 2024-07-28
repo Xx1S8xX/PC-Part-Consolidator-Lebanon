@@ -1,6 +1,10 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 public class MainMenu   extends JFrame {
     private JTextField searchName;
@@ -36,7 +40,11 @@ public class MainMenu   extends JFrame {
     private JLabel coolingPriceLabel;
     private int category;
     private String searchFor;
+    private int clicks;
+    private int index;
     public MainMenu(AyoubComputers ayoubComputers, Mojitech mojitech, PCandParts pcAndParts) {
+        clicks = 0;
+        index = -1;
         searchFor = " ";
         setContentPane(MainMenu);
         AllItems allItems = new AllItems(ayoubComputers, mojitech, pcAndParts);
@@ -44,7 +52,7 @@ public class MainMenu   extends JFrame {
         setSize(1000,800);
         setResizable(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        showAllItems(allItems);
+        showCategory(0,allItems);
         PCBuild pcBuild = new PCBuild(null, null, null, null, null, null, null, null);
         powerSupplyLabel.setText("Power Supply:");
         powerSupplyPriceLabel.setText("Price: 0");
@@ -98,7 +106,14 @@ public class MainMenu   extends JFrame {
                         if(item.getName().toLowerCase().contains(searchFor.toLowerCase())) {
                             namesList.add(item.getName());
                             priceList.add(String.valueOf(item.getPrice()));
-                            websiteList.add(item.getWebsite());
+                            if(item.getWebsite().contains("mojitech.net"))
+                                websiteList.add("mojitech.net");
+                            else if(item.getWebsite().contains("pcandparts.com"))
+                                websiteList.add("pcandparts.com");
+                            else if(item.getWebsite().contains("ayoubcomputers.com"))
+                                websiteList.add("ayoubcomputers.com");
+                            else
+                                websiteList.add("N/A");
                         }
                     }
                     ItemsWebsiteList.setSelectedIndex(0);
@@ -128,7 +143,14 @@ public class MainMenu   extends JFrame {
                             if (item.getName().toLowerCase().contains(searchFor.toLowerCase())) {
                                 namesList.add(item.getName());
                                 priceList.add(String.valueOf(item.getPrice()));
-                                websiteList.add(item.getWebsite());
+                                if(item.getWebsite().contains("mojitech.net"))
+                                    websiteList.add("mojitech.net");
+                                else if(item.getWebsite().contains("pcandparts.com"))
+                                    websiteList.add("pcandparts.com");
+                                else if(item.getWebsite().contains("ayoubcomputers.com"))
+                                    websiteList.add("ayoubcomputers.com");
+                                else
+                                    websiteList.add("N/A");
                             }
                         }
                         break;
@@ -138,7 +160,14 @@ public class MainMenu   extends JFrame {
                             if (item.getName().toLowerCase().contains(searchFor.toLowerCase())) {
                                 namesList.add(item.getName());
                                 priceList.add(String.valueOf(item.getPrice()));
-                                websiteList.add(item.getWebsite());
+                                if(item.getWebsite().contains("mojitech.net"))
+                                    websiteList.add("mojitech.net");
+                                else if(item.getWebsite().contains("pcandparts.com"))
+                                    websiteList.add("pcandparts.com");
+                                else if(item.getWebsite().contains("ayoubcomputers.com"))
+                                    websiteList.add("ayoubcomputers.com");
+                                else
+                                    websiteList.add("N/A");
                             }
                         }
                         break;
@@ -158,12 +187,17 @@ public class MainMenu   extends JFrame {
             @Override
             public void mouseWheelMoved(MouseWheelEvent e) {
                 if(ItemsNameList.getSelectedIndex() > 0 || e.getWheelRotation() > 0) {
-                    ItemsNameList.setSelectedIndex(ItemsNameList.getSelectedIndex() + ((e.getScrollAmount() * e.getWheelRotation()) / 2));
-                    ItemsNameList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
-                    ItemsPriceList.setSelectedIndex(ItemsNameList.getSelectedIndex());
-                    ItemsPriceList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
-                    ItemsWebsiteList.setSelectedIndex(ItemsNameList.getSelectedIndex());
-                    ItemsWebsiteList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
+                    try {
+                        ItemsNameList.setSelectedIndex(ItemsNameList.getSelectedIndex() + ((e.getScrollAmount() * e.getWheelRotation()) / 2));
+                        ItemsNameList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
+                        ItemsPriceList.setSelectedIndex(ItemsNameList.getSelectedIndex());
+                        ItemsPriceList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
+                        ItemsWebsiteList.setSelectedIndex(ItemsNameList.getSelectedIndex());
+                        ItemsWebsiteList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
+                    }
+                    catch (Exception exception) {
+                        System.out.println("Error in scrolling");
+                    }
                 }
             }
         });
@@ -294,6 +328,9 @@ public class MainMenu   extends JFrame {
                             else if(pcAndParts.getItems()[i].get(a).getName().contains("Tax included")) {
                                 pcAndParts.getItems()[i].get(a).setName(pcAndParts.getItems()[i].get(a).getName().replace("Tax included",""));
                             }
+                            else if(pcAndParts.getItems()[i].get(a).getName().contains("(TAX included)")) {
+                                pcAndParts.getItems()[i].get(a).setName(pcAndParts.getItems()[i].get(a).getName().replace("(TAX included)",""));
+                            }
                             else {
                                 pcAndParts.getItems()[i].get(a).setPrice(pcAndParts.getItems()[i].get(a).getPrice() * 1.11);
                                 pcAndParts.getItems()[i].get(a).setPrice(Math.round(pcAndParts.getItems()[i].get(a).getPrice() * 100.0) / 100.0);
@@ -320,14 +357,12 @@ public class MainMenu   extends JFrame {
                     ItemsPriceList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex() + 1);
                     ItemsWebsiteList.setSelectedIndex(ItemsNameList.getSelectedIndex() + 1);
                     ItemsWebsiteList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex() + 1);
-                    System.out.println("Down");
                 }
                 else if(e.getKeyCode() == 38) {
                     ItemsPriceList.setSelectedIndex(ItemsNameList.getSelectedIndex() - 1);
                     ItemsPriceList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex() - 1);
                     ItemsWebsiteList.setSelectedIndex(ItemsNameList.getSelectedIndex() - 1);
                     ItemsWebsiteList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex() - 1);
-                    System.out.println("Up");
                 }
                 else if(e.getKeyCode() == KeyEvent.VK_ENTER) {
                     switch (category) {
@@ -380,8 +415,38 @@ public class MainMenu   extends JFrame {
                             totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
                             break;
                     }
-                    System.out.println("Enter");
                 }
+            }
+        });
+        ItemsNameList.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                ItemsNameList.setSelectedIndex(ItemsNameList.getSelectedIndex());
+                ItemsNameList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
+                ItemsPriceList.setSelectedIndex(ItemsNameList.getSelectedIndex());
+                ItemsPriceList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
+                ItemsWebsiteList.setSelectedIndex(ItemsNameList.getSelectedIndex());
+                ItemsWebsiteList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
+                super.mouseClicked(e);
+                if(index == ItemsNameList.getSelectedIndex()) {
+                    Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                    try {
+                        URI uri = new URI(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)).getWebsite());
+                        desktop.browse(uri);
+                    } catch (URISyntaxException | IOException ex) {
+                        System.out.println("Could not open website");
+                    }
+
+                }
+                else {
+                    index = ItemsNameList.getSelectedIndex();
+                }
+            }
+        });
+        savePCButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
             }
         });
     }
@@ -422,7 +487,14 @@ public class MainMenu   extends JFrame {
             for (item item: allItems.getAllItems()[i]) {
                 namesList.add(item.getName());
                 priceList.add(String.valueOf(item.getPrice()));
-                websiteList.add(item.getWebsite());
+                if(item.getWebsite().contains("mojitech.net"))
+                    websiteList.add("mojitech.net");
+                else if(item.getWebsite().contains("pcandparts.com"))
+                    websiteList.add("pcandparts.com");
+                else if(item.getWebsite().contains("ayoubcomputers.com"))
+                    websiteList.add("ayoubcomputers.com");
+                else
+                    websiteList.add("N/A");
             }
         }
         ItemsWebsiteList.setSelectedIndex(0);
@@ -442,7 +514,14 @@ public class MainMenu   extends JFrame {
         for (item item: allItems.getAllItems()[choice]) {
             namesList.add(item.getName());
             priceList.add(String.valueOf(item.getPrice()));
-            websiteList.add(item.getWebsite());
+            if(item.getWebsite().contains("mojitech.net"))
+                websiteList.add("mojitech.net");
+            else if(item.getWebsite().contains("pcandparts.com"))
+                websiteList.add("pcandparts.com");
+            else if(item.getWebsite().contains("ayoubcomputers.com"))
+                websiteList.add("ayoubcomputers.com");
+            else
+                websiteList.add("N/A");
         }
         ItemsWebsiteList.setSelectedIndex(0);
         ItemsWebsiteList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
