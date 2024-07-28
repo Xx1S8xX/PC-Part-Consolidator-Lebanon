@@ -153,4 +153,65 @@ public class Read {
         }
         return new PCandParts(items);
     }
+    public ArrayList<PCBuild> readPcBuilds(AllItems allItems) throws FileNotFoundException {
+        ArrayList<PCBuild> builds = new ArrayList<>();
+        ArrayList<String> data = readData();
+        for(int i = 0; i < data.size(); i += 9) {
+			if(data.get(i+3).equals("N/A") && data.get(i+8).equals("N/A")) {
+				builds.add(new PCBuild(
+						data.get(i),
+						allItems.getAllItems()[0].get(allItems.searchForName(data.get(i+1),0)),
+						allItems.getAllItems()[1].get(allItems.searchForName(data.get(i+2),1)),
+						new item("N/A",0,"N/A"),
+						allItems.getAllItems()[3].get(allItems.searchForName(data.get(i+4),3)),
+						allItems.getAllItems()[4].get(allItems.searchForName(data.get(i+5),4)),
+						allItems.getAllItems()[5].get(allItems.searchForName(data.get(i+6),5)),
+						allItems.getAllItems()[6].get(allItems.searchForName(data.get(i+7),6)),
+						new item("N/A",0,"N/A")
+						)
+				);
+			}
+	        else if(data.get(i+8).equals("N/A")) {
+		        builds.add(new PCBuild(
+						data.get(i),
+				        allItems.getAllItems()[0].get(allItems.searchForName(data.get(i+1),0)),
+				        allItems.getAllItems()[1].get(allItems.searchForName(data.get(i+2),1)),
+				        allItems.getAllItems()[2].get(allItems.searchForName(data.get(i + 3), 2)),
+				        allItems.getAllItems()[3].get(allItems.searchForName(data.get(i+4),3)),
+				        allItems.getAllItems()[4].get(allItems.searchForName(data.get(i+5),4)),
+				        allItems.getAllItems()[5].get(allItems.searchForName(data.get(i+6),5)),
+				        allItems.getAllItems()[6].get(allItems.searchForName(data.get(i+7),6)),
+				        new item("N/A",0,"N/A")
+				        )
+		        );
+	        }
+	        else if(data.get(i+3).equals("N/A")) {
+		        builds.add(new PCBuild(
+				        data.get(i),
+				        allItems.getAllItems()[0].get(allItems.searchForName(data.get(i+1),0)),
+				        allItems.getAllItems()[1].get(allItems.searchForName(data.get(i+2),1)),
+				        new item("N/A",0,"N/A"),
+				        allItems.getAllItems()[3].get(allItems.searchForName(data.get(i+4),3)),
+				        allItems.getAllItems()[4].get(allItems.searchForName(data.get(i+5),4)),
+				        allItems.getAllItems()[5].get(allItems.searchForName(data.get(i+6),5)),
+				        allItems.getAllItems()[6].get(allItems.searchForName(data.get(i+7),6)),
+				        allItems.getAllItems()[7].get(allItems.searchForName(data.get(i+8),7)))
+		        );
+	        }
+			else {
+		        builds.add(new PCBuild(
+				        data.get(i),
+				        allItems.getAllItems()[0].get(allItems.searchForName(data.get(i + 1), 0)),
+				        allItems.getAllItems()[1].get(allItems.searchForName(data.get(i + 2), 1)),
+				        allItems.getAllItems()[2].get(allItems.searchForName(data.get(i + 3), 2)),
+				        allItems.getAllItems()[3].get(allItems.searchForName(data.get(i + 4), 3)),
+				        allItems.getAllItems()[4].get(allItems.searchForName(data.get(i + 5), 4)),
+				        allItems.getAllItems()[5].get(allItems.searchForName(data.get(i + 6), 5)),
+				        allItems.getAllItems()[6].get(allItems.searchForName(data.get(i + 7), 6)),
+				        allItems.getAllItems()[7].get(allItems.searchForName(data.get(i + 8), 7)))
+		        );
+	        }
+        }
+        return builds;
+    }
 }

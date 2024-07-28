@@ -51,17 +51,19 @@ public class Main {
             System.out.println("No File Found");
             mojitech = new Mojitech(mojitechItems);
         }
-
         // Saved PCs Stuff
+        AllItems allItems = new AllItems(ayoubComputers, mojitech, pcAndParts);
         File savedPCsFile = new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt");
         Save savedPCsSave = new Save(savedPCsFile);
         Read savedPCsRead = new Read(savedPCsFile);
+        ArrayList<PCBuild> pcBuilds = savedPCsRead.readPcBuilds(allItems);
 
 
 
+        savedPCsSave.saveAllPcBuilds(pcBuilds);
         pcAndPartsSave.saveAllPcAndPartsItems(pcAndParts);
         mojitechSave.saveAllMojitechItems(mojitech);
         ayoubSave.saveAllAyoubItems(ayoubComputers);
-        MainMenu mainMenu = new MainMenu(ayoubComputers,mojitech,pcAndParts);
+        MainMenu mainMenu = new MainMenu(ayoubComputers,mojitech,pcAndParts,pcBuilds);
     }
 }
