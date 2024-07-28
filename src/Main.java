@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ public class Main {
         // 6: Storage
         // 7: Cooling
         // Ayoub Stuff
-        File ayoubFile = new File("ayoubFile.txt");
+        File ayoubFile = new File(System.getProperty("user.home") + System.getProperty("file.separator") + "ayoubComputers.txt");
         Save ayoubSave = new Save(ayoubFile);
         Read ayoubRead = new Read(ayoubFile);
         ArrayList<item>[] ayoubItems = (ArrayList<item>[]) new ArrayList[8];
@@ -25,7 +26,7 @@ public class Main {
             ayoubComputers = new AyoubComputers(ayoubItems);
         }
         // PC and Parts Stuff
-        File pcAndPartsFile = new File("pcAndPartsFile.txt");
+        File pcAndPartsFile = new File(System.getProperty("user.home") + System.getProperty("file.separator") + "pcAndParts.txt");
         Save pcAndPartsSave = new Save(pcAndPartsFile);
         Read pcAndPartsRead = new Read(pcAndPartsFile);
         ArrayList<item>[] pcAndPartsItems = (ArrayList<item>[]) new ArrayList[8];
@@ -38,7 +39,7 @@ public class Main {
             pcAndParts = new PCandParts(pcAndPartsItems);
         }
         // Mojitech Stuff
-        File mojitechFile = new File("mojitechFile.txt");
+        File mojitechFile = new File(System.getProperty("user.home") + System.getProperty("file.separator") + "mojitech.txt");
         Save mojitechSave = new Save(mojitechFile);
         Read mojitechRead = new Read(mojitechFile);
         ArrayList<item>[] mojitechItems = (ArrayList<item>[]) new ArrayList[8];
