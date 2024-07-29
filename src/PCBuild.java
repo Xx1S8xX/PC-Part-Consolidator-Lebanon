@@ -8,9 +8,7 @@ public class PCBuild {
     private item Cooler;
     private item Ram;
     private item Storage;
-    private String buildName;
-    public PCBuild(String name,item powerSupply,item cpu, item gpu, item ram, item motherboard, item Case, item storage, item cooler) {
-        this.buildName = name;
+    public PCBuild(item powerSupply,item cpu, item gpu, item ram, item motherboard, item Case, item storage, item cooler) {
         this.PowerSupply = powerSupply;
         this.Cpu = cpu;
         this.Gpu = gpu;
@@ -19,12 +17,6 @@ public class PCBuild {
         this.Cooler = cooler;
         this.Case = Case;
         this.Motherboard = motherboard;
-    }
-    public String getBuildName() {
-        return buildName;
-    }
-    public void setBuildName(String buildName) {
-        this.buildName = buildName;
     }
     public double getPriceOfBuild() {
         double price = 0;
@@ -125,6 +117,12 @@ public class PCBuild {
     }
     public void setRam(item ram) {
         this.Ram = ram;
+    }
+    public String getPartNames(ArrayList<item> items) {
+        StringBuilder names = new StringBuilder();
+        for (item item : items)
+            names.append(item.getName()).append(" ");
+        return names.toString();
     }
     @Override
     public String toString() {
