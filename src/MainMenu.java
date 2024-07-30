@@ -59,7 +59,7 @@ public class MainMenu   extends JFrame {
         setContentPane(MainMenu);
         AllItems allItems = new AllItems(ayoubComputers, mojitech, pcAndParts);
         setVisible(true);
-        setSize(1400,1100);
+        setSize(1920,1080);
         setResizable(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         showCategory(0,allItems);
@@ -391,49 +391,49 @@ public class MainMenu   extends JFrame {
                     switch (category) {
                         case 0:
                             pcBuild.setPowerSupply(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
-                            powerSupplyLabel.setText("Power Supply: " + pcBuild.getPowerSupply().getName());
+                            powerSupplyLabel.setText("<html>" + "Power Supply: " + pcBuild.getPowerSupply().getName() + "</html>");
                             powerSupplyPriceLabel.setText("Price: " + pcBuild.getPowerSupply().getPrice());
                             totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
                             break;
                         case 1:
                             pcBuild.setCpu(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
-                            cpuLabel.setText("CPU: " + pcBuild.getCpu().getName());
+                            cpuLabel.setText("<html>" + "CPU: " + pcBuild.getCpu().getName() + "</html>");
                             cpuPriceLabel.setText("Price: " + pcBuild.getCpu().getPrice());
                             totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
                             break;
                         case 2:
                             pcBuild.setGpu(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
-                            gpuLabel.setText("GPU: " + pcBuild.getGpu().getName());
+                            gpuLabel.setText("<html>" + "GPU: " + pcBuild.getGpu().getName() + "</html>");
                             gpuPriceLabel.setText("Price: " + pcBuild.getGpu().getPrice());
                             totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
                             break;
                         case 3:
                             pcBuild.setRam(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
-                            ramLabel.setText("RAM: " + pcBuild.getRam().getName());
+                            ramLabel.setText("<html>" + "RAM: " + pcBuild.getRam().getName() + "</html>");
                             ramPriceLabel.setText("Price: " + pcBuild.getRam().getPrice());
                             totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
                             break;
                         case 4:
                             pcBuild.setMotherboard(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
-                            motherboardLabel.setText("Motherboard: " + pcBuild.getMotherboard().getName());
+                            motherboardLabel.setText("<html>" + "Motherboard: " + pcBuild.getMotherboard().getName() + "</html>");
                             motherboardPriceLabel.setText("Price: " + pcBuild.getMotherboard().getPrice());
                             totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
                             break;
                         case 5:
                             pcBuild.setCase(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
-                            caseLabel.setText("Case: " + pcBuild.getCase().getName());
+                            caseLabel.setText("<html>" + "Case: " + pcBuild.getCase().getName() + "</html>");
                             casePriceLabel.setText("Price: " + pcBuild.getCase().getPrice());
                             totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
                             break;
                         case 6:
                             pcBuild.setStorage(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
-                            storageLabel.setText("Storage: " + pcBuild.getStorage().getName());
+                            storageLabel.setText("<html>" + "Storage: " + pcBuild.getStorage().getName() + "</html>");
                             storagePriceLabel.setText("Price: " + pcBuild.getStorage().getPrice());
                             totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
                             break;
                         case 7:
                             pcBuild.setCooler(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
-                            coolerLabel.setText("Cooler: " + pcBuild.getCooler().getName());
+                            coolerLabel.setText("<html>" + "Cooler: " + pcBuild.getCooler().getName() + "</html>");
                             coolingPriceLabel.setText("Price: " + pcBuild.getCooler().getPrice());
                             totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
                             break;
@@ -641,23 +641,23 @@ public class MainMenu   extends JFrame {
                         builds = read.readPcBuilds(allItems);
                         currentPcName.setText("PC Name: " + builds.get(index2).getName());
                         pcNameTextField.setText(builds.get(index2).getName());
-                        powerSupplyLabel.setText("Power Supply: " + builds.get(index2).getPowerSupply().getName());
-                        powerSupplyPriceLabel.setText("Price: " + builds.get(index2).getPowerSupply().getPrice());
-                        cpuLabel.setText("CPU: " + builds.get(index2).getCpu().getName());
-                        cpuPriceLabel.setText("Price: " + builds.get(index2).getCpu().getPrice());
-                        gpuLabel.setText("GPU: " + builds.get(index2).getGpu().getName());
-                        gpuPriceLabel.setText("Price: " + builds.get(index2).getGpu().getPrice());
-                        ramLabel.setText("RAM: " + builds.get(index2).getRam().getName());
-                        ramPriceLabel.setText("Price: " + builds.get(index2).getRam().getPrice());
-                        motherboardLabel.setText("Motherboard: " + builds.get(index2).getMotherboard().getName());
-                        motherboardPriceLabel.setText("Price: " + builds.get(index2).getMotherboard().getPrice());
-                        caseLabel.setText("Case: " + builds.get(index2).getCase().getName());
-                        casePriceLabel.setText("Price: " + builds.get(index2).getCase().getPrice());
-                        storageLabel.setText("Storage: " + builds.get(index2).getStorage().getName());
-                        storagePriceLabel.setText("Price: " + builds.get(index2).getStorage().getPrice());
-                        coolerLabel.setText("Cooler: " + builds.get(index2).getCooler().getName());
-                        coolingPriceLabel.setText("Price: " + builds.get(index2).getCooler().getPrice());
-                        totalPriceLabel.setText("Total Price: " + Math.round(builds.get(index2).getPriceOfBuild()*10)/10);
+                        powerSupplyLabel.setText("<html>" + "Power Supply: " + builds.get(index2).getPowerSupply().getName() + "</html>");
+                        powerSupplyPriceLabel.setText("<html>" + "Price: " + builds.get(index2).getPowerSupply().getPrice() + "</html>");
+                        cpuLabel.setText("<html>" + "CPU: " + builds.get(index2).getCpu().getName() + "</html>");
+                        cpuPriceLabel.setText("<html>" + "Price: " + builds.get(index2).getCpu().getPrice() + "</html>");
+                        gpuLabel.setText("<html>" + "GPU: " + builds.get(index2).getGpu().getName() + "</html>");
+                        gpuPriceLabel.setText("<html>" + "Price: " + builds.get(index2).getGpu().getPrice() + "</html>");
+                        ramLabel.setText("<html>" + "RAM: " + builds.get(index2).getRam().getName() + "</html>");
+                        ramPriceLabel.setText("<html>" + "Price: " + builds.get(index2).getRam().getPrice() + "</html>");
+                        motherboardLabel.setText("<html>" + "Motherboard: " + builds.get(index2).getMotherboard().getName() + "</html>");
+                        motherboardPriceLabel.setText("<html>" + "Price: " + builds.get(index2).getMotherboard().getPrice() + "</html>");
+                        caseLabel.setText("<html>" + "Case: " + builds.get(index2).getCase().getName() + "</html>");
+                        casePriceLabel.setText("<html>" + "Price: " + builds.get(index2).getCase().getPrice() + "</html>");
+                        storageLabel.setText("<html>" + "Storage: " + builds.get(index2).getStorage().getName() + "</html>");
+                        storagePriceLabel.setText("<html>" + "Price: " + builds.get(index2).getStorage().getPrice() + "</html>");
+                        coolerLabel.setText("<html>" + "Cooler: " + builds.get(index2).getCooler().getName() + "</html>");
+                        coolingPriceLabel.setText("<html>" + "Price: " + builds.get(index2).getCooler().getPrice() + "</html>");
+                        totalPriceLabel.setText("<html>" + "Total Price: " + Math.round(builds.get(index2).getPriceOfBuild()*10)/10 + "</html>");
 	                } catch (FileNotFoundException ex) {
 		                throw new RuntimeException(ex);
 	                }

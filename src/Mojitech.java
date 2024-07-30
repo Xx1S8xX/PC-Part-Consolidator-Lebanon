@@ -58,26 +58,21 @@ public class Mojitech {
     }
     public void getAllItemMojitech() throws IOException {
         ArrayList<item> temp;
-
         // Power Supplies
         this.items[0] = getItemMojitech(this.urls[0]);
         System.out.println("Power Supplies MOJITECH");
-
         // CPUs
         this.items[1] = getItemMojitech(this.urls[1]);
         temp = getItemMojitech(urls[2]);
         for(item item:temp)
             items[1].add(item);
         System.out.println("CPUs MOJITECH");
-
         // GPUs
         this.items[2] = getItemMojitech(this.urls[3]);
         System.out.println("GPUs MOJITECH");
-
         // RAMs
         this.items[3] = getItemMojitech(this.urls[4]);
         System.out.println("RAMs MOJITECH");
-
         // Motherboards
         this.items[4] = getItemMojitech(this.urls[5]);
         temp = getItemMojitech(urls[6]);
@@ -87,14 +82,12 @@ public class Mojitech {
         for(item item:temp)
             items[4].add(item);
         System.out.println("Motherboards MOJITECH");
-
         // Cases
         this.items[5] = getItemMojitech(this.urls[8]);
         temp = getItemMojitech(urls[9]);
         for(item item:temp)
             items[5].add(item);
         System.out.println("Cases MOJITECH");
-
         // Storage
         this.items[6] = getItemMojitech(this.urls[9]);
         temp = getItemMojitech(urls[10]);
@@ -104,7 +97,6 @@ public class Mojitech {
         for(item item:temp)
             items[6].add(item);
         System.out.println("Storage MOJITECH");
-
         //Cooling
         this.items[7] = getItemMojitech(this.urls[12]);
         temp = getItemMojitech(urls[13]);

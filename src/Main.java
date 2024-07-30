@@ -51,7 +51,6 @@ public class Main {
             System.out.println("No File Found");
             mojitech = new Mojitech(mojitechItems);
         }
-
         // Saved PCs Stuff
         AllItems allItems = new AllItems(ayoubComputers,mojitech,pcAndParts);
         File savedPCsFile = new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt");
@@ -64,8 +63,6 @@ public class Main {
         catch (Exception exception) {
             savedPCsSave.savePcBuilds(builds);
         }
-
-
         pcAndPartsSave.saveAllPcAndPartsItems(pcAndParts);
         mojitechSave.saveAllMojitechItems(mojitech);
         ayoubSave.saveAllAyoubItems(ayoubComputers);

@@ -57,38 +57,30 @@ public class PCandParts {
     }
     public void getAllItemPCandParts() throws IOException {
         ArrayList<item> temp;
-
         // Power Supplies
         this.items[0] = getItemPCandParts(this.urls[0]);
         System.out.println("Power Supplies PC and Parts");
-
         // CPUs
         this.items[1] = getItemPCandParts(this.urls[1]);
         System.out.println("CPUs PC and Parts");
-
         // GPUs
         this.items[2] = getItemPCandParts(this.urls[2]);
         System.out.println("GPUs PC and Parts");
-
         // RAMs
         this.items[3] = getItemPCandParts(this.urls[3]);
         System.out.println("RAMs PC and Parts");
-
         // Motherboards
         this.items[4] = getItemPCandParts(this.urls[4]);
         System.out.println("Motherboards PC and Parts");
-
         // Cases
         this.items[5] = getItemPCandParts(this.urls[5]);
         System.out.println("Cases PC and Parts");
-
         // Storage
         this.items[6] = getItemPCandParts(this.urls[6]);
         temp = getItemPCandParts(urls[7]);
         for(item item:temp)
             items[6].add(item);
         System.out.println("Storage PC and Parts");
-
         //Cooling
         this.items[7] = getItemPCandParts(this.urls[8]);
         temp = getItemPCandParts(urls[9]);
