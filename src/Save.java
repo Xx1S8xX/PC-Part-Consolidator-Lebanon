@@ -136,4 +136,27 @@ public class Save {
         }
         pw.close();
     }
+    public void savePcBuilds(ArrayList<PCBuild> builds) throws FileNotFoundException {
+        PrintWriter pw = new PrintWriter(file);
+        for(PCBuild build: builds) {
+            pw.println(build.getName());
+            if(build.getPowerSupply() == null) pw.println("N/A");
+            else pw.println(build.getPowerSupply().getName());
+            if(build.getCpu() == null) pw.println("N/A");
+            else pw.println(build.getCpu().getName());
+            if(build.getGpu() == null) pw.println("N/A");
+            else pw.println(build.getGpu().getName());
+            if(build.getRam() == null) pw.println("N/A");
+            else pw.println(build.getRam().getName());
+            if(build.getMotherboard() == null) pw.println("N/A");
+            else pw.println(build.getMotherboard().getName());
+            if(build.getCase() == null) pw.println("N/A");
+            else pw.println(build.getCase().getName());
+            if(build.getStorage() == null) pw.println("N/A");
+            else pw.println(build.getStorage().getName());
+            if(build.getCooler() == null) pw.println("N/A");
+            else pw.println(build.getCooler().getName());
+        }
+        pw.close();
+    }
 }

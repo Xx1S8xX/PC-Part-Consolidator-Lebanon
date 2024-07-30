@@ -1,5 +1,7 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Objects;
+
 public class Read {
     private final File file;
     public Read(File file) throws FileNotFoundException {
@@ -152,5 +154,49 @@ public class Read {
             counter += 4;
         }
         return new PCandParts(items);
+    }
+    public ArrayList<PCBuild> readPcBuilds(AllItems allItems) throws FileNotFoundException {
+        FileReader fr = new FileReader(file);
+        BufferedReader br = new BufferedReader(fr);
+        ArrayList<PCBuild> builds = new ArrayList<>();
+        ArrayList<String> data = readData();
+        for(int i = 0; i < data.size(); i += 9) {
+            item PowerSupply;
+            item Cpu;
+            item Gpu;
+            item Ram;
+            item Motherboard;
+            item Case;
+            item Storage;
+            item Cooler;
+            if(Objects.equals(data.get(i + 1), "N/A")) PowerSupply = new item("N/A",0,"N/A");
+            else PowerSupply = allItems.getAllItems()[0].get(allItems.searchForName(data.get(i+1),0));
+            if(Objects.equals(data.get(i + 2), "N/A")) Cpu = new item("N/A",0,"N/A");
+            else Cpu = allItems.getAllItems()[1].get(allItems.searchForName(data.get(i+2),1));
+            if(Objects.equals(data.get(i + 3), "N/A")) Gpu = new item("N/A",0,"N/A");
+            else Gpu = allItems.getAllItems()[2].get(allItems.searchForName(data.get(i+3),2));
+            if(Objects.equals(data.get(i + 4), "N/A")) Ram = new item("N/A",0,"N/A");
+            else Ram = allItems.getAllItems()[3].get(allItems.searchForName(data.get(i+4),3));
+            if(Objects.equals(data.get(i + 5), "N/A")) Motherboard = new item("N/A",0,"N/A");
+            else Motherboard = allItems.getAllItems()[4].get(allItems.searchForName(data.get(i+5),4));
+            if(Objects.equals(data.get(i + 6), "N/A")) Case = new item("N/A",0,"N/A");
+            else Case = allItems.getAllItems()[5].get(allItems.searchForName(data.get(i+6),5));
+            if(Objects.equals(data.get(i + 7), "N/A")) Storage = new item("N/A",0,"N/A");
+            else Storage = allItems.getAllItems()[6].get(allItems.searchForName(data.get(i+7),6));
+            if(Objects.equals(data.get(i + 8), "N/A")) Cooler = new item("N/A",0,"N/A");
+            else Cooler = allItems.getAllItems()[7].get(allItems.searchForName(data.get(i+8),7));
+            builds.add(new PCBuild(
+                    data.get(i),
+                    PowerSupply,
+                    Cpu,
+                    Gpu,
+                    Ram,
+                    Motherboard,
+                    Case,
+                    Storage,
+                    Cooler
+            ));
+        }
+        return builds;
     }
 }

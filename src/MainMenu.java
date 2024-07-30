@@ -2,10 +2,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Arrays;
+
 public class MainMenu   extends JFrame {
     private JTextField searchName;
     private JComboBox categoryChoice;
@@ -14,7 +17,6 @@ public class MainMenu   extends JFrame {
     private JComboBox sortBy;
     private JPanel MainMenu;
     private JButton UpdateSources;
-    private JTextArea textArea1;
     private JList ItemsNameList;
     private JList ItemsPriceList;
     private JList ItemsWebsiteList;
@@ -38,22 +40,30 @@ public class MainMenu   extends JFrame {
     private JLabel casePriceLabel;
     private JLabel storagePriceLabel;
     private JLabel coolingPriceLabel;
+    private JList pcBuilds;
+    private JButton deletePCButton;
+    private JTextField pcNameTextField;
+    private JLabel currentPcName;
     private int category;
     private String searchFor;
-    private int clicks;
     private int index;
-    public MainMenu(AyoubComputers ayoubComputers, Mojitech mojitech, PCandParts pcAndParts) {
-        clicks = 0;
+    private int index2;
+    private PCBuild pcBuild;
+    private ArrayList<PCBuild> builds;
+    public MainMenu(AyoubComputers ayoubComputers, Mojitech mojitech, PCandParts pcAndParts, ArrayList<PCBuild> Builds) {
         index = -1;
+        index2 = -1;
         searchFor = " ";
+        builds = Builds;
+        pcBuilds.setListData(getPCNames(builds));
         setContentPane(MainMenu);
         AllItems allItems = new AllItems(ayoubComputers, mojitech, pcAndParts);
         setVisible(true);
-        setSize(1000,800);
+        setSize(1400,1100);
         setResizable(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         showCategory(0,allItems);
-        PCBuild pcBuild = new PCBuild(null, null, null, null, null, null, null, null);
+        pcBuild = new PCBuild(null, null, null, null, null, null, null, null, null);
         powerSupplyLabel.setText("Power Supply:");
         powerSupplyPriceLabel.setText("Price: 0");
         cpuLabel.setText("CPU:");
@@ -66,9 +76,9 @@ public class MainMenu   extends JFrame {
         motherboardPriceLabel.setText("Price: 0");
         caseLabel.setText("Case:");
         casePriceLabel.setText("Price: 0");
-        storageLabel.setText("Storage");
+        storageLabel.setText("Storage:");
         storagePriceLabel.setText("Price: 0");
-        coolerLabel.setText("Cooler");
+        coolerLabel.setText("Cooler:");
         coolingPriceLabel.setText("Price: 0");
         totalPriceLabel.setText("Total Price: 0");
         categoryChoice.addItem("Power Supply");
@@ -89,6 +99,7 @@ public class MainMenu   extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 category = categoryChoice.getSelectedIndex();
                 showCategory(category,allItems);
+                index = -1;
             }
         });
         searchName.addActionListener(new ActionListener() {
@@ -337,11 +348,23 @@ public class MainMenu   extends JFrame {
                             }
                         }
                     }
+                    AllItems allItems = new AllItems(ayoubComputers,mojitech,pcAndParts);
+                    File savedPCsFile = new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt");
+                    Save savedPCsSave = new Save(savedPCsFile);
+                    Read savedPCsRead = new Read(savedPCsFile);
+                    ArrayList<PCBuild> builds = new ArrayList<>();
+                    try {
+                        builds = savedPCsRead.readPcBuilds(allItems);
+                    }
+                    catch (Exception exception) {
+                        savedPCsSave.savePcBuilds(builds);
+                    }
+
                     pcAndPartsSave.saveAllPcAndPartsItems(pcAndParts);
                     mojitechSave.saveAllMojitechItems(mojitech);
                     ayoubSave.saveAllAyoubItems(ayoubComputers);
                     dispose();
-                    new MainMenu(ayoubComputers,mojitech,pcAndParts);
+                    new MainMenu(ayoubComputers,mojitech,pcAndParts,builds);
                 }
                 catch (Exception ex) {
                     System.out.println("Error in updating sources");
@@ -429,8 +452,8 @@ public class MainMenu   extends JFrame {
                 ItemsWebsiteList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
                 super.mouseClicked(e);
                 if(index == ItemsNameList.getSelectedIndex()) {
-                    Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
                     try {
+                        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
                         URI uri = new URI(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)).getWebsite());
                         desktop.browse(uri);
                     } catch (URISyntaxException | IOException ex) {
@@ -443,10 +466,205 @@ public class MainMenu   extends JFrame {
                 }
             }
         });
+        powerSupplyLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                try {
+                    Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                    URI uri = new URI(pcBuild.getPowerSupply().getWebsite());
+                    desktop.browse(uri);
+                } catch (URISyntaxException | IOException ex) {
+                    System.out.println("Could not open website");
+                }
+            }
+        });
+        cpuLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                try {
+                    Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                    URI uri = new URI(pcBuild.getCpu().getWebsite());
+                    desktop.browse(uri);
+                } catch (URISyntaxException | IOException ex) {
+                    System.out.println("Could not open website");
+                }
+            }
+        });
+        gpuLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                try {
+                    Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                    URI uri = new URI(pcBuild.getGpu().getWebsite());
+                    desktop.browse(uri);
+                } catch (URISyntaxException | IOException ex) {
+                    System.out.println("Could not open website");
+                }
+            }
+        });
+        ramLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                try {
+                    Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                    URI uri = new URI(pcBuild.getRam().getWebsite());
+                    desktop.browse(uri);
+                } catch (URISyntaxException | IOException ex) {
+                    System.out.println("Could not open website");
+                }
+            }
+        });
+        motherboardLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                try {
+                    Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                    URI uri = new URI(pcBuild.getMotherboard().getWebsite());
+                    desktop.browse(uri);
+                } catch (URISyntaxException | IOException ex) {
+                    System.out.println("Could not open website");
+                }
+            }
+        });
+        caseLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                try {
+                    Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                    URI uri = new URI(pcBuild.getCase().getWebsite());
+                    desktop.browse(uri);
+                } catch (URISyntaxException | IOException ex) {
+                    System.out.println("Could not open website");
+                }
+            }
+        });
+        storageLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                try {
+                    Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                    URI uri = new URI(pcBuild.getStorage().getWebsite());
+                    desktop.browse(uri);
+                } catch (URISyntaxException | IOException ex) {
+                    System.out.println("Could not open website");
+                }
+            }
+        });
+        coolerLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                try {
+                    Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                    URI uri = new URI(pcBuild.getCooler().getWebsite());
+                    desktop.browse(uri);
+                } catch (URISyntaxException | IOException ex) {
+                    System.out.println("Could not open website");
+                }
+            }
+        });
+        pcNameTextField.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pcBuild.setName(pcNameTextField.getText());
+                currentPcName.setText("PC Name: "+pcBuild.getName());
+            }
+        });
         savePCButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                ArrayList<String> names = new ArrayList<>(Arrays.asList(getPCNames(builds)));
+                try {
+                    if (!pcBuild.getName().isEmpty() && names.contains(pcBuilds.getName()) && names.get(names.indexOf(pcBuild.getName())).length() != pcBuild.getName().length()) {
+                        try {
+                            System.out.println("option 1");
+                            builds.add(pcBuild);
+                            Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
+                            save.savePcBuilds(builds);
+                        } catch (FileNotFoundException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                    } else if (!pcBuild.getName().isEmpty() && !names.contains(pcBuild.getName())) {
+                        try {
+                            builds.add(pcBuild);
+                            Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
+                            save.savePcBuilds(builds);
+                        } catch (FileNotFoundException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                    } else if (!pcBuild.getName().isEmpty() && names.contains(pcBuild.getName())) {
+                        try {
+                            builds.set(arrayListIndexOfString(builds, pcBuild.getName()), pcBuild);
+                            Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
+                            save.savePcBuilds(builds);
+                        } catch (FileNotFoundException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                    }
+                    pcBuilds.setListData(getPCNames(builds));
+                }
+                catch (Exception exception) {
+                    System.out.println("Error when saving pcs");
+                }
+            }
+        });
+        deletePCButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    builds.remove(pcBuilds.getSelectedIndex());
+                    Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
+                    save.savePcBuilds(builds);
+                    pcBuilds.setListData(getPCNames(builds));
+                } catch (FileNotFoundException ex) {
+	                throw new RuntimeException(ex);
+                }
+            }
+        });
+        pcBuilds.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                if(index2 == pcBuilds.getSelectedIndex() && index2 != -1) {
+	                try {
+		                Read read = new Read(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
+                        pcBuild = builds.get(index2);
+                        Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
+                        save.savePcBuilds(builds);
+                        builds = read.readPcBuilds(allItems);
+                        currentPcName.setText("PC Name: " + builds.get(index2).getName());
+                        pcNameTextField.setText(builds.get(index2).getName());
+                        powerSupplyLabel.setText("Power Supply: " + builds.get(index2).getPowerSupply().getName());
+                        powerSupplyPriceLabel.setText("Price: " + builds.get(index2).getPowerSupply().getPrice());
+                        cpuLabel.setText("CPU: " + builds.get(index2).getCpu().getName());
+                        cpuPriceLabel.setText("Price: " + builds.get(index2).getCpu().getPrice());
+                        gpuLabel.setText("GPU: " + builds.get(index2).getGpu().getName());
+                        gpuPriceLabel.setText("Price: " + builds.get(index2).getGpu().getPrice());
+                        ramLabel.setText("RAM: " + builds.get(index2).getRam().getName());
+                        ramPriceLabel.setText("Price: " + builds.get(index2).getRam().getPrice());
+                        motherboardLabel.setText("Motherboard: " + builds.get(index2).getMotherboard().getName());
+                        motherboardPriceLabel.setText("Price: " + builds.get(index2).getMotherboard().getPrice());
+                        caseLabel.setText("Case: " + builds.get(index2).getCase().getName());
+                        casePriceLabel.setText("Price: " + builds.get(index2).getCase().getPrice());
+                        storageLabel.setText("Storage: " + builds.get(index2).getStorage().getName());
+                        storagePriceLabel.setText("Price: " + builds.get(index2).getStorage().getPrice());
+                        coolerLabel.setText("Cooler: " + builds.get(index2).getCooler().getName());
+                        coolingPriceLabel.setText("Price: " + builds.get(index2).getCooler().getPrice());
+                        totalPriceLabel.setText("Total Price: " + Math.round(builds.get(index2).getPriceOfBuild()*10)/10);
+	                } catch (FileNotFoundException ex) {
+		                throw new RuntimeException(ex);
+	                }
+                    index2 = -1;
+                }
+                else
+                    index2 = pcBuilds.getSelectedIndex();
             }
         });
     }
@@ -532,6 +750,23 @@ public class MainMenu   extends JFrame {
         ItemsNameList.setListData(namesList.toArray());
         ItemsPriceList.setListData(priceList.toArray());
         ItemsWebsiteList.setListData(websiteList.toArray());
-
+    }
+    public int arrayListIndexOfString(ArrayList<PCBuild> builds, String name) {
+        int index = 0;
+        for(PCBuild build: builds) {
+            if(name.equals(build.getName()))
+                return index;
+            index++;
+        }
+        return -1;
+    }
+    public String[] getPCNames(ArrayList<PCBuild> builds) {
+        String[] names = new String[builds.size()];
+        int index = 0;
+        for(PCBuild build: builds) {
+            names[index] = build.getName();
+            index ++;
+        }
+        return names;
     }
 }

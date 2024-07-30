@@ -53,15 +53,22 @@ public class Main {
         }
 
         // Saved PCs Stuff
+        AllItems allItems = new AllItems(ayoubComputers,mojitech,pcAndParts);
         File savedPCsFile = new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt");
         Save savedPCsSave = new Save(savedPCsFile);
         Read savedPCsRead = new Read(savedPCsFile);
-
+        ArrayList<PCBuild> builds = new ArrayList<>();
+        try {
+            builds = savedPCsRead.readPcBuilds(allItems);
+        }
+        catch (Exception exception) {
+            savedPCsSave.savePcBuilds(builds);
+        }
 
 
         pcAndPartsSave.saveAllPcAndPartsItems(pcAndParts);
         mojitechSave.saveAllMojitechItems(mojitech);
         ayoubSave.saveAllAyoubItems(ayoubComputers);
-        MainMenu mainMenu = new MainMenu(ayoubComputers,mojitech,pcAndParts);
+        MainMenu mainMenu = new MainMenu(ayoubComputers,mojitech,pcAndParts,builds);
     }
 }
