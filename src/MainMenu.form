@@ -95,7 +95,7 @@
       </component>
       <component id="dff5" class="javax.swing.JLabel" binding="powerSupplyLabel">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="400" height="-1"/>
             <preferred-size width="400" height="-1"/>
             <maximum-size width="400" height="-1"/>
@@ -107,19 +107,7 @@
       </component>
       <component id="69a63" class="javax.swing.JLabel" binding="powerSupplyPriceLabel">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <minimum-size width="400" height="-1"/>
-            <preferred-size width="400" height="-1"/>
-            <maximum-size width="400" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value="Label"/>
-        </properties>
-      </component>
-      <component id="3fb0" class="javax.swing.JLabel" binding="cpuLabel">
-        <constraints>
-          <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="400" height="-1"/>
             <preferred-size width="400" height="-1"/>
             <maximum-size width="400" height="-1"/>
@@ -131,7 +119,7 @@
       </component>
       <component id="ec502" class="javax.swing.JLabel" binding="cpuPriceLabel">
         <constraints>
-          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="6" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="400" height="-1"/>
             <preferred-size width="400" height="-1"/>
             <maximum-size width="400" height="-1"/>
@@ -143,7 +131,7 @@
       </component>
       <component id="f0cce" class="javax.swing.JLabel" binding="gpuLabel">
         <constraints>
-          <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="8" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="400" height="-1"/>
             <preferred-size width="400" height="-1"/>
             <maximum-size width="400" height="-1"/>
@@ -155,7 +143,7 @@
       </component>
       <component id="501d8" class="javax.swing.JLabel" binding="gpuPriceLabel">
         <constraints>
-          <grid row="9" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="9" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="400" height="-1"/>
             <preferred-size width="400" height="-1"/>
             <maximum-size width="400" height="-1"/>
@@ -167,19 +155,7 @@
       </component>
       <component id="49652" class="javax.swing.JLabel" binding="ramLabel">
         <constraints>
-          <grid row="11" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <minimum-size width="400" height="-1"/>
-            <preferred-size width="400" height="-1"/>
-            <maximum-size width="400" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value="Label"/>
-        </properties>
-      </component>
-      <component id="b0fab" class="javax.swing.JLabel" binding="ramPriceLabel">
-        <constraints>
-          <grid row="12" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="11" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="400" height="-1"/>
             <preferred-size width="400" height="-1"/>
             <maximum-size width="400" height="-1"/>
@@ -191,7 +167,7 @@
       </component>
       <component id="23972" class="javax.swing.JLabel" binding="motherboardLabel">
         <constraints>
-          <grid row="14" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="14" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="400" height="-1"/>
             <preferred-size width="400" height="-1"/>
             <maximum-size width="400" height="-1"/>
@@ -203,19 +179,7 @@
       </component>
       <component id="e64c2" class="javax.swing.JLabel" binding="motherboardPriceLabel">
         <constraints>
-          <grid row="15" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <minimum-size width="400" height="-1"/>
-            <preferred-size width="400" height="-1"/>
-            <maximum-size width="400" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value="Label"/>
-        </properties>
-      </component>
-      <component id="dd2fc" class="javax.swing.JLabel" binding="caseLabel">
-        <constraints>
-          <grid row="17" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="15" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="400" height="-1"/>
             <preferred-size width="400" height="-1"/>
             <maximum-size width="400" height="-1"/>
@@ -227,7 +191,7 @@
       </component>
       <component id="c68bf" class="javax.swing.JLabel" binding="casePriceLabel">
         <constraints>
-          <grid row="18" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="18" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="400" height="-1"/>
             <preferred-size width="400" height="-1"/>
             <maximum-size width="400" height="-1"/>
@@ -239,7 +203,7 @@
       </component>
       <component id="baed6" class="javax.swing.JLabel" binding="storageLabel">
         <constraints>
-          <grid row="20" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="20" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="400" height="-1"/>
             <preferred-size width="400" height="-1"/>
             <maximum-size width="400" height="-1"/>
@@ -251,7 +215,7 @@
       </component>
       <component id="a5630" class="javax.swing.JLabel" binding="storagePriceLabel">
         <constraints>
-          <grid row="21" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="21" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="400" height="-1"/>
             <preferred-size width="400" height="-1"/>
             <maximum-size width="400" height="-1"/>
@@ -263,7 +227,7 @@
       </component>
       <component id="8e47" class="javax.swing.JLabel" binding="coolerLabel">
         <constraints>
-          <grid row="23" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="23" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="400" height="-1"/>
             <preferred-size width="400" height="-1"/>
             <maximum-size width="400" height="-1"/>
@@ -275,7 +239,7 @@
       </component>
       <component id="5ef1d" class="javax.swing.JLabel" binding="coolingPriceLabel">
         <constraints>
-          <grid row="24" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="24" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Label"/>
@@ -291,7 +255,7 @@
       </component>
       <component id="25538" class="javax.swing.JLabel" binding="totalPriceLabel">
         <constraints>
-          <grid row="26" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="26" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Label"/>
@@ -344,11 +308,6 @@
       <vspacer id="204c5">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </vspacer>
-      <vspacer id="79fa4">
-        <constraints>
-          <grid row="7" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
       <vspacer id="ed3b3">
@@ -422,6 +381,47 @@
           </grid>
         </constraints>
         <properties/>
+      </component>
+      <vspacer id="79fa4">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="dd2fc" class="javax.swing.JLabel" binding="caseLabel">
+        <constraints>
+          <grid row="17" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="400" height="-1"/>
+            <preferred-size width="400" height="-1"/>
+            <maximum-size width="400" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="3fb0" class="javax.swing.JLabel" binding="cpuLabel">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="400" height="-1"/>
+            <preferred-size width="400" height="-1"/>
+            <maximum-size width="400" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="b0fab" class="javax.swing.JLabel" binding="ramPriceLabel">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="400" height="-1"/>
+            <preferred-size width="400" height="-1"/>
+            <maximum-size width="400" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
       </component>
     </children>
   </grid>

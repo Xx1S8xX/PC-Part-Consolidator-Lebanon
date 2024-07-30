@@ -8,7 +8,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Arrays;
-
 public class MainMenu   extends JFrame {
     private JTextField searchName;
     private JComboBox categoryChoice;
@@ -371,6 +370,64 @@ public class MainMenu   extends JFrame {
                 }
             }
         });
+        pcNameTextField.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pcBuild.setName(pcNameTextField.getText());
+                currentPcName.setText("PC Name: "+pcBuild.getName());
+            }
+        });
+        savePCButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ArrayList<String> names = new ArrayList<>(Arrays.asList(getPCNames(builds)));
+                try {
+                    if (!pcBuild.getName().isEmpty() && names.contains(pcBuilds.getName()) && names.get(names.indexOf(pcBuild.getName())).length() != pcBuild.getName().length()) {
+                        try {
+                            System.out.println("option 1");
+                            builds.add(pcBuild);
+                            Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
+                            save.savePcBuilds(builds);
+                        } catch (FileNotFoundException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                    } else if (!pcBuild.getName().isEmpty() && !names.contains(pcBuild.getName())) {
+                        try {
+                            builds.add(pcBuild);
+                            Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
+                            save.savePcBuilds(builds);
+                        } catch (FileNotFoundException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                    } else if (!pcBuild.getName().isEmpty() && names.contains(pcBuild.getName())) {
+                        try {
+                            builds.set(arrayListIndexOfString(builds, pcBuild.getName()), pcBuild);
+                            Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
+                            save.savePcBuilds(builds);
+                        } catch (FileNotFoundException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                    }
+                    pcBuilds.setListData(getPCNames(builds));
+                }
+                catch (Exception exception) {
+                    System.out.println("Error when saving pcs");
+                }
+            }
+        });
+        deletePCButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    builds.remove(pcBuilds.getSelectedIndex());
+                    Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
+                    save.savePcBuilds(builds);
+                    pcBuilds.setListData(getPCNames(builds));
+                } catch (FileNotFoundException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+        });
         ItemsNameList.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
@@ -380,12 +437,158 @@ public class MainMenu   extends JFrame {
                     ItemsPriceList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex() + 1);
                     ItemsWebsiteList.setSelectedIndex(ItemsNameList.getSelectedIndex() + 1);
                     ItemsWebsiteList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex() + 1);
+                    index = ItemsNameList.getSelectedIndex();
                 }
                 else if(e.getKeyCode() == 38) {
                     ItemsPriceList.setSelectedIndex(ItemsNameList.getSelectedIndex() - 1);
                     ItemsPriceList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex() - 1);
                     ItemsWebsiteList.setSelectedIndex(ItemsNameList.getSelectedIndex() - 1);
                     ItemsWebsiteList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex() - 1);
+                    index = ItemsNameList.getSelectedIndex();
+                }
+                else if(e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    switch (category) {
+                        case 0:
+                            pcBuild.setPowerSupply(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            powerSupplyLabel.setText("<html>" + "Power Supply: " + pcBuild.getPowerSupply().getName() + "</html>");
+                            powerSupplyPriceLabel.setText("Price: " + pcBuild.getPowerSupply().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                        case 1:
+                            pcBuild.setCpu(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            cpuLabel.setText("<html>" + "CPU: " + pcBuild.getCpu().getName() + "</html>");
+                            cpuPriceLabel.setText("Price: " + pcBuild.getCpu().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                        case 2:
+                            pcBuild.setGpu(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            gpuLabel.setText("<html>" + "GPU: " + pcBuild.getGpu().getName() + "</html>");
+                            gpuPriceLabel.setText("Price: " + pcBuild.getGpu().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                        case 3:
+                            pcBuild.setRam(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            ramLabel.setText("<html>" + "RAM: " + pcBuild.getRam().getName() + "</html>");
+                            ramPriceLabel.setText("Price: " + pcBuild.getRam().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                        case 4:
+                            pcBuild.setMotherboard(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            motherboardLabel.setText("<html>" + "Motherboard: " + pcBuild.getMotherboard().getName() + "</html>");
+                            motherboardPriceLabel.setText("Price: " + pcBuild.getMotherboard().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                        case 5:
+                            pcBuild.setCase(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            caseLabel.setText("<html>" + "Case: " + pcBuild.getCase().getName() + "</html>");
+                            casePriceLabel.setText("Price: " + pcBuild.getCase().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                        case 6:
+                            pcBuild.setStorage(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            storageLabel.setText("<html>" + "Storage: " + pcBuild.getStorage().getName() + "</html>");
+                            storagePriceLabel.setText("Price: " + pcBuild.getStorage().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                        case 7:
+                            pcBuild.setCooler(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            coolerLabel.setText("<html>" + "Cooler: " + pcBuild.getCooler().getName() + "</html>");
+                            coolingPriceLabel.setText("Price: " + pcBuild.getCooler().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                    }
+                }
+            }
+        });
+        ItemsPriceList.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                if(e.getKeyCode() == 40) {
+                    ItemsNameList.setSelectedIndex(ItemsPriceList.getSelectedIndex() + 1);
+                    ItemsNameList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex() + 1);
+                    ItemsWebsiteList.setSelectedIndex(ItemsPriceList.getSelectedIndex() + 1);
+                    ItemsWebsiteList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex() + 1);
+                    index = ItemsPriceList.getSelectedIndex();
+                }
+                else if(e.getKeyCode() == 38) {
+                    ItemsNameList.setSelectedIndex(ItemsPriceList.getSelectedIndex() - 1);
+                    ItemsNameList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex() - 1);
+                    ItemsWebsiteList.setSelectedIndex(ItemsPriceList.getSelectedIndex() - 1);
+                    ItemsWebsiteList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex() - 1);
+                    index = ItemsPriceList.getSelectedIndex();
+                }
+                else if(e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    switch (category) {
+                        case 0:
+                            pcBuild.setPowerSupply(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            powerSupplyLabel.setText("<html>" + "Power Supply: " + pcBuild.getPowerSupply().getName() + "</html>");
+                            powerSupplyPriceLabel.setText("Price: " + pcBuild.getPowerSupply().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                        case 1:
+                            pcBuild.setCpu(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            cpuLabel.setText("<html>" + "CPU: " + pcBuild.getCpu().getName() + "</html>");
+                            cpuPriceLabel.setText("Price: " + pcBuild.getCpu().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                        case 2:
+                            pcBuild.setGpu(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            gpuLabel.setText("<html>" + "GPU: " + pcBuild.getGpu().getName() + "</html>");
+                            gpuPriceLabel.setText("Price: " + pcBuild.getGpu().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                        case 3:
+                            pcBuild.setRam(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            ramLabel.setText("<html>" + "RAM: " + pcBuild.getRam().getName() + "</html>");
+                            ramPriceLabel.setText("Price: " + pcBuild.getRam().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                        case 4:
+                            pcBuild.setMotherboard(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            motherboardLabel.setText("<html>" + "Motherboard: " + pcBuild.getMotherboard().getName() + "</html>");
+                            motherboardPriceLabel.setText("Price: " + pcBuild.getMotherboard().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                        case 5:
+                            pcBuild.setCase(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            caseLabel.setText("<html>" + "Case: " + pcBuild.getCase().getName() + "</html>");
+                            casePriceLabel.setText("Price: " + pcBuild.getCase().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                        case 6:
+                            pcBuild.setStorage(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            storageLabel.setText("<html>" + "Storage: " + pcBuild.getStorage().getName() + "</html>");
+                            storagePriceLabel.setText("Price: " + pcBuild.getStorage().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                        case 7:
+                            pcBuild.setCooler(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)));
+                            coolerLabel.setText("<html>" + "Cooler: " + pcBuild.getCooler().getName() + "</html>");
+                            coolingPriceLabel.setText("Price: " + pcBuild.getCooler().getPrice());
+                            totalPriceLabel.setText("Total Price: " + pcBuild.getPriceOfBuild());
+                            break;
+                    }
+                }
+            }
+        });
+        ItemsWebsiteList.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                if(e.getKeyCode() == 40) {
+                    ItemsPriceList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex() + 1);
+                    ItemsPriceList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex() + 1);
+                    ItemsNameList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex() + 1);
+                    ItemsNameList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex() + 1);
+                    index = ItemsWebsiteList.getSelectedIndex();
+                }
+                else if(e.getKeyCode() == 38) {
+                    ItemsPriceList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex() - 1);
+                    ItemsPriceList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex() - 1);
+                    ItemsNameList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex() - 1);
+                    ItemsNameList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex() - 1);
+                    index = ItemsWebsiteList.getSelectedIndex();
                 }
                 else if(e.getKeyCode() == KeyEvent.VK_ENTER) {
                     switch (category) {
@@ -460,6 +663,50 @@ public class MainMenu   extends JFrame {
                         System.out.println("Could not open website");
                     }
 
+                }
+                else {
+                    index = ItemsNameList.getSelectedIndex();
+                }
+            }
+        });
+        ItemsPriceList.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                ItemsNameList.setSelectedIndex(ItemsPriceList.getSelectedIndex());
+                ItemsNameList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex());
+                ItemsWebsiteList.setSelectedIndex(ItemsPriceList.getSelectedIndex());
+                ItemsWebsiteList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex());
+                super.mouseClicked(e);
+                if(index == ItemsPriceList.getSelectedIndex()) {
+                    try {
+                        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                        URI uri = new URI(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)).getWebsite());
+                        desktop.browse(uri);
+                    } catch (URISyntaxException | IOException ex) {
+                        System.out.println("Could not open website");
+                    }
+                }
+                else {
+                    index = ItemsNameList.getSelectedIndex();
+                }
+            }
+        });
+        ItemsWebsiteList.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                ItemsNameList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex());
+                ItemsNameList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+                ItemsPriceList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex());
+                ItemsPriceList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+                super.mouseClicked(e);
+                if(index == ItemsWebsiteList.getSelectedIndex()) {
+                    try {
+                        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                        URI uri = new URI(allItems.getAllItems()[category].get(allItems.searchForName(String.valueOf(ItemsNameList.getSelectedValue()),category)).getWebsite());
+                        desktop.browse(uri);
+                    } catch (URISyntaxException | IOException ex) {
+                        System.out.println("Could not open website");
+                    }
                 }
                 else {
                     index = ItemsNameList.getSelectedIndex();
@@ -567,64 +814,6 @@ public class MainMenu   extends JFrame {
                     desktop.browse(uri);
                 } catch (URISyntaxException | IOException ex) {
                     System.out.println("Could not open website");
-                }
-            }
-        });
-        pcNameTextField.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                pcBuild.setName(pcNameTextField.getText());
-                currentPcName.setText("PC Name: "+pcBuild.getName());
-            }
-        });
-        savePCButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                ArrayList<String> names = new ArrayList<>(Arrays.asList(getPCNames(builds)));
-                try {
-                    if (!pcBuild.getName().isEmpty() && names.contains(pcBuilds.getName()) && names.get(names.indexOf(pcBuild.getName())).length() != pcBuild.getName().length()) {
-                        try {
-                            System.out.println("option 1");
-                            builds.add(pcBuild);
-                            Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
-                            save.savePcBuilds(builds);
-                        } catch (FileNotFoundException ex) {
-                            throw new RuntimeException(ex);
-                        }
-                    } else if (!pcBuild.getName().isEmpty() && !names.contains(pcBuild.getName())) {
-                        try {
-                            builds.add(pcBuild);
-                            Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
-                            save.savePcBuilds(builds);
-                        } catch (FileNotFoundException ex) {
-                            throw new RuntimeException(ex);
-                        }
-                    } else if (!pcBuild.getName().isEmpty() && names.contains(pcBuild.getName())) {
-                        try {
-                            builds.set(arrayListIndexOfString(builds, pcBuild.getName()), pcBuild);
-                            Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
-                            save.savePcBuilds(builds);
-                        } catch (FileNotFoundException ex) {
-                            throw new RuntimeException(ex);
-                        }
-                    }
-                    pcBuilds.setListData(getPCNames(builds));
-                }
-                catch (Exception exception) {
-                    System.out.println("Error when saving pcs");
-                }
-            }
-        });
-        deletePCButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    builds.remove(pcBuilds.getSelectedIndex());
-                    Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
-                    save.savePcBuilds(builds);
-                    pcBuilds.setListData(getPCNames(builds));
-                } catch (FileNotFoundException ex) {
-	                throw new RuntimeException(ex);
                 }
             }
         });
