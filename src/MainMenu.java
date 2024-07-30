@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.beans.VetoableChangeListener;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -58,7 +59,8 @@ public class MainMenu   extends JFrame {
         setContentPane(MainMenu);
         AllItems allItems = new AllItems(ayoubComputers, mojitech, pcAndParts);
         setVisible(true);
-        setSize(1920,1080);
+        setSize(1500,900);
+        setMinimumSize(new Dimension(1500,800));
         setResizable(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         showCategory(0,allItems);
@@ -370,13 +372,6 @@ public class MainMenu   extends JFrame {
                 }
             }
         });
-        pcNameTextField.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                pcBuild.setName(pcNameTextField.getText());
-                currentPcName.setText("PC Name: "+pcBuild.getName());
-            }
-        });
         savePCButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -384,7 +379,7 @@ public class MainMenu   extends JFrame {
                 try {
                     if (!pcBuild.getName().isEmpty() && names.contains(pcBuilds.getName()) && names.get(names.indexOf(pcBuild.getName())).length() != pcBuild.getName().length()) {
                         try {
-                            System.out.println("option 1");
+                            pcNameTextField.setText(pcBuild.getName());
                             builds.add(pcBuild);
                             Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
                             save.savePcBuilds(builds);
@@ -393,6 +388,7 @@ public class MainMenu   extends JFrame {
                         }
                     } else if (!pcBuild.getName().isEmpty() && !names.contains(pcBuild.getName())) {
                         try {
+                            pcNameTextField.setText(pcBuild.getName());
                             builds.add(pcBuild);
                             Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
                             save.savePcBuilds(builds);
@@ -401,6 +397,7 @@ public class MainMenu   extends JFrame {
                         }
                     } else if (!pcBuild.getName().isEmpty() && names.contains(pcBuild.getName())) {
                         try {
+                            pcNameTextField.setText(pcBuild.getName());
                             builds.set(arrayListIndexOfString(builds, pcBuild.getName()), pcBuild);
                             Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
                             save.savePcBuilds(builds);
@@ -426,6 +423,12 @@ public class MainMenu   extends JFrame {
                 } catch (FileNotFoundException ex) {
                     throw new RuntimeException(ex);
                 }
+            }
+        });
+        pcNameTextField.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pcBuild.setName(pcNameTextField.getText());
             }
         });
         ItemsNameList.addKeyListener(new KeyAdapter() {
@@ -828,7 +831,6 @@ public class MainMenu   extends JFrame {
                         Save save = new Save(new File(System.getProperty("user.home") + System.getProperty("file.separator") + "savedPCs.txt"));
                         save.savePcBuilds(builds);
                         builds = read.readPcBuilds(allItems);
-                        currentPcName.setText("PC Name: " + builds.get(index2).getName());
                         pcNameTextField.setText(builds.get(index2).getName());
                         powerSupplyLabel.setText("<html>" + "Power Supply: " + builds.get(index2).getPowerSupply().getName() + "</html>");
                         powerSupplyPriceLabel.setText("<html>" + "Price: " + builds.get(index2).getPowerSupply().getPrice() + "</html>");

@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 public class PCBuild {
     private item Cpu;
     private item Gpu;
@@ -32,51 +31,35 @@ public class PCBuild {
         try {
             price += this.PowerSupply.getPrice();
         }
-        catch (Exception e) {
-            System.out.println("No Power Supply Price");
-        }
+        catch (Exception ignored) {}
         try {
             price += this.Cpu.getPrice();
         }
-        catch (Exception e) {
-            System.out.println("No CPU Price");
-        }
+        catch (Exception ignored){}
         try {
             price += this.Gpu.getPrice();
         }
-        catch (Exception e) {
-            System.out.println("No GPU Price");
-        }
+        catch (Exception ignored) {}
         try {
             price += this.Motherboard.getPrice();
         }
-        catch (Exception e) {
-            System.out.println("No Motherboard Price");
-        }
+        catch (Exception ignored) {}
         try {
             price += this.Case.getPrice();
         }
-        catch (Exception e) {
-            System.out.println("No Case Price");
-        }
+        catch (Exception ignored) {}
         try {
             price += this.Ram.getPrice();
         }
-        catch (Exception e) {
-            System.out.println("No Ram Price");
-        }
+        catch (Exception ignored) {}
         try {
             price += this.Storage.getPrice();
         }
-        catch (Exception e) {
-            System.out.println("No Storage Price");
-        }
+        catch (Exception ignored) {}
         try {
             price += this.Cooler.getPrice();
         }
-        catch (Exception e) {
-            System.out.println("No Cooler Price");
-        }
+        catch (Exception ignored) {}
         return price;
     }
     public void setMotherboard(item motherboard) {
