@@ -1,14 +1,15 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.beans.VetoableChangeListener;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Objects;
 public class MainMenu   extends JFrame {
     private JTextField searchName;
     private JComboBox categoryChoice;
@@ -43,6 +44,7 @@ public class MainMenu   extends JFrame {
     private JList pcBuilds;
     private JButton deletePCButton;
     private JTextField pcNameTextField;
+    private JButton openAllLinksButton;
     private JLabel currentPcName;
     private int category;
     private String searchFor;
@@ -57,9 +59,13 @@ public class MainMenu   extends JFrame {
         builds = Builds;
         pcBuilds.setListData(getPCNames(builds));
         setContentPane(MainMenu);
+        URL iconUrl = this.getClass().getResource("/icon.png");
+        Toolkit tk = this.getToolkit();
+        Image img = tk.getImage(iconUrl);
+        setIconImage(img);
         AllItems allItems = new AllItems(ayoubComputers, mojitech, pcAndParts);
         setVisible(true);
-        setSize(1500,900);
+        setSize(1500,800);
         setMinimumSize(new Dimension(1500,800));
         setResizable(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -665,7 +671,6 @@ public class MainMenu   extends JFrame {
                     } catch (URISyntaxException | IOException ex) {
                         System.out.println("Could not open website");
                     }
-
                 }
                 else {
                     index = ItemsNameList.getSelectedIndex();
@@ -856,6 +861,83 @@ public class MainMenu   extends JFrame {
                 }
                 else
                     index2 = pcBuilds.getSelectedIndex();
+            }
+        });
+        openAllLinksButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(pcBuild.getPowerSupply() != null && !Objects.equals(pcBuild.getPowerSupply().getName(), "N/A")) {
+                    try {
+                        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                        URI uri = new URI(pcBuild.getPowerSupply().getWebsite());
+                        desktop.browse(uri);
+                    } catch (URISyntaxException | IOException ex) {
+                        System.out.println("Could not open website");
+                    }
+                }
+                if(pcBuild.getCpu() != null && !Objects.equals(pcBuild.getCpu().getName(), "N/A")) {
+                    try {
+                        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                        URI uri = new URI(pcBuild.getCpu().getWebsite());
+                        desktop.browse(uri);
+                    } catch (URISyntaxException | IOException ex) {
+                        System.out.println("Could not open website");
+                    }
+                }
+                if(pcBuild.getGpu() != null && !Objects.equals(pcBuild.getGpu().getName(), "N/A")) {
+                    try {
+                        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                        URI uri = new URI(pcBuild.getGpu().getWebsite());
+                        desktop.browse(uri);
+                    } catch (URISyntaxException | IOException ex) {
+                        System.out.println("Could not open website");
+                    }
+                }
+                if(pcBuild.getRam() != null && !Objects.equals(pcBuild.getRam().getName(), "N/A")) {
+                    try {
+                        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                        URI uri = new URI(pcBuild.getRam().getWebsite());
+                        desktop.browse(uri);
+                    } catch (URISyntaxException | IOException ex) {
+                        System.out.println("Could not open website");
+                    }
+                }
+                if(pcBuild.getMotherboard() != null && !Objects.equals(pcBuild.getMotherboard().getName(), "N/A")) {
+                    try {
+                        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                        URI uri = new URI(pcBuild.getMotherboard().getWebsite());
+                        desktop.browse(uri);
+                    } catch (URISyntaxException | IOException ex) {
+                        System.out.println("Could not open website");
+                    }
+                }
+                if(pcBuild.getCase() != null && !Objects.equals(pcBuild.getCase().getName(), "N/A")) {
+                    try {
+                        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                        URI uri = new URI(pcBuild.getCase().getWebsite());
+                        desktop.browse(uri);
+                    } catch (URISyntaxException | IOException ex) {
+                        System.out.println("Could not open website");
+                    }
+                }
+                if(pcBuild.getStorage() != null && !Objects.equals(pcBuild.getStorage().getName(), "N/A")) {
+                    try {
+                        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                        URI uri = new URI(pcBuild.getStorage().getWebsite());
+                        desktop.browse(uri);
+                    } catch (URISyntaxException | IOException ex) {
+                        System.out.println("Could not open website");
+                    }
+                }
+                if(pcBuild.getCooler() != null && !Objects.equals(pcBuild.getCooler().getName(), "N/A")) {
+                    try {
+                        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+                        URI uri = new URI(pcBuild.getCooler().getWebsite());
+                        desktop.browse(uri);
+                    } catch (URISyntaxException | IOException ex) {
+                        System.out.println("Could not open website");
+                    }
+                }
             }
         });
     }

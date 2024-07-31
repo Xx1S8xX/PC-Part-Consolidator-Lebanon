@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainMenu">
-  <grid id="27dc6" binding="MainMenu" layout-manager="GridLayoutManager" row-count="27" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="MainMenu" layout-manager="GridLayoutManager" row-count="28" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="2009" height="667"/>
+      <xy x="20" y="20" width="2009" height="692"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -55,7 +55,7 @@
       </scrollpane>
       <component id="d5387" class="javax.swing.JButton" binding="savePCButton" default-binding="true">
         <constraints>
-          <grid row="26" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="27" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Save PC"/>
@@ -63,7 +63,7 @@
       </component>
       <component id="2dd23" class="javax.swing.JButton" binding="UpdateSources">
         <constraints>
-          <grid row="26" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="27" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Update Sources"/>
@@ -236,18 +236,10 @@
       </component>
       <component id="46a19" class="javax.swing.JButton" binding="deletePCButton" default-binding="true">
         <constraints>
-          <grid row="26" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="27" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Delete PC"/>
-        </properties>
-      </component>
-      <component id="25538" class="javax.swing.JLabel" binding="totalPriceLabel">
-        <constraints>
-          <grid row="26" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Label"/>
         </properties>
       </component>
       <vspacer id="204c5">
@@ -409,6 +401,22 @@
         </constraints>
         <properties>
           <text value="Name:"/>
+        </properties>
+      </component>
+      <component id="25538" class="javax.swing.JLabel" binding="totalPriceLabel">
+        <constraints>
+          <grid row="26" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="c47e9" class="javax.swing.JButton" binding="openAllLinksButton" default-binding="true">
+        <constraints>
+          <grid row="27" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Open All Links"/>
         </properties>
       </component>
     </children>
