@@ -206,12 +206,17 @@ public class MainMenu   extends JFrame {
             public void mouseWheelMoved(MouseWheelEvent e) {
                 if(ItemsNameList.getSelectedIndex() > 0 || e.getWheelRotation() > 0) {
                     try {
-                        ItemsNameList.setSelectedIndex(ItemsNameList.getSelectedIndex() + ((e.getScrollAmount() * e.getWheelRotation()) / 2));
-                        ItemsNameList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
-                        ItemsPriceList.setSelectedIndex(ItemsNameList.getSelectedIndex());
-                        ItemsPriceList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
-                        ItemsWebsiteList.setSelectedIndex(ItemsNameList.getSelectedIndex());
-                        ItemsWebsiteList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
+                        if (ItemsNameList.getSelectedIndex() == 0) {
+                            ItemsNameList.setSelectedIndex(1);
+                        }
+                        else {
+                            ItemsNameList.setSelectedIndex(ItemsNameList.getSelectedIndex() + ((e.getScrollAmount() * e.getWheelRotation()) / 2));
+                        }
+	                    ItemsNameList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
+	                    ItemsPriceList.setSelectedIndex(ItemsNameList.getSelectedIndex());
+	                    ItemsPriceList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
+	                    ItemsWebsiteList.setSelectedIndex(ItemsNameList.getSelectedIndex());
+	                    ItemsWebsiteList.ensureIndexIsVisible(ItemsNameList.getSelectedIndex());
                     }
                     catch (Exception exception) {
                         System.out.println("Error in scrolling");
@@ -223,12 +228,15 @@ public class MainMenu   extends JFrame {
             @Override
             public void mouseWheelMoved(MouseWheelEvent e) {
                 if(ItemsNameList.getSelectedIndex() > 0 || e.getWheelRotation() > 0) {
-                    ItemsPriceList.setSelectedIndex(ItemsPriceList.getSelectedIndex() + ((e.getScrollAmount() * e.getWheelRotation()) / 2));
-                    ItemsPriceList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex());
-                    ItemsNameList.setSelectedIndex(ItemsPriceList.getSelectedIndex());
-                    ItemsNameList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex());
-                    ItemsWebsiteList.setSelectedIndex(ItemsPriceList.getSelectedIndex());
-                    ItemsWebsiteList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex());
+                    try {
+                        ItemsPriceList.setSelectedIndex(ItemsPriceList.getSelectedIndex() + ((e.getScrollAmount() * e.getWheelRotation()) / 2));
+                        ItemsPriceList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex());
+                        ItemsNameList.setSelectedIndex(ItemsPriceList.getSelectedIndex());
+                        ItemsNameList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex());
+                        ItemsWebsiteList.setSelectedIndex(ItemsPriceList.getSelectedIndex());
+                        ItemsWebsiteList.ensureIndexIsVisible(ItemsPriceList.getSelectedIndex());
+                    } catch (Exception ignored) {
+                    }
                 }
             }
         });
@@ -236,12 +244,16 @@ public class MainMenu   extends JFrame {
             @Override
             public void mouseWheelMoved(MouseWheelEvent e) {
                 if(ItemsNameList.getSelectedIndex() > 0 || e.getWheelRotation() > 0) {
-                    ItemsWebsiteList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex() + ((e.getScrollAmount() * e.getWheelRotation()) / 2));
-                    ItemsWebsiteList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
-                    ItemsPriceList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex());
-                    ItemsPriceList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
-                    ItemsNameList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex());
-                    ItemsNameList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+                    try {
+                        ItemsWebsiteList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex() + ((e.getScrollAmount() * e.getWheelRotation()) / 2));
+                        ItemsWebsiteList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+                        ItemsPriceList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex());
+                        ItemsPriceList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+                        ItemsNameList.setSelectedIndex(ItemsWebsiteList.getSelectedIndex());
+                        ItemsNameList.ensureIndexIsVisible(ItemsWebsiteList.getSelectedIndex());
+                    } catch (Exception ex) {
+                        System.out.println("Error in scrolling");
+                    }
                 }
             }
         });

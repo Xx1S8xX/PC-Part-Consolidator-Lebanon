@@ -44,7 +44,6 @@ public class Mojitech {
             Element element3 = element;
             name = element.select("a.woocommerce-LoopProduct-link.woocommerce-loop-product__link").text();
             website = "https://mojitech.net" + element3.select("a.woocommerce-LoopProduct-link.woocommerce-loop-product__link").attr("href");
-            System.out.println(website);
             if(!element2.select("strong").text().equals("Call for price"))
             {
                 price = element2.select("bdi").text();
